@@ -6,9 +6,9 @@ import { DrawerLayoutAndroid } from 'react-native';
 export interface navigationInterface {
     navigation: {
         navigate: (value: string) => void,
-        params: {}
+        params: {},
+        pathname: string,
     },
-    pathname: string,
     translate: translateInterface,
     drawerRef: React.RefObject<DrawerLayoutAndroid>
 }
@@ -17,8 +17,8 @@ export const NavigationProvider = createContext<navigationInterface>({
     navigation: {
         params: {},
         navigate(value) { },
+        pathname: ''
     },
-    pathname: '',
     translate: translate?.en,
     drawerRef: { current: null }
 })
@@ -38,7 +38,11 @@ export default function NavigationContainer({ children }: { children: React.Reac
         get params() {
             return params
         }
+        get pathname() {
+            return screen
+        }
     }
+
 
     AsyncStorage.getItem('link').then(r => {
         if (r) {
@@ -50,27 +54,25 @@ export default function NavigationContainer({ children }: { children: React.Reac
     })
 
     const [language, setLanguage] = useState<translateInterface>(translate?.en)
-    // const [language, setLanguage] = useState<translateInterface>(translate?.en)
 
     useEffect(() => {
         setLanguage(translate?.en)
         return () => { }
     }, [])
 
-    // AsyncStorage.getItem('language').then(r => {
-    //     if (r == 'bn') {
-    //         setLanguage(translate?.bn)
-    //     }
-    //     else {
-    //         setLanguage(translate?.en)
-    //     }
-    // })
+    AsyncStorage.getItem('language').then(r => {
+        if (r == 'bn') {
+            setLanguage(translate?.bn)
+        }
+        else {
+            setLanguage(translate?.en)
+        }
+    })
 
     return (
         <NavigationProvider.Provider
             value={{
                 navigation: new navigation(),
-                pathname: screen,
                 translate: language,
                 drawerRef: drawerRef
             }}

@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import { Animated, FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Banner from './components/banner/Banner';
 import { categories } from './components/Categories';
 import CategorySection from './components/CategorySection';
 import TextInputExample from '../../components/input/InputSearch';
 import ProfileScreen from '../profile/ProfileScreen';
+import { navigationInterface } from '../../navigators/NavigationContainer';
 
 
-export default function HomeScreen() {
-
-
+export default function HomeScreen(props: navigationInterface) {
 
     return (
         <SafeAreaView style={{ flex: 1, }}>

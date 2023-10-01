@@ -24,7 +24,7 @@ const user_info = {
 
 export default function AccountInformation() {
 
-    const { translate, pathname, drawerRef } = useContext(NavigationProvider);
+    const { translate, drawerRef } = useContext(NavigationProvider);
 
     const {
         name,

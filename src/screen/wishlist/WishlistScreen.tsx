@@ -10,6 +10,7 @@ import {
     ScrollView,
 } from 'react-native';
 import WishlistEachProduct from './components/WishlistEachProduct';
+import { global_styles } from '../../styles/global';
 
 const wishlist = [
     {
@@ -104,27 +105,18 @@ const wishlist = [
     }
 ]
 
-export const WishlistScreen = () => (
-
-    <SafeAreaView style={styles.container}>
-        <View>
-            {
-                wishlist?.map((product, index) => {
-                    return (
-                        <WishlistEachProduct product={product} key={product?.productID} />
-                    )
-                })
-            }
-        </View>
-    </SafeAreaView>
-);
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 16,
-        // paddingTop: StatusBar.currentHeight,
-        marginHorizontal: 16,
-    },
-});
-
+export const WishlistScreen = () => {
+    return (
+        <SafeAreaView style={global_styles.container}>
+            <View>
+                {
+                    wishlist?.map((product, index) => {
+                        return (
+                            <WishlistEachProduct product={product} key={product?.productID} />
+                        )
+                    })
+                }
+            </View>
+        </SafeAreaView>
+    )
+}

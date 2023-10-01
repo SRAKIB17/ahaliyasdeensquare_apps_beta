@@ -28,6 +28,12 @@ export interface translateInterface {
     "user_id": string,
     "user_type": string,
     "change_language": string,
+    "details": string,
+    "tracking_number": string,
+    "total_amount": string,
+    "buy_now": string,
+    "courier_address": string,
+    "default_address": string
 }
 
 export const translate = {
@@ -60,7 +66,13 @@ export const translate = {
         "reward_coins": "reward_coins",
         "user_id": "ব্যবহারকারী আইডি",
         "user_type": "ব্যবহারকারীর ধরন",
-        "change_language": "ভাষা পরিবর্তন করুন"
+        "change_language": "ভাষা পরিবর্তন করুন",
+        "details": "বিস্তারিত",
+        "tracking_number": "ট্র্যাকিং নম্বর",
+        "total_amount": "মোট পরিমাণ",
+        "buy_now": "এখন কিনুন",
+        "courier_address": "কুরিয়ার ঠিকানা",
+        "default_address": "ডিফল্ট"
     },
 
     "en": {
@@ -92,6 +104,13 @@ export const translate = {
         "reward_coins": "Reward_coins",
         "user_id": "User_id",
         "user_type": "user_type",
-        "change_language": "Change Language"
+        "change_language": "Change Language",
+
+        "details": "Details",
+        "tracking_number": "Tracking Number",
+        "total_amount": "Total Amount",
+        "buy_now": "Buy Now",
+        "courier_address": "Courier Address",
+        "default_address": "Default"
     }
 }

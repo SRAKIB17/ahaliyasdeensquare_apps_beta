@@ -20,7 +20,7 @@ function App(): JSX.Element {
               animated={true}
               barStyle='light-content'
               backgroundColor={colors.primary}
-              showHideTransition={'fade'}
+              showHideTransition={'slide'}
               hidden={false}
             />
             <Navigator />

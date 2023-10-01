@@ -1,12 +1,14 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
-import { eachProductInterface } from '../../../interface/each_product_interface';
+
 import colors from '../../../utils/colors';
 import { global_styles } from '../../../styles/global';
 import currencyConvert from '../../../hooks/currencyConvert';
 import decimalPoint from '../../../hooks/decimalPoint';
-import TouchableOpacityButton from '../../../components/button/PressableButton';
+
 import { assets_images } from '../../../assets/assets_images';
+import { eachProductInterface } from '../../../interface/each_product.interface';
+import TouchableOpacityButton from '../../../components/button/TouchableOpacityButton';
 
 export default function WishlistEachProduct(props: { product: eachProductInterface }) {
     const { title, images, availabilityStatus, price, currency, discount } = props?.product
@@ -19,19 +21,18 @@ export default function WishlistEachProduct(props: { product: eachProductInterfa
             </View>
             <View style={styles.item_info}>
                 {/* Product Title */}
-
-                <Text style={[global_styles.text_sm, global_styles.font_medium, { paddingBottom: 4 }]}>
+                <Text style={[global_styles.text_sm, global_styles.font_medium]}>
                     {
                         title?.slice(0, 30)
                     }
                     {
-                        "\n"
+                        title?.length >= 30 && "\n"
                     }
                     {
                         title?.slice(30, 60)
                     }
                     {
-                        title?.length >= 60 && "..."
+                        title?.length >= 60 && " . . ."
                     }
                 </Text>
 
@@ -89,21 +90,42 @@ export default function WishlistEachProduct(props: { product: eachProductInterfa
                     </View>
                 </View>
                 {/* ___________ Product price stock quantity _____________*/}
+
+                <View style={{ display: 'flex', flexDirection: 'row', alignItems: "center", gap: 4, paddingTop: 4, flex: 1 }}>
+                    <TouchableOpacityButton
+                        onPress={() => { }}
+                        image={assets_images.arrow_right_light}
+                        containerStyles={{
+                            backgroundColor: colors.primary,
+                            width: 32,
+                            height: 32,
+                            borderWidth: 0,
+                        }}
+                    />
+                    <TouchableOpacityButton
+                        onPress={() => { }}
+                        image={assets_images.arrow_right_light}
+                        containerStyles={{
+                            backgroundColor: colors.primary,
+                            width: 32,
+                            height: 32,
+                            borderWidth: 0,
+                        }}
+                    />
+                    <TouchableOpacityButton
+                        onPress={() => { }}
+                        image={assets_images.arrow_right_light}
+                        containerStyles={{
+                            backgroundColor: colors.primary,
+                            width: 32,
+                            height: 32,
+                            borderWidth: 0,
+                        }}
+                    />
+                </View>
             </View>
 
-            <View style={{ position: 'absolute', right: 16, top: '50%' }}>
-                <TouchableOpacityButton
-                    key={title}
-                    onPress={() => { }}
-                    image={assets_images.arrow_right_light}
-                    containerStyles={{
-                        backgroundColor: colors.primary,
-                        width: 32,
-                        height: 32,
-                        borderWidth: 0,
-                    }}
-                />
-            </View>
+
         </View>
     );
 }
@@ -111,7 +133,7 @@ export default function WishlistEachProduct(props: { product: eachProductInterfa
 const styles = StyleSheet.create({
     item: {
         backgroundColor: colors.white,
-        padding: 8,
+        padding: 10,
         borderColor: colors.border_color,
         borderWidth: 0.5,
         display: 'flex',
@@ -123,13 +145,13 @@ const styles = StyleSheet.create({
     item_info: {
         display: 'flex',
         flexDirection: 'column',
-        gap: 2
+        gap: 5
     },
     product_image: {
-        width: 80,
+        width: 100,
         borderRadius: 6,
-        height: 80,
-        objectFit: 'fill'
+        flex: 1,
+        objectFit: 'contain'
     },
 
     stock: {

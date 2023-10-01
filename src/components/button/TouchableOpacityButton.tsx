@@ -14,13 +14,19 @@ interface ButtonProps {
     textStyle?: object
 }
 
-export default function PressableButton({
-    text, onPress, containerStyles, disabled = false, image = 0, image_url = '', imageStyle
+export default function TouchableOpacityButton({
+    text,
+    onPress,
+    containerStyles,
+    disabled = false,
+    image = 0,
+    image_url = '',
+    imageStyle
     , textStyle
 }: ButtonProps) {
 
     return (
-        <Pressable
+        <TouchableOpacity
             onPress={onPress}
             disabled={disabled}
         >
@@ -52,7 +58,7 @@ export default function PressableButton({
                     }
                 </View>
             </View>
-        </Pressable>
+        </TouchableOpacity>
     );
 };
 

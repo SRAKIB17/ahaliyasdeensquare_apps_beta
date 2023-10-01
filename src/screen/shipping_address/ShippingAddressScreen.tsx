@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { Button, Dimensions, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Button, Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import TouchableOpacityButton from '../../components/button/PressableButton';
 import { assets_images } from '../../assets/assets_images';
-import CartProductItem from './components/CartProductItem';
+import EachShippingAddress from './components/EachShippingAddress';
 import { NavigationProvider } from '../../navigators/NavigationContainer';
 import translate_each_word from '../../db/translate_each_word';
 import { global_styles } from '../../styles/global';
@@ -48,7 +48,7 @@ const products = [
         }
     },
     {
-        id: '1',
+        id: '4',
         quantity: 1,
         item: {
             id: '1',
@@ -61,7 +61,7 @@ const products = [
         }
     },
     {
-        id: '2',
+        id: '244',
         quantity: 2,
         item: {
             id: '2',
@@ -74,7 +74,7 @@ const products = [
         }
     },
     {
-        id: '3',
+        id: '345',
         quantity: 1,
         option: 'Space Grey',
         item: {
@@ -89,79 +89,62 @@ const products = [
     },
 ];
 
-export default function CartScreen() {
-    const { navigate, pathname, translate } = useContext(NavigationProvider)
+const address = [
+    {
+        "userID": 10000,
+        "shippingAddressID": 10000,
+        "addressLabel": "Home",
+        "area": "FSFSDF",
+        "city": "Kaderpur, Babuganj, Barisal, Barisal",
+        "country": "Bangladesh",
+        "phoneNumber": "01873-989651",
+        "alternativePhoneNumber": "01873-989651",
+        "courierServiceAddress": "SDFSDFDF",
+        "email": "rakibulssc5@gamil.com",
+        "defaultShippingAddress": 10000,
+        "isDefaultShippingAddress": 1
+    },
+    {
+        "userID": 10000,
+        "shippingAddressID": 10001,
+        "addressLabel": "Office",
+        "area": "নেওয়া",
+        "city": "Khagaura, Baniachong, Habiganj, Sylhet",
+        "country": "Bangladesh",
+        "phoneNumber": "+8801873989651",
+        "alternativePhoneNumber": "8801873989651",
+        "courierServiceAddress": "🤔jkk",
+        "email": "rakibulssc5@gamil.com",
+        "defaultShippingAddress": null,
+        "isDefaultShippingAddress": 0
+    }
+]
+
+export default function ShippingAddressScreen() {
+    const { translate } = useContext(NavigationProvider)
     const { my_account_menu } = translate_each_word()
-    const { my_carts } = translate.my_carts
+    const { my_carts } = translate
 
     return (
-        <SafeAreaView>
-            <View style={styles.container}>
-                <View style={styles.title}>
-                    <View style={{ position: 'absolute' }}>
-                        <TouchableOpacityButton
-                            onPress={() => navigate('/profile')}
-                            image={assets_images.arrow_right_dark}
-                            imageStyle={{ transform: [{ rotate: "180deg" }] }}
-                            containerStyles={{
-                                backgroundColor: 'transparent',
-                                width: 36,
-                                height: 36,
-                                borderWidth: 0,
-                            }}
-                        />
-                    </View>
-                    <View style={{ width: "100%", display: 'flex', justifyContent: "center", alignContent: 'center', flexDirection: 'row' }}>
-                        <View>
-                            <Text style={[global_styles.text_3xl, global_styles.font_bold]}
-                            >
-                                {
-                                    my_carts
-                                }
-                            </Text>
-                        </View>
-                    </View>
-                </View>
-
-                <View style={styles.page} >
-                    {/* subtotal and checkout  */}
-
-                    <ScrollView>
-                        {/* Render Product Items  */}
-                        {
-                            products?.map(r => {
-                                return (
-                                    <CartProductItem cartItem={r} key={r?.id} />
-                                )
-                            })
-                        }
-                    </ScrollView>
-                    {/* <FlatList
-                // refreshing={true}
-                // onRefresh={() => {
-                //     console.log(5435)
-                // }}
-                data={products}
-                renderItem={
-                    ({ item }) => <CartProductItem cartItem={item} />
+        <SafeAreaView style={global_styles.container}>
+            <View>
+                {
+                    address?.map(address => {
+                        return (
+                            <EachShippingAddress address={address}
+                                key={address?.shippingAddressID}
+                            />
+                        )
+                    })
                 }
-                showsVerticalScrollIndicator={true}
-            /> */}
-                </View>
-
             </View>
+
         </SafeAreaView>
     );
 }
 
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 16,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 40
-    },
     title: {
         display: 'flex',
         position: "relative",

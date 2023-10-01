@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import EachNotifications from './components/EachNotifications';
+import { global_styles } from '../../styles/global';
 const notifications =
     [
         {
@@ -177,7 +178,7 @@ const notifications =
     ]
 export default function NotificationsScreen() {
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={global_styles.container}>
             {
                 notifications?.map((notification, index) => {
                     return (
@@ -189,11 +190,4 @@ export default function NotificationsScreen() {
         </SafeAreaView>
     );
 }
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 16,
-        // paddingTop: StatusBar.currentHeight,
-        marginHorizontal: 16,
-    },
-});
+

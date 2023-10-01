@@ -70,9 +70,9 @@ const font = StyleSheet.create({
 export const global_styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 16,
+        paddingVertical: 16,
         // paddingTop: StatusBar.currentHeight,
-        marginHorizontal: 16,
+        marginHorizontal: 10,
     },
     input: {
         borderWidth: 1,

@@ -11,17 +11,15 @@ import { NavigationProvider } from '../../../navigators/NavigationContainer';
 
 
 const NavbarTitleBackButton = ({
-    drawerRef,
     title,
     backward
 }: {
-    drawerRef: React.RefObject<DrawerLayoutAndroid>,
     title: string
     backward: string,
 }) => {
 
     // const router: any = Router()
-    const { navigate } = useContext(NavigationProvider)
+    const { navigation, drawerRef } = useContext(NavigationProvider)
     const onPress = () => {
         return drawerRef.current?.openDrawer()
     }
@@ -43,7 +41,7 @@ const NavbarTitleBackButton = ({
                     <View style={{ position: 'absolute' }}>
                         <TouchableOpacityButton
                             key={title}
-                            onPress={() => { navigate(backward) }}
+                            onPress={() => { navigation.navigate(backward) }}
                             image={assets_images.arrow_right_light}
                             imageStyle={{ transform: [{ rotate: "180deg" }] }}
                             containerStyles={{

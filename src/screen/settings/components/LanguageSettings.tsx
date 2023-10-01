@@ -8,8 +8,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 function LanguageSettings({ button, button_title_image }: { button: object, button_title_image: object }) {
-    const { navigate, pathname, translate } = useContext(NavigationProvider)
-    const { change_language } = translate.settings
+    const { navigation: { navigate }, translate } = useContext(NavigationProvider)
+    const { change_language } = translate
     const [isEnabled, setIsEnabled] = useState(false);
     useEffect(() => {
         AsyncStorage.getItem('language')

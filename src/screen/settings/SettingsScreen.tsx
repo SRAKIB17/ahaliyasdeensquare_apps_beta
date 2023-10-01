@@ -14,15 +14,15 @@ const user_info = {
 }
 
 export default function SettingsScreen() {
-    const { navigate, pathname, translate } = useContext(NavigationProvider)
+    const { translate } = useContext(NavigationProvider)
     const { my_account_menu } = translate_each_word()
-    const { change_language } = translate.settings
+    const { change_language } = translate
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
     return (
-        <View style={styles.container}>
-            <View style={{ display: 'flex', gap: 16 }}>
+        <View style={global_styles.container}>
+            <View style={{ display: 'flex', gap: 16, paddingBottom: 40 }}>
                 <View style={{ display: 'flex', flexDirection: "row", alignItems: 'center', gap: 16 }}>
                     <View>
                         <Image source={user_info.profile} style={{ width: 64, height: 64 }} />
@@ -92,12 +92,7 @@ export default function SettingsScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 16,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 40
-    },
+
     button: {
         display: 'flex',
         alignItems: 'center',

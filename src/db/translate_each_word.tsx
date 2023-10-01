@@ -3,7 +3,7 @@ import { NavigationProvider } from '../navigators/NavigationContainer';
 import { assets_images } from '../assets/assets_images';
 
 const translate_each_word = () => {
-    const { navigate, pathname, translate } = useContext(NavigationProvider)
+    const { translate } = useContext(NavigationProvider)
 
     const {
         home, profile, cart, wishlist, account_information, my_carts, my_orders, my_wishlists, notifications, shipping_address, support_tickets, settings
@@ -70,7 +70,7 @@ const translate_each_word = () => {
         },
         {
             title: shipping_address,
-            link: '/account/address',
+            link: '/shipping-address',
             light: assets_images.shipping_address_light,
             dark: assets_images.shipping_address_dark,
         },

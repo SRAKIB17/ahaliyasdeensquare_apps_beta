@@ -6,16 +6,15 @@ import colors from '../../utils/colors';
 
 
 export default function Footer() {
-    const { navigation, pathname, translate } = useContext(NavigationProvider)
-    const { footer: footerMenuButton } = translate_each_word();
+    const { navigation, translate } = useContext(NavigationProvider)
 
-    console.log(useContext(NavigationProvider).pathname)
+    const { footer: footerMenuButton } = translate_each_word();
 
     return (
         <View style={styles.footer}>
             {
                 footerMenuButton?.map((r: any, index) => {
-                    const check = pathname === r.link;
+                    const check = navigation.pathname === r.link;
                     return (
                         <View key={index}>
                             <Pressable

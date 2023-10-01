@@ -1,10 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
+import { global_styles } from '../../styles/global';
 
 export default function SearchScreen() {
     return (
-        <View>
+        <SafeAreaView style={global_styles.container}>
 
-        </View>
+        </SafeAreaView>
     );
 }

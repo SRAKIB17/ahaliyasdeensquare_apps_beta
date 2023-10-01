@@ -3,7 +3,7 @@ import { Button, Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, Te
 import TouchableOpacityButton from '../../components/button/PressableButton';
 import { assets_images } from '../../assets/assets_images';
 import CartProductItem from './components/CartProductItem';
-import { NavigationProvider } from '../../navigators/NavigationContainer';
+import { NavigationProvider, navigationInterface } from '../../navigators/NavigationContainer';
 import translate_each_word from '../../db/translate_each_word';
 import { global_styles } from '../../styles/global';
 const products = [
@@ -89,14 +89,15 @@ const products = [
     },
 ];
 
-export default function CartScreen() {
-    const { navigate, pathname, translate } = useContext(NavigationProvider)
+export default function CartScreen(props: navigationInterface) {
+
+    const { translate } = props
     const { my_account_menu } = translate_each_word()
-    const { my_carts } = translate.my_carts
+    const { my_carts } = translate
 
     return (
-        <SafeAreaView>
-            <View style={styles.container}>
+        <SafeAreaView style={global_styles.container}>
+            <View>
 
                 <View style={styles.page} >
                     {/* subtotal and checkout  */}
@@ -131,14 +132,7 @@ export default function CartScreen() {
 
 
 const styles = StyleSheet.create({
-    container: {
-        paddingTop: 16,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 40,
-        flex: 1,
-        marginHorizontal: 16,
-    },
+
     title: {
         display: 'flex',
         position: "relative",

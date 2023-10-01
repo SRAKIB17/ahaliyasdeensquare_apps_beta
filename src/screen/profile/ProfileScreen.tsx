@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Image, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationProvider, navigationInterface } from '../../navigators/NavigationContainer';
 import translate_each_word from '../../db/translate_each_word';
-import { default_theme, global_styles } from '../../styles/global';
+import { global_styles } from '../../styles/global';
 import { assets_images } from '../../assets/assets_images';
 import colors from '../../utils/colors';
 
@@ -25,13 +25,13 @@ const user_info = {
 }
 
 
-export default function ProfileScreen({ navigation, drawerRef, pathname, translate }: navigationInterface) {
+export default function ProfileScreen({ navigation, drawerRef, translate }: navigationInterface) {
     const { my_account_menu } = translate_each_word()
-    const { my_profile, log_out } = translate
-
+    const { log_out } = translate
     return (
-        <View style={styles.container}>
-            <View style={{ display: 'flex', gap: 16 }}>
+        <View style={global_styles.container}>
+
+            <View style={{ display: 'flex', gap: 16, paddingBottom: 40 }}>
                 <View style={{ display: 'flex', flexDirection: "row", alignItems: 'center', gap: 16 }}>
                     <View>
                         <Image source={user_info.profile} style={{ width: 64, height: 64 }} />
@@ -52,6 +52,7 @@ export default function ProfileScreen({ navigation, drawerRef, pathname, transla
 
                 </View>
             </View>
+
             <View style={{ borderTopColor: colors.border_color, borderTopWidth: 0.5 }}>
                 {
                     my_account_menu?.map((r: any, index) => {
@@ -92,10 +93,8 @@ export default function ProfileScreen({ navigation, drawerRef, pathname, transla
                     })
                 }
                 <View>
-                    <TouchableOpacity
+                    <Pressable
                         onPress={() => navigation.navigate("r?.link")}
-                    // style={{ marginTop: -48 }}
-                    // disabled={check}
                     >
                         <View style={styles.button}>
                             <View style={styles.button_title_image}>
@@ -125,7 +124,8 @@ export default function ProfileScreen({ navigation, drawerRef, pathname, transla
                                 />
                             </View>
                         </View>
-                    </TouchableOpacity>
+                    </Pressable>
+
                 </View>
             </View>
         </View>
@@ -133,12 +133,7 @@ export default function ProfileScreen({ navigation, drawerRef, pathname, transla
 }
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 16,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 40
-    },
+
     button: {
         display: 'flex',
         alignItems: 'center',
