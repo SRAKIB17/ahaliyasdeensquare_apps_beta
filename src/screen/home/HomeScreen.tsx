@@ -6,6 +6,7 @@ import CategorySection from './components/CategorySection';
 import TextInputExample from '../../components/input/InputSearch';
 import ProfileScreen from '../profile/ProfileScreen';
 import { navigationInterface } from '../../navigators/NavigationContainer';
+import SignInScreen from '../auth/signin/SignInScreen';
 
 
 export default function HomeScreen(props: navigationInterface) {
@@ -22,6 +23,8 @@ export default function HomeScreen(props: navigationInterface) {
                 // placeholder={'fsdlf'} value={534}
                 />
             </View>
+
+            <SignInScreen />
 
             {/* {
                 categories?.map(item => {

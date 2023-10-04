@@ -3,7 +3,6 @@ import React, { createContext, useEffect, useReducer } from 'react';
 import { actionTypeInterface, authenticationCheckProviderReducer, } from './AuthenticationReducer';
 
 
-
 export const initialState = {
     role: null,
     isLoggedIn: false,
