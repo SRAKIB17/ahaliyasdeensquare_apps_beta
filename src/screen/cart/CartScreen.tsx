@@ -4,7 +4,6 @@ import TouchableOpacityButton from '../../components/button/PressableButton';
 import { assets_images } from '../../assets/assets_images';
 import CartProductItem from './components/CartProductItem';
 import { NavigationProvider, navigationInterface } from '../../navigators/NavigationContainer';
-import translate_each_word from '../../db/translate_each_word';
 import { global_styles } from '../../styles/global';
 const products = [
     {
@@ -92,7 +91,6 @@ const products = [
 export default function CartScreen(props: navigationInterface) {
 
     const { translate } = props
-    const { my_account_menu } = translate_each_word()
     const { my_carts } = translate
 
     return (

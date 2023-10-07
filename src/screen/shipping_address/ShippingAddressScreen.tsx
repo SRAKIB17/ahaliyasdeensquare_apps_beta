@@ -4,7 +4,6 @@ import TouchableOpacityButton from '../../components/button/PressableButton';
 import { assets_images } from '../../assets/assets_images';
 import EachShippingAddress from './components/EachShippingAddress';
 import { NavigationProvider } from '../../navigators/NavigationContainer';
-import translate_each_word from '../../db/translate_each_word';
 import { global_styles } from '../../styles/global';
 const products = [
     {
@@ -122,7 +121,6 @@ const address = [
 
 export default function ShippingAddressScreen() {
     const { translate } = useContext(NavigationProvider)
-    const { my_account_menu } = translate_each_word()
     const { my_carts } = translate
 
     return (

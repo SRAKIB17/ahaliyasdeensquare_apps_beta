@@ -1,14 +1,39 @@
 import { useContext, useState } from 'react';
 import { View, Text, Button, TouchableHighlight, TouchableOpacityBase, StyleSheet, Image, TouchableOpacity, Linking, Pressable } from 'react-native';
 import { NavigationProvider } from '../../navigators/NavigationContainer';
-import translate_each_word from '../../db/translate_each_word';
 import colors from '../../utils/colors';
+import { assets_images } from '../../assets/assets_images';
 
 
 export default function Footer() {
-    const { navigation, translate } = useContext(NavigationProvider)
-
-    const { footer: footerMenuButton } = translate_each_word();
+    const { navigation, translate, navigate_link } = useContext(NavigationProvider)
+    const { home, wishlist, cart, profile } = translate
+    const footerMenuButton = [
+        {
+            light: assets_images.home_light,
+            dark: assets_images.home_dark,
+            title: home,
+            link: "/home",
+        },
+        {
+            light: assets_images.wishlist_light,
+            dark: assets_images.wishlist_dark,
+            title: wishlist,
+            link: "/wishlists"
+        },
+        {
+            light: assets_images.cart_light,
+            dark: assets_images.cart_dark,
+            title: cart,
+            link: "/carts",
+        },
+        {
+            light: assets_images.profile_light,
+            dark: assets_images.profile_dark,
+            title: profile,
+            link: navigate_link.profile,
+        }
+    ]
 
     return (
         <View style={styles.footer}>
@@ -18,7 +43,7 @@ export default function Footer() {
                     return (
                         <View key={index}>
                             <Pressable
-                                onPress={() => navigation.navigate(r?.link)}
+                                onPress={() => navigation.navigate({ link: r?.link })}
                                 disabled={check}
                             >
                                 <View style={styles.button}>

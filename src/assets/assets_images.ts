@@ -26,4 +26,26 @@ export const assets_images = {
     "language_dark": require('./images/language_dark.png'),
     "info_dark": require('./images/info_dark.png'),
     "info_light": require('./images/info_light.png'),
+
+
+
+    "carts3d": require('./images/3d/carts3d.png'),
+    "browser_history3d": require('./images/3d/browser_history3d.png'),
+    "email3d": require('./images/3d/email3d.png'),
+    "expenditure3d": require('./images/3d/expenditure3d.png'),
+    "location3d": require('./images/3d/location3d.png'),
+    "notifications3d": require('./images/3d/notifications3d.png'),
+    "orders3d": require('./images/3d/orders3d.png'),
+    "password3d": require('./images/3d/password3d.png'),
+    "person_256_3d": require('./images/3d/person_256_3d.png'),
+    "person3d": require('./images/3d/person3d.png'),
+    "phone3d": require('./images/3d/phone3d.png'),
+    "settings3d": require('./images/3d/settings3d.png'),
+    "wishlists3d": require('./images/3d/wishlists3d.png'),
+    "shipping_address3d": require('./images/3d/shipping_address3d.png'),
+    "sign_out3d": require('./images/3d/sign_out3d.png'),
+    "support_ticket3d": require('./images/3d/support_ticket3d.png'),
+
+
+    "signin_bg": require('./images/bg/signin_bg.png'),
 }

@@ -11,10 +11,15 @@ import { WishlistScreen } from "../screen/wishlist/WishlistScreen";
 import NotificationsScreen from "../screen/notifications/NotificationsScreen";
 import AccountInformation from "../screen/account_information/AccountInformation";
 import ShippingAddressScreen from "../screen/shipping_address/ShippingAddressScreen";
+import SignInScreen from "../screen/auth/signin/SignInScreen";
+import SignUpScreen from "../screen/auth/signup/SignUpScreen";
+import PrivacyPolicyScreen from "../screen/static/PrivacyPolicyScreen";
+import TermsConditionScreen from "../screen/static/TermsConditionScreen";
+
 
 export default function Router(props: navigationInterface) {
-    const { translate, navigation: { pathname } } = props
-
+    const { translate, navigation: { pathname, params }, navigate_link } = props
+    console.log(params)
     const {
         my_carts,
         my_profile,
@@ -23,53 +28,93 @@ export default function Router(props: navigationInterface) {
         account_information,
         my_orders,
         shipping_address,
-        notifications
-    } = translate
+        notifications,
 
+        privacy_policy,
+        terms,
+
+        sign_in,
+        sign_up,
+    } = translate
 
     const router = [
         // /home
         {
-            light: assets_images.home_light,
-            dark: assets_images.home_dark,
             title: "Home",
             component: HomeScreen,
-            link: "/home",
+            link: navigate_link.home,
         },
-
+        // privacy-policy
+        {
+            title: "Privacy Policy",
+            component: PrivacyPolicyScreen,
+            navbar: <NavbarTitleBackButton
+                title={privacy_policy}
+                key="privacy_policy_nav"
+                backward={navigate_link.sign_up}
+            />,
+            link: navigate_link.privacy_policy,
+        },
+        // terms-condition
+        {
+            title: "Terms Condition",
+            component: TermsConditionScreen,
+            navbar: <NavbarTitleBackButton
+                title={terms}
+                key="terms_condition_nav"
+                backward={navigate_link.sign_up}
+            />,
+            link: navigate_link.terms_condition,
+        },
+        // sign-in
+        {
+            title: "Sign In",
+            navbar: <NavbarTitleBackButton
+                title={sign_in}
+                key="sign_in_nav"
+                backward={navigate_link.profile}
+            />,
+            component: SignInScreen,
+            link: navigate_link.sign_in,
+        },
+        // sign-up
+        {
+            title: "Sign Up",
+            navbar: <NavbarTitleBackButton
+                title={sign_up}
+                key="sign_up_nav"
+                backward={navigate_link.sign_in}
+            />,
+            component: SignUpScreen,
+            link: navigate_link.sign_up,
+        },
         // /profile
         {
-            light: assets_images.profile_light,
-            dark: assets_images.profile_dark,
             title: "Profile",
-            link: "/profile",
+            link: navigate_link.profile,
             navbar: <NavbarTitleBackButton
                 title={my_profile}
                 key="profile_nav"
-                backward="/profile"
+                backward={navigate_link.home}
             />,
             component: ProfileScreen
         },
         // /account-information
         {
-            light: assets_images.profile_light,
-            dark: assets_images.profile_dark,
             title: "Account information",
-            link: "/account-information",
+            link: navigate_link.account_information,
             navbar: <NavbarTitleBackButton
                 title={account_information}
                 key="profile_information_nav"
-                backward="/profile"
+                backward={navigate_link.profile}
             />,
             component: AccountInformation
         },
 
-        // /wishlists
+        // wishlists
         {
-            light: assets_images.wishlist_light,
-            dark: assets_images.wishlist_dark,
             title: "Favorite",
-            link: "/wishlists",
+            link: navigate_link.wishlists,
             navbar: <NavbarTitleBackButton
                 title={my_wishlists}
                 key="wishlist_nav"
@@ -78,12 +123,10 @@ export default function Router(props: navigationInterface) {
             component: WishlistScreen,
         },
 
-        // /wishlists
+        // wishlists
         {
-            light: assets_images.shipping_address_light,
-            dark: assets_images.shipping_address_dark,
             title: "Shipping Address",
-            link: "/shipping-address",
+            link: navigate_link.shipping_address,
             navbar: <NavbarTitleBackButton
                 title={shipping_address}
                 key="shipping_address_nav"
@@ -92,12 +135,10 @@ export default function Router(props: navigationInterface) {
             component: ShippingAddressScreen,
         },
 
-        // /carts
+        // carts
         {
-            light: assets_images.cart_light,
-            dark: assets_images.cart_dark,
             title: "Cart",
-            link: "/carts",
+            link: navigate_link.carts,
             navbar: <NavbarTitleBackButton
                 title={my_carts}
                 key="my_carts_nav"
@@ -106,12 +147,10 @@ export default function Router(props: navigationInterface) {
             component: CartScreen
         },
 
-        // /orders
+        // orders
         {
-            light: assets_images.order_light,
-            dark: assets_images.order_dark,
             title: "Orders",
-            link: "/orders",
+            link: navigate_link.orders,
             navbar: <NavbarTitleBackButton
                 title={my_orders}
                 key="my_orders_nav"
@@ -119,12 +158,11 @@ export default function Router(props: navigationInterface) {
             />,
             component: OrderScreen
         },
-        // /notifications
+
+        // notifications
         {
-            light: assets_images.profile_light,
-            dark: assets_images.profile_dark,
             title: "Notifications",
-            link: "/notifications",
+            link: navigate_link.notifications,
             navbar: <NavbarTitleBackButton
                 title={notifications}
                 key="notifications_nav"
@@ -133,12 +171,10 @@ export default function Router(props: navigationInterface) {
             component: NotificationsScreen
         },
 
-        // /settings
+        // settings
         {
-            light: assets_images.profile_light,
-            dark: assets_images.profile_dark,
             title: "Settings",
-            link: "/settings",
+            link: navigate_link.settings,
             navbar: <NavbarTitleBackButton
                 title={settings}
                 key="settings_nav"
@@ -146,10 +182,6 @@ export default function Router(props: navigationInterface) {
             />,
             component: SettingsScreen
         },
-
-
-
-
     ];
 
     return router.find(component => component.link == pathname)

@@ -6,7 +6,7 @@ import colors from '../../utils/colors';
 interface ButtonProps {
     text?: string,
     onPress: () => void;
-    containerStyles?: object;
+    containerStyles?: object | any;
     disabled?: boolean,
     image?: any,
     image_url?: any,
@@ -30,7 +30,21 @@ export default function TouchableOpacityButton({
             onPress={onPress}
             disabled={disabled}
         >
-            <View style={[styles.root, containerStyles]}>
+            <View style={[
+                styles.root, containerStyles,
+                {
+                    backgroundColor: (
+                        disabled ?
+                            colors.grey
+                            :
+                            (containerStyles?.backgroundColor
+                                ?
+                                containerStyles?.backgroundColor
+                                : styles.root.backgroundColor
+                            )
+                    )
+                }
+            ]}>
                 <View>
                     {
                         Boolean(image) &&

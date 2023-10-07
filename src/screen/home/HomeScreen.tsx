@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect } from 'react';
+import React, { useContext, useRef, useEffect, useState } from 'react';
 import { Animated, FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Banner from './components/banner/Banner';
 import { categories } from './components/Categories';
@@ -7,9 +7,31 @@ import TextInputExample from '../../components/input/InputSearch';
 import ProfileScreen from '../profile/ProfileScreen';
 import { navigationInterface } from '../../navigators/NavigationContainer';
 import SignInScreen from '../auth/signin/SignInScreen';
+import { products_api } from '../../config';
 
 
 export default function HomeScreen(props: navigationInterface) {
+    // const [data, setData] = useState(null);
+    // const [loading, setLoading] = useState(true);
+
+    // const fetchData = async () => {
+    //     try {
+    //         const res = await fetch(products_api);
+    //         const data = await res.json()
+    //         console.log(data)
+    //         // setData(response.data);
+    //     } catch (error) {
+    //         console.error('Error fetching data:', error);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
+
+
+
+    // useEffect(() => {
+    //     fetchData();
+    // }, []);
 
     return (
         <SafeAreaView style={{ flex: 1, }}>
@@ -24,7 +46,6 @@ export default function HomeScreen(props: navigationInterface) {
                 />
             </View>
 
-            <SignInScreen />
 
             {/* {
                 categories?.map(item => {

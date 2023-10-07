@@ -1,15 +1,17 @@
 import React, { useContext } from 'react';
 import { Image, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationProvider, navigationInterface } from '../../navigators/NavigationContainer';
-import translate_each_word from '../../db/translate_each_word';
 import { global_styles } from '../../styles/global';
 import { assets_images } from '../../assets/assets_images';
 import colors from '../../utils/colors';
+import TouchableOpacityButton from '../../components/button/TouchableOpacityButton';
+import { navigate_link } from '../../navigators/navigate_link';
+import PressableButton from '../../components/button/PressableButton';
 
 const user_info = {
     name: "MD Rakibul Islam",
     email: 'reakibulssc5@gmail.com',
-    profile: require('../../assets/images/male_avatar.png'),
+    profile: assets_images.person_256_3d,
     balance: 0,
     birthday: "2023-08-19",
     country: "Bangladesh",
@@ -25,9 +27,68 @@ const user_info = {
 }
 
 
-export default function ProfileScreen({ navigation, drawerRef, translate }: navigationInterface) {
-    const { my_account_menu } = translate_each_word()
-    const { log_out } = translate
+export default function ProfileScreen({ navigation, drawerRef, translate, navigate_link }: navigationInterface) {
+
+    const {
+        log_out, sign_in, account_information, notifications, my_carts, my_orders, my_wishlists, shipping_address, support_tickets, settings, browser_history
+    } = translate
+
+    const my_account_menu = [
+        {
+            title: account_information,
+            link: navigate_link.account_information,
+            icon: assets_images.person3d,
+            authentication: 'customer'
+        },
+        {
+            title: notifications,
+            link: navigate_link.notifications,
+            icon: assets_images.notifications3d,
+            authentication: 'customer/guest'
+        },
+        {
+            title: my_orders,
+            link: navigate_link.orders,
+            icon: assets_images.orders3d,
+            authentication: 'customer'
+        },
+        {
+            title: my_wishlists,
+            link: navigate_link.wishlists,
+            icon: assets_images.wishlists3d,
+            authentication: 'customer/guest'
+        },
+        {
+            title: my_carts,
+            link: navigate_link.carts,
+            icon: assets_images.carts3d,
+            authentication: 'customer/guest'
+        },
+        {
+            title: browser_history,
+            link: navigate_link?.browser_history,
+            icon: assets_images.browser_history3d,
+            authentication: 'customer/guest'
+        },
+        {
+            title: shipping_address,
+            link: navigate_link?.shipping_address,
+            icon: assets_images.shipping_address3d,
+            authentication: 'customer'
+        },
+        {
+            title: support_tickets,
+            link: navigate_link.support_tickets,
+            icon: assets_images.support_ticket3d,
+            authentication: 'customer'
+        },
+        {
+            title: settings,
+            link: navigate_link?.settings,
+            icon: assets_images.settings3d,
+            authentication: 'customer/guest'
+        },
+    ]
     return (
         <View style={global_styles.container}>
 
@@ -51,56 +112,67 @@ export default function ProfileScreen({ navigation, drawerRef, translate }: navi
                     </View>
 
                 </View>
+                <View>
+                    <PressableButton
+                        text={sign_in}
+                        textStyle={{ color: colors.secondary_text }}
+                        onPress={() => { navigation.navigate({ link: navigate_link.sign_in }) }}
+                        containerStyles={{ height: 48, backgroundColor: colors.secondary }}
+                    />
+                </View>
             </View>
 
             <View style={{ borderTopColor: colors.border_color, borderTopWidth: 0.5 }}>
                 {
-                    my_account_menu?.map((r: any, index) => {
-                        // const check = pathname === r.link;
-                        return (
-                            <View key={index}>
-                                <Pressable onPress={() => navigation.navigate(r?.link)}   >
-                                    <View style={styles.button}>
-                                        <View style={styles.button_title_image}>
+                    my_account_menu?.map((r, index) => {
+                        // const check = r?.authentication?.includes('guest')
+                        const check = true
+                        if (check) {
+                            return (
+                                <View key={index}>
+                                    <Pressable onPress={() => navigation.navigate({ link: r?.link })}   >
+                                        <View style={styles.button}>
+                                            <View style={styles.button_title_image}>
+                                                <View>
+                                                    <Image
+                                                        source={r?.icon}
+                                                        style={{
+                                                            height: 24, width: 24, objectFit: 'contain',
+                                                        }}
+                                                    />
+                                                </View>
+                                                <View>
+                                                    <Text style={global_styles.text_lg}>
+                                                        {
+                                                            r?.title
+                                                        }
+                                                    </Text>
+                                                </View>
+                                            </View>
                                             <View>
                                                 <Image
-                                                    source={r?.dark}
+                                                    source={assets_images.arrow_right_grey}
                                                     style={{
-                                                        height: 20, width: 20, objectFit: 'contain',
+                                                        height: 16, objectFit: 'contain',
                                                     }}
                                                 />
                                             </View>
-                                            <View>
-                                                <Text style={global_styles.text_lg}>
-                                                    {
-                                                        r?.title
-                                                    }
-                                                </Text>
-                                            </View>
                                         </View>
-                                        <View>
-                                            <Image
-                                                source={assets_images.arrow_right_grey}
-                                                style={{
-                                                    height: 16, objectFit: 'contain',
-                                                }}
-                                            />
-                                        </View>
-                                    </View>
-                                </Pressable>
-                            </View>
-                        )
+                                    </Pressable>
+                                </View>
+                            )
+                        }
                     })
                 }
                 <View>
                     <Pressable
-                        onPress={() => navigation.navigate("r?.link")}
+                        onPress={() => navigation.navigate({ link: "r?.link" })}
                     >
                         <View style={styles.button}>
                             <View style={styles.button_title_image}>
                                 <View>
                                     <Image
-                                        source={assets_images.log_out_dark}
+                                        source={assets_images.sign_out3d}
                                         style={{
                                             height: 20, width: 20, objectFit: 'contain',
                                         }}

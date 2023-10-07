@@ -1,7 +1,6 @@
 import React, { useContext, useRef, useState } from 'react';
 import { Image, SafeAreaView, StyleSheet, View, Text, Button, TouchableHighlight, DrawerLayoutAndroid } from 'react-native';
 import Colors from '../../../utils/colors';
-import images_database from '../../../db/translate_each_word';
 import { assets_images } from '../../../assets/assets_images';
 import TouchableOpacityButton from '../../button/PressableButton';
 import { global_styles } from '../../../styles/global';
@@ -41,7 +40,7 @@ const NavbarTitleBackButton = ({
                     <View style={{ position: 'absolute' }}>
                         <TouchableOpacityButton
                             key={title}
-                            onPress={() => { navigation.navigate(backward) }}
+                            onPress={() => { navigation.navigate({ link: backward }) }}
                             image={assets_images.arrow_right_light}
                             imageStyle={{ transform: [{ rotate: "180deg" }] }}
                             containerStyles={{

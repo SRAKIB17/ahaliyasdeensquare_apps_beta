@@ -2,27 +2,35 @@ import React, { PropsWithChildren, createContext, useEffect, useRef, useState } 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { translate, translateInterface } from '../translate/translate';
 import { DrawerLayoutAndroid } from 'react-native';
+import { navigate_link, navigate_linkInterface } from './navigate_link';
+
 
 export interface navigationInterface {
     navigation: {
-        navigate: (value: string, paramsProps?: { key: string; value?: string | number | undefined; }[]) => void,
+        navigate: (value: {
+            link: string,
+            title?: string,
+            params?: { key: string; value?: string | number | undefined; }[]
+        }) => void,
         params: {} | any,
         pathname: string,
         setParams: (props: { key: string; value?: string | number | undefined; }[]) => void,
     },
     translate: translateInterface,
-    drawerRef: React.RefObject<DrawerLayoutAndroid>
+    drawerRef: React.RefObject<DrawerLayoutAndroid>,
+    navigate_link: navigate_linkInterface
 }
 
 export const NavigationProvider = createContext<navigationInterface>({
     navigation: {
         params: {},
-        navigate(value, hasParams) { },
+        navigate(value) { },
         pathname: '',
         setParams: () => { },
     },
     translate: translate?.en,
-    drawerRef: { current: null }
+    drawerRef: { current: null },
+    navigate_link: navigate_link
 })
 
 export default function NavigationContainer({ children }: { children: React.ReactNode }): JSX.Element {
@@ -32,9 +40,15 @@ export default function NavigationContainer({ children }: { children: React.Reac
     const drawerRef = useRef<DrawerLayoutAndroid>(null);
 
     class navigation {
-        navigate = async (value: string, paramsProps = [{ key: '', value: '' }]) => {
-            if (Boolean(paramsProps?.[0]?.key) && (Boolean(paramsProps?.[0]?.value) || paramsProps?.[0]?.value == '0')) {
-                const paramsObj: Array<{ [key: string]: any }> = paramsProps?.map(r => {
+        navigate = async (value: {
+            link: string,
+            title?: string,
+            params: [{ key: string | "", value: string | "" }]
+        }) => {
+            if (Boolean(value.params?.[0]?.key) && (Boolean(value.params?.[0]?.value) || value?.params?.[0]?.value == '0')) {
+                console.log(value)
+
+                const paramsObj: Array<{ [key: string]: any }> = value?.params?.map(r => {
                     return {
                         [r?.key]: r?.value
                     }
@@ -42,19 +56,18 @@ export default function NavigationContainer({ children }: { children: React.Reac
 
                 const mergedObject = Object.assign({}, ...paramsObj);
 
-
                 const p = {
                     ...params,
                     ...mergedObject
                 }
-                setScreen(value)
+                setScreen(value?.link)
                 setAllParams(p)
-                await AsyncStorage.setItem('link', value)
+                await AsyncStorage.setItem('link', value?.link)
                 await AsyncStorage.setItem('params', JSON.stringify(p))
             }
             else {
-                setScreen(value)
-                await AsyncStorage.setItem('link', value)
+                setScreen(value?.link)
+                await AsyncStorage.setItem('link', value?.link)
                 await AsyncStorage.removeItem('params')
             }
         }
@@ -85,19 +98,11 @@ export default function NavigationContainer({ children }: { children: React.Reac
     }
 
 
-    AsyncStorage.getItem('link').then(r => {
-        if (r) {
-            setScreen(r)
-        }
-        else {
-            setScreen('/home')
-        }
-    })
 
     const [language, setLanguage] = useState<translateInterface>(translate?.en)
 
     useEffect(() => {
-        setLanguage(translate?.en)
+        setLanguage(translate?.bn)
         return () => { }
     }, [])
 
@@ -110,6 +115,25 @@ export default function NavigationContainer({ children }: { children: React.Reac
                 setLanguage(translate?.en)
             }
         })
+
+        AsyncStorage.getItem('link').then(r => {
+            if (r) {
+                setScreen(r)
+            }
+            else {
+                setScreen('/home')
+            }
+        })
+
+        AsyncStorage.getItem('params').then(r => {
+            if (r) {
+                setAllParams(JSON.parse(r))
+            }
+            else {
+                setAllParams({})
+            }
+        })
+
     }, [screen])
 
     const navigationConstructor: any = new navigation()
@@ -118,7 +142,8 @@ export default function NavigationContainer({ children }: { children: React.Reac
             value={{
                 navigation: navigationConstructor,
                 translate: language,
-                drawerRef: drawerRef
+                drawerRef: drawerRef,
+                navigate_link: navigate_link
             }}
         >
             {

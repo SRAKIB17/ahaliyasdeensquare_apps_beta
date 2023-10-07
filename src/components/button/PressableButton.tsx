@@ -6,7 +6,7 @@ import colors from '../../utils/colors';
 interface ButtonProps {
     text?: string,
     onPress: () => void;
-    containerStyles?: object;
+    containerStyles?: any | object;
     disabled?: boolean,
     image?: any,
     image_url?: any,
@@ -24,7 +24,21 @@ export default function PressableButton({
             onPress={onPress}
             disabled={disabled}
         >
-            <View style={[styles.root, containerStyles]}>
+            <View style={[
+                styles.root, containerStyles,
+                {
+                    backgroundColor: (
+                        disabled ?
+                            colors.grey
+                            :
+                            (containerStyles?.backgroundColor
+                                ?
+                                containerStyles?.backgroundColor
+                                : styles.root.backgroundColor
+                            )
+                    )
+                }
+            ]}>
                 <View>
                     {
                         Boolean(image) &&

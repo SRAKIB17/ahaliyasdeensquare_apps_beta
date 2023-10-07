@@ -33,11 +33,30 @@ export interface translateInterface {
     "total_amount": string,
     "buy_now": string,
     "courier_address": string,
-    "default_address": string
+    "default_address": string,
+    "terms": string,
+    "cancel": string,
+    "exit": string,
+    "browser_history": string,
+
+    "privacy_policy": string,
+    "by_signing_up_i_agree_to_the_terms_and_privacy_policy": string,
+    "sign_in": string,
+    "already_have_account": string,
+    "sign_up": string,
+    "password_error": string,
+    "new_here": string,
+    "email_error": string,
+    "password": string,
+    "forget_my_password": string,
+    "phone_error": string,
+    "name_error": string,
+    "do_you_want_to_exit": string
 }
 
-export const translate = {
+export const translate: { bn: translateInterface, en: translateInterface } = {
     "bn": {
+        "browser_history": "ব্রাউজার ইতিহাস",
         "home": "বাড়ি",
         "wishlist": "ইচ্ছে তালিকা",
         "cart": "কার্ট",
@@ -72,11 +91,30 @@ export const translate = {
         "total_amount": "মোট পরিমাণ",
         "buy_now": "এখন কিনুন",
         "courier_address": "কুরিয়ার ঠিকানা",
-        "default_address": "ডিফল্ট"
+        "default_address": "ডিফল্ট",
+        "do_you_want_to_exit": "আপনি কি প্রস্থান করতে চান",
+
+        "privacy_policy": "গোপনীয়তা এবং নীতি",
+        "by_signing_up_i_agree_to_the_terms_and_privacy_policy": "নতুন একাউন্ট তৈরী করার মাধ্যমে  আমি শর্তাবলী এবং গোপনীয়তা নীতিতে সম্মত",
+        "terms": "শর্তাবলী",
+        "cancel": "ক্যানসেল",
+        "exit": "বাহির হবো",
+
+        "sign_in": "প্রবেশ করুন",
+        "sign_up": "একাউন্ট তৈরি করুন",
+        "already_have_account": "ইতিমধ্যে অ্যাকাউন্ট আছে",
+        "password_error": "ন্যূনতম আটটি অক্ষর, অন্তত একটি অক্ষর এবং একটি সংখ্যা",
+        "new_here": "এখানে নতুন",
+        "email_error": "বৈধ ইমেইল প্রবেশ করান ",
+        "password": "পাসওয়ার্ড",
+        "forget_my_password": "পাসওয়ার্ড ভুলে গেছি",
+        "name_error": "অনুগ্রহ করে বৈধ নাম ইনপুট করুন",
+        "phone_error": "একটি বৈধ ফোন নম্বর ইনপুট করুন"
     },
 
     "en": {
         "home": "Home",
+        "browser_history": "Browser History",
         "wishlist": "Wishlist",
         "cart": "Cart",
         "profile": "Profile",
@@ -97,6 +135,9 @@ export const translate = {
         "country": "Country",
         "default_shipping_address": "default_shipping_address",
         "gender": "Gender",
+        "cancel": "Cancel",
+        "exit": "Exit",
+        "do_you_want_to_exit": "Do you want to exit",
         "is_block": "is_block",
         "last_login": "last_login",
         "phone": "Phone",
@@ -105,12 +146,26 @@ export const translate = {
         "user_id": "User_id",
         "user_type": "user_type",
         "change_language": "Change Language",
-
         "details": "Details",
+        "privacy_policy": "Privacy policy",
         "tracking_number": "Tracking Number",
         "total_amount": "Total Amount",
         "buy_now": "Buy Now",
         "courier_address": "Courier Address",
-        "default_address": "Default"
+        "default_address": "Default",
+        "by_signing_up_i_agree_to_the_terms_and_privacy_policy": "By signing up I agree to the terms and privacy policy.",
+        "terms": "Terms",
+
+
+        "sign_in": "Sign In",
+        "sign_up": "Create account",
+        "already_have_account": "Already have account",
+        "new_here": "New here",
+        "password_error": "Minimum eight characters, at least one letter and one number",
+        "email_error": "Please input valid email",
+        "password": 'Password',
+        "forget_my_password": "Forget my password",
+        "name_error": "Please input a valid name",
+        "phone_error": "please input a valid phone number",
     }
 }
