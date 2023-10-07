@@ -3,7 +3,6 @@ import { Animated, FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-
 import Banner from './components/banner/Banner';
 import { categories } from './components/Categories';
 import CategorySection from './components/CategorySection';
-import TextInputExample from '../../components/input/InputSearch';
 import ProfileScreen from '../profile/ProfileScreen';
 import { navigationInterface } from '../../navigators/NavigationContainer';
 import SignInScreen from '../auth/signin/SignInScreen';
@@ -38,12 +37,6 @@ export default function HomeScreen(props: navigationInterface) {
 
             <View>
                 <Banner />
-            </View>
-            <View>
-                <TextInputExample
-                // onChangeText={() => { }}
-                // placeholder={'fsdlf'} value={534}
-                />
             </View>
 
 

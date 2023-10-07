@@ -9,6 +9,9 @@ import { Height } from '../../../utils/dimensions';
 import { navigationInterface } from '../../../navigators/NavigationContainer';
 import PressableButton from '../../../components/button/PressableButton';
 import { signin_api } from '../../../config';
+import Toast from '../../../components/toast/Toast';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import Link from '../../../components/link/Link';
 
 function SignInScreen(props: navigationInterface) {
     const { navigation, translate, navigate_link } = props
@@ -16,26 +19,42 @@ function SignInScreen(props: navigationInterface) {
     const [password, setPassword] = useState('');
 
     const { sign_in, password_error, password: passwordTr, email: emailTr, email_error, new_here, sign_up, forget_my_password } = translate
-
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState<string>()
 
     const signinHandle = async () => {
-        console.log({ email, password })
-        // fetch(signin_api, {
-        //     method: "POST",
-        //     headers: {
-        //         Accept: 'application/json',
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify({ email, password })
-        // }).then(res => res.json()).then(data => {
-        //     console.log(data)
-        // }).catch(err => {
-        //     console.log(err)
-        // })
+        setLoading(true)
+        setError('')
+        fetch(signin_api, {
+            method: "POST",
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })
+        }).then(res => res.json()).then(data => {
+            setLoading(false)
+            if (data?.success) {
+                AsyncStorage.setItem('ref_tkn', data?.token)
+                navigation.navigate({ link: navigate_link.profile })
+            }
+            else {
+                setError(data?.message)
+                Toast({ text: data?.message })
+            }
+
+        }).catch(err => {
+            console.log(err)
+            setLoading(false)
+        })
     }
 
     return (
         <SafeAreaView>
+
             <View style={{ alignItems: 'center', marginTop: 16 }}>
                 <Image
                     source={assets_images.signin_bg}
@@ -43,6 +62,14 @@ function SignInScreen(props: navigationInterface) {
                 />
             </View>
             <View style={[{ gap: 16, flex: 1, justifyContent: 'center' }, global_styles.container]}>
+                {
+                    (Boolean(error)) &&
+                    <View>
+                        <Text style={{ color: colors.danger }}>
+                            {error}
+                        </Text>
+                    </View>
+                }
                 <View>
                     <Input
                         asset={assets_images.email3d}
@@ -64,13 +91,25 @@ function SignInScreen(props: navigationInterface) {
                     />
                 </View>
                 <View>
-                    <PressableButton
-                        disabled={(!Boolean(password) || !Boolean(email))}
-                        text={sign_in}
-                        textStyle={{ color: colors.primary_text }}
-                        onPress={signinHandle}
-                        containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
-                    />
+                    {
+                        loading ?
+                            <PressableButton
+                                image={assets_images.loading_gif}
+                                imageStyle={{ height: 28, width: 28 }}
+                                textStyle={{ color: colors.primary_text }}
+                                onPress={() => Toast({ text: "Please wait" })}
+                                containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
+                            />
+                            :
+                            <PressableButton
+                                disabled={(!Boolean(password) || !Boolean(email))}
+                                text={sign_in}
+                                textStyle={{ color: colors.primary_text }}
+                                onPress={signinHandle}
+                                containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
+                            />
+
+                    }
                 </View>
                 <View style={{ gap: 4 }}>
                     <View style={{
@@ -79,21 +118,18 @@ function SignInScreen(props: navigationInterface) {
                         <Text style={global_styles.text_base}>
                             {new_here}?
                         </Text>
-                        <Pressable onPress={() => navigation.navigate({ link: navigate_link?.sign_up })}>
-                            <Text style={[{ color: colors.blue, textDecorationLine: 'underline' }, global_styles.text_base]}>
-                                {sign_up}
-                            </Text>
-                        </Pressable>
+
+                        <Link href={navigate_link?.sign_up}>
+                            {sign_up}
+                        </Link>
                     </View>
 
                     <View style={{
                         alignItems: 'center', flexDirection: 'row', gap: 4
                     }}>
-                        <Pressable>
-                            <Text style={[{ color: colors.blue, textDecorationLine: 'underline' }, global_styles.text_base]}>
-                                {forget_my_password}
-                            </Text>
-                        </Pressable>
+                        <Link href={navigate_link?.sign_up} >
+                            {forget_my_password}
+                        </Link>
                     </View>
                 </View>
             </View>

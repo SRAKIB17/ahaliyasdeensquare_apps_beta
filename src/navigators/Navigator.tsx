@@ -5,20 +5,25 @@ import { BackHandler, Image, SafeAreaView, ScrollView, Text, View } from 'react-
 import Footer from '../components/shared/Footer';
 import colors from '../utils/colors';
 import MainNavbar from '../components/shared/Navbar/MainNavbar';
-import HomeScreen from '../screen/home/HomeScreen';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import PressableButton from '../components/button/PressableButton';
 import ExitButton from './ExitButton';
+import { AuthenticationCheck } from '../context/Authentication/AuthenticationCheckProvider';
+import LoaderHeader from './LoaderHeader';
+import LoaderComponent from './LoaderComponent';
 
 const Navigator = () => {
-    const { navigation, translate, drawerRef, navigate_link } = useContext(NavigationProvider)
+    const { navigation, loadingComponent, setLoadingComponent, translate, drawerRef, navigate_link, loadingStart, setLoadingStart } = useContext(NavigationProvider)
     const rest = {
         navigation: navigation,
         translate,
         drawerRef,
-        navigate_link
+        loadingStart,
+        setLoadingStart,
+        navigate_link,
+        loadingComponent,
+        setLoadingComponent
     }
     const router = Router(rest)
+    const { isLoading, isLoggedIn, role, user_info } = useContext(AuthenticationCheck)
 
 
     const [exitApp, setExitApp] = useState<Boolean>(false)
@@ -40,6 +45,7 @@ const Navigator = () => {
 
 
     const Render: any = router?.component || function () {
+
         return (
             <View style={{ alignItems: 'center' }}>
                 <Image style={{ width: 300, objectFit: 'contain' }} source={require('../assets/images/not_found.png')} />
@@ -47,14 +53,22 @@ const Navigator = () => {
     }
 
 
-    // AsyncStorage.removeItem('link').then(r => {
-    //     console.log(r)
-    // })
+
+    useEffect(() => {
+        setLoadingStart(isLoading)
+        return () => {
+        }
+    }, [isLoading])
+
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
             {
                 router?.navbar || <MainNavbar drawerRef={drawerRef} />
+            }
+            {
+                loadingStart &&
+                <LoaderHeader />
             }
             {
                 exitApp &&
@@ -71,7 +85,12 @@ const Navigator = () => {
                     { paddingBottom: 80, display: 'flex' }]
                 }
             >
-                <Render {...rest} />
+                {
+                    loadingComponent ?
+                        <LoaderComponent /> :
+                        <Render {...rest} />
+                }
+
             </ScrollView>
             <Footer />
         </SafeAreaView>

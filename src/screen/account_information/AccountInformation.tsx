@@ -7,7 +7,7 @@ import colors from '../../utils/colors';
 const user_info = {
     name: "MD Rakibul Islam",
     email: 'reakibulssc5@gmail.com',
-    profile: require('../../assets/images/male_avatar.png'),
+    profile: 0,
     balance: 0,
     birthday: "2023-08-19",
     country: "Bangladesh",

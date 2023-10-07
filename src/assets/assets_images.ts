@@ -27,9 +27,13 @@ export const assets_images = {
     "info_dark": require('./images/info_dark.png'),
     "info_light": require('./images/info_light.png'),
 
+    "male_avatar": require('./images/male_avatar.png'),
+    "female_avatar": require('./images/female_avatar.png'),
+
 
 
     "carts3d": require('./images/3d/carts3d.png'),
+    "delete3d": require('./images/3d/delete3d.png'),
     "browser_history3d": require('./images/3d/browser_history3d.png'),
     "email3d": require('./images/3d/email3d.png'),
     "expenditure3d": require('./images/3d/expenditure3d.png'),
@@ -45,6 +49,9 @@ export const assets_images = {
     "shipping_address3d": require('./images/3d/shipping_address3d.png'),
     "sign_out3d": require('./images/3d/sign_out3d.png'),
     "support_ticket3d": require('./images/3d/support_ticket3d.png'),
+
+    // Gif
+    "loading_gif": require('./images/loading.gif'),
 
 
     "signin_bg": require('./images/bg/signin_bg.png'),

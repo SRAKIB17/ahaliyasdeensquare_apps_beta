@@ -15,11 +15,12 @@ import SignInScreen from "../screen/auth/signin/SignInScreen";
 import SignUpScreen from "../screen/auth/signup/SignUpScreen";
 import PrivacyPolicyScreen from "../screen/static/PrivacyPolicyScreen";
 import TermsConditionScreen from "../screen/static/TermsConditionScreen";
+import { AuthenticationCheck } from "../context/Authentication/AuthenticationCheckProvider";
+import LoaderComponent from "./LoaderComponent";
 
 
 export default function Router(props: navigationInterface) {
-    const { translate, navigation: { pathname, params }, navigate_link } = props
-    console.log(params)
+    const { translate, navigation: { pathname, params }, navigate_link, setLoadingStart } = props
     const {
         my_carts,
         my_profile,
@@ -37,12 +38,16 @@ export default function Router(props: navigationInterface) {
         sign_up,
     } = translate
 
+    const { isLoading, isLoggedIn, role, user_info } = useContext(AuthenticationCheck)
+
+
     const router = [
         // /home
         {
             title: "Home",
             component: HomeScreen,
             link: navigate_link.home,
+            authentication: 'user/guest',
         },
         // privacy-policy
         {
@@ -54,6 +59,7 @@ export default function Router(props: navigationInterface) {
                 backward={navigate_link.sign_up}
             />,
             link: navigate_link.privacy_policy,
+            authentication: 'user/guest',
         },
         // terms-condition
         {
@@ -65,6 +71,7 @@ export default function Router(props: navigationInterface) {
                 backward={navigate_link.sign_up}
             />,
             link: navigate_link.terms_condition,
+            authentication: 'user/guest',
         },
         // sign-in
         {
@@ -76,6 +83,7 @@ export default function Router(props: navigationInterface) {
             />,
             component: SignInScreen,
             link: navigate_link.sign_in,
+            authentication: 'guest',
         },
         // sign-up
         {
@@ -87,11 +95,13 @@ export default function Router(props: navigationInterface) {
             />,
             component: SignUpScreen,
             link: navigate_link.sign_up,
+            authentication: 'guest',
         },
         // /profile
         {
             title: "Profile",
             link: navigate_link.profile,
+            authentication: 'user/guest',
             navbar: <NavbarTitleBackButton
                 title={my_profile}
                 key="profile_nav"
@@ -103,6 +113,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Account information",
             link: navigate_link.account_information,
+            authentication: 'user',
             navbar: <NavbarTitleBackButton
                 title={account_information}
                 key="profile_information_nav"
@@ -115,6 +126,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Favorite",
             link: navigate_link.wishlists,
+            authentication: 'user/guest',
             navbar: <NavbarTitleBackButton
                 title={my_wishlists}
                 key="wishlist_nav"
@@ -127,6 +139,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Shipping Address",
             link: navigate_link.shipping_address,
+            authentication: 'user',
             navbar: <NavbarTitleBackButton
                 title={shipping_address}
                 key="shipping_address_nav"
@@ -139,6 +152,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Cart",
             link: navigate_link.carts,
+            authentication: 'user/guest',
             navbar: <NavbarTitleBackButton
                 title={my_carts}
                 key="my_carts_nav"
@@ -151,6 +165,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Orders",
             link: navigate_link.orders,
+            authentication: 'user',
             navbar: <NavbarTitleBackButton
                 title={my_orders}
                 key="my_orders_nav"
@@ -163,6 +178,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Notifications",
             link: navigate_link.notifications,
+            authentication: 'user/guest',
             navbar: <NavbarTitleBackButton
                 title={notifications}
                 key="notifications_nav"
@@ -175,6 +191,7 @@ export default function Router(props: navigationInterface) {
         {
             title: "Settings",
             link: navigate_link.settings,
+            authentication: 'user/guest',
             navbar: <NavbarTitleBackButton
                 title={settings}
                 key="settings_nav"
@@ -184,5 +201,12 @@ export default function Router(props: navigationInterface) {
         },
     ];
 
-    return router.find(component => component.link == pathname)
+    return isLoading ? { component: LoaderComponent, navbar: '' } :
+        router.find(component => {
+            const check = isLoggedIn ?
+                component?.authentication?.includes(role)
+                :
+                component?.authentication?.includes('guest')
+            return component.link == pathname && check
+        })
 }

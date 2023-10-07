@@ -9,9 +9,11 @@ import { Height } from '../../../utils/dimensions';
 import { navigationInterface } from '../../../navigators/NavigationContainer';
 import DropDownPicker from '../../../components/dropdown/DropDownPicker';
 import PressableButton from '../../../components/button/PressableButton';
+import Link from '../../../components/link/Link';
 
 function SignUpScreen(props: navigationInterface) {
-    const { navigation, translate, navigate_link } = props
+    const { navigation, translate, navigate_link } = props;
+
 
     const [nameInput, setNameInput] = useState('');
     const [countryInput, setCountryInput] = useState({ label: "Bangladesh", value: 'Bangladesh' });
@@ -45,7 +47,6 @@ function SignUpScreen(props: navigationInterface) {
             email: emailInput,
             password: passwordInput
         }
-        console.log(info)
         // fetch(signin_api, {
         //     method: "POST",
         //     headers: {
@@ -59,6 +60,7 @@ function SignUpScreen(props: navigationInterface) {
         //     console.log(err)
         // })
     }
+
     return (
         <SafeAreaView>
             <View style={{ alignItems: 'center', marginTop: 16 }}>
@@ -129,19 +131,16 @@ function SignUpScreen(props: navigationInterface) {
                         {by_signing_up_i_agree_to_the_terms_and_privacy_policy}
                     </Text>
                     <View style={{ flexDirection: "row", gap: 6, alignItems: 'center' }}>
-                        <Pressable onPress={() => navigation.navigate({ link: navigate_link?.terms_condition })}>
-                            <Text style={[{ color: colors.blue, textDecorationLine: 'underline' }, global_styles.text_base]}>
-                                {terms}
-                            </Text>
-                        </Pressable>
+                        <Link href={navigate_link?.terms_condition}>
+                            {terms}
+                        </Link>
                         <Text>
                             ,
                         </Text>
-                        <Pressable onPress={() => navigation.navigate({ link: navigate_link?.privacy_policy })}>
-                            <Text style={[{ color: colors.blue, textDecorationLine: 'underline' }, global_styles.text_base]}>
-                                {privacy_policy}
-                            </Text>
-                        </Pressable>
+                        <Link href={navigate_link?.privacy_policy}>
+                            {privacy_policy}
+                        </Link>
+
                     </View>
                 </View>
                 {/* ************************* */}
@@ -161,11 +160,9 @@ function SignUpScreen(props: navigationInterface) {
                         <Text style={global_styles.text_base}>
                             {already_have_account}?
                         </Text>
-                        <Pressable onPress={() => navigation.navigate({ link: navigate_link?.sign_in })}>
-                            <Text style={[{ color: colors.blue, textDecorationLine: 'underline' }, global_styles.text_base]}>
-                                {sign_in}
-                            </Text>
-                        </Pressable>
+                        <Link href={navigate_link?.sign_in}>
+                            {sign_in}
+                        </Link>
                     </View>
                 </View>
             </View>

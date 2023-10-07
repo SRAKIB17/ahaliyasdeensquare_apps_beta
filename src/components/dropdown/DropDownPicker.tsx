@@ -1,40 +1,84 @@
 import React, { useState, useEffect } from 'react';
-import { Image, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, ScrollView, Image, Pressable } from 'react-native';
 import colors from '../../utils/colors';
 import { assets_images } from '../../assets/assets_images';
 import { global_styles } from '../../styles/global';
 import { Height, Width } from '../../utils/dimensions';
+import Input from '../input/Input';
+import Toast from '../toast/Toast';
+
+
 
 function DropDownPicker({
-    setValue,
+    setValue = () => { },
     value,
     items,
     placeholder = 'Please select',
+    searchPlaceholder = "Search for something",
+    noResultsFoundPlaceholder = "No results found",
     asset,
     defaultValue
 }:
     {
+        noResultsFoundPlaceholder?: string,
         value: {
+            id?: number | string,
             label: string;
             value: string;
         },
         defaultValue?: {
+            id?: number | string,
             label: string;
             value: string;
         },
         setValue: React.Dispatch<React.SetStateAction<{
+            id?: number | string,
             label: string;
             value: string;
         }>>
         items: {
+            id?: number | string,
             label: string;
             value: string;
         }[],
-
+        searchPlaceholder?: string,
         placeholder?: string,
         asset?: number,
         required?: boolean
     }) {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const [selectedOption, setSelectedOption] = useState('');
+
+
+
+    const [searchValue, setSearchValue] = useState('');
+
+    const [searchItems, setSearchItems] = useState<{
+
+        id?: number | string,
+        label: string;
+        value: string;
+    }[]>([])
+
+    useEffect(() => {
+
+        const filter = items?.filter(r => {
+            const value = r?.value?.toLowerCase()?.includes(searchValue?.toLowerCase());
+            const label = r?.label?.toLowerCase()?.includes(searchValue?.toLowerCase());
+            return value || label
+        })
+        if (!Boolean(filter?.length) && Boolean(searchValue)) {
+            Toast({ text: noResultsFoundPlaceholder })
+        }
+        if (filter?.length) {
+            setSearchItems(filter)
+        }
+        else {
+            setSearchItems(items)
+        }
+    }, [searchValue])
+
     useEffect(() => {
         if (defaultValue?.label) {
             setValue(defaultValue)
@@ -44,38 +88,10 @@ function DropDownPicker({
         }
     }, [defaultValue])
 
-    const [open, setOpen] = useState(false);
     return (
-        <SafeAreaView style={styles.main_select}>
-            {
-                open &&
-                <ScrollView
-                    // contentContainerStyle={{ flexGrow: 1 }}
-                    style={styles.items}
-                >
-                    {
-                        items?.map((r) => {
-                            return (
-                                <View key={r?.value} style={{ width: '100%' }}>
-                                    <TouchableOpacity onPress={() => {
-                                        setValue(r)
-                                        setOpen(false)
-                                    }}>
-                                        <View style={[styles.item]}>
-                                            <Text style={global_styles.text_base}>
-                                                {
-                                                    r?.label
-                                                }
-                                            </Text>
-                                        </View>
-                                    </TouchableOpacity>
-                                </View>
-                            )
-                        })
-                    }
-                </ScrollView>
-            }
-            <TouchableOpacity onPress={() => setOpen(!open)}>
+        <View style={styles.main_select}>
+
+            <Pressable onPress={() => setIsVisible(true)}>
                 <View style={styles.select}>
 
                     <View style={{ flexDirection: 'row', alignItems: 'center', alignContent: 'flex-start', gap: 4 }}>
@@ -110,17 +126,53 @@ function DropDownPicker({
                             source={assets_images.arrow_right_grey}
                             style={{
                                 width: 16, height: 16, objectFit: 'contain',
-                                transform: [{ rotate: (open ? "90deg" : "270deg") }]
+                                transform: [{ rotate: (!isVisible ? "90deg" : "270deg") }]
                             }}
                         />
                     </View>
                 </View>
-            </TouchableOpacity>
-        </SafeAreaView >
+            </Pressable>
+
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={isVisible && Boolean(items?.length)}
+                onRequestClose={() => setIsVisible(false)}
+            >
+                <View style={styles.modal}>
+                    <View style={{ paddingBottom: 10 }}>
+                        <Input
+                            style={{ height: 48 }}
+                            setValue={setSearchValue}
+                            value={searchValue}
+                            placeholder={searchPlaceholder}
+                        />
+                    </View>
+                    <ScrollView>
+                        {searchItems?.map((option, index) => {
+                            return (
+                                <Pressable
+                                    key={index}
+                                    onPress={() => {
+                                        setValue(option)
+                                        setIsVisible(false);
+                                    }}
+                                >
+                                    <View style={styles.item}>
+                                        <Text>{option?.label}</Text>
+                                    </View>
+                                </Pressable>
+                            )
+                        })}
+                    </ScrollView>
+                </View>
+            </Modal>
+        </View>
     );
-}
+};
 
 const styles = StyleSheet.create({
+
     main_select: {
         backgroundColor: colors.white,
         position: 'relative',
@@ -142,16 +194,7 @@ const styles = StyleSheet.create({
         width: Width(90),
         height: 48,
     },
-    items: {
-        backgroundColor: colors.white,
-        position: 'absolute',
-        bottom: 48,
-        width: '105%',
-        overflow: 'scroll',
-        // maxHeight: 400,
-        // height: '100%',
-        zIndex: 200,
-    },
+
     item: {
         justifyContent: "space-between",
         alignItems: "center",
@@ -165,7 +208,14 @@ const styles = StyleSheet.create({
         paddingHorizontal: 16,
         padding: 8,
     },
-});
 
+    modal: {
+        height: Height(100),
+        padding: 8,
+        paddingVertical: 64,
+        backgroundColor: 'white',
+    },
+
+});
 
 export default DropDownPicker;

@@ -1,0 +1,322 @@
+[
+    {
+        "id": "1",
+        "value": "Dhaka",
+        "label": "ঢাকা"
+    },
+    {
+        "id": "2",
+        "value": "Faridpur",
+        "label": "ফরিদপুর"
+    },
+    {
+        "id": "3",
+        "value": "Gazipur",
+        "label": "গাজীপুর"
+    },
+    {
+        "id": "4",
+        "value": "Gopalganj",
+        "label": "গোপালগঞ্জ"
+    },
+    {
+        "id": "5",
+        "value": "Jamalpur",
+        "label": "জামালপুর"
+    },
+    {
+        "id": "6",
+        "value": "Kishoreganj",
+        "label": "কিশোরগঞ্জ"
+    },
+    {
+        "id": "7",
+        "value": "Madaripur",
+        "label": "মাদারীপুর"
+    },
+    {
+        "id": "8",
+        "value": "Manikganj",
+        "label": "মানিকগঞ্জ"
+    },
+    {
+        "id": "9",
+        "value": "Munshiganj",
+        "label": "মুন্সিগঞ্জ"
+    },
+    {
+        "id": "10",
+        "value": "Mymensingh",
+        "label": "ময়মনসিংহ"
+    },
+    {
+        "id": "11",
+        "value": "Narayanganj",
+        "label": "নারায়াণগঞ্জ"
+    },
+    {
+        "id": "12",
+        "value": "Narsingdi",
+        "label": "নরসিংদী"
+    },
+    {
+        "id": "13",
+        "value": "Netrokona",
+        "label": "নেত্রকোণা"
+    },
+    {
+        "id": "14",
+        "value": "Rajbari",
+        "label": "রাজবাড়ি"
+    },
+    {
+        "id": "15",
+        "value": "Shariatpur",
+        "label": "শরীয়তপুর"
+    },
+    {
+        "id": "16",
+        "value": "Sherpur",
+        "label": "শেরপুর"
+    },
+    {
+        "id": "17",
+        "value": "Tangail",
+        "label": "টাঙ্গাইল"
+    },
+    {
+        "id": "18",
+        "value": "Bogura",
+        "label": "বগুড়া"
+    },
+    {
+        "id": "19",
+        "value": "Joypurhat",
+        "label": "জয়পুরহাট"
+    },
+    {
+        "id": "20",
+        "value": "Naogaon",
+        "label": "নওগাঁ"
+    },
+    {
+        "id": "21",
+        "value": "Natore",
+        "label": "নাটোর"
+    },
+    {
+        "id": "22",
+        "value": "Nawabganj",
+        "label": "নবাবগঞ্জ"
+    },
+    {
+        "id": "23",
+        "value": "Pabna",
+        "label": "পাবনা"
+    },
+    {
+        "id": "24",
+        "value": "Rajshahi",
+        "label": "রাজশাহী"
+    },
+    {
+        "id": "25",
+        "value": "Sirajgonj",
+        "label": "সিরাজগঞ্জ"
+    },
+    {
+        "id": "26",
+        "value": "Dinajpur",
+        "label": "দিনাজপুর"
+    },
+    {
+        "id": "27",
+        "value": "Gaibandha",
+        "label": "গাইবান্ধা"
+    },
+    {
+        "id": "28",
+        "value": "Kurigram",
+        "label": "কুড়িগ্রাম"
+    },
+    {
+        "id": "29",
+        "value": "Lalmonirhat",
+        "label": "লালমনিরহাট"
+    },
+    {
+        "id": "30",
+        "value": "Nilphamari",
+        "label": "নীলফামারী"
+    },
+    {
+        "id": "31",
+        "value": "Panchagarh",
+        "label": "পঞ্চগড়"
+    },
+    {
+        "id": "32",
+        "value": "Rangpur",
+        "label": "রংপুর"
+    },
+    {
+        "id": "33",
+        "value": "Thakurgaon",
+        "label": "ঠাকুরগাঁও"
+    },
+    {
+        "id": "34",
+        "value": "Barguna",
+        "label": "বরগুনা"
+    },
+    {
+        "id": "35",
+        "value": "Barishal",
+        "label": "বরিশাল"
+    },
+    {
+        "id": "36",
+        "value": "Bhola",
+        "label": "ভোলা"
+    },
+    {
+        "id": "37",
+        "value": "Jhalokati",
+        "label": "ঝালকাঠি"
+    },
+    {
+        "id": "38",
+        "value": "Patuakhali",
+        "label": "পটুয়াখালী"
+    },
+    {
+        "id": "39",
+        "value": "Pirojpur",
+        "label": "পিরোজপুর"
+    },
+    {
+        "id": "40",
+        "value": "Bandarban",
+        "label": "বান্দরবান"
+    },
+    {
+        "id": "41",
+        "value": "Brahmanbaria",
+        "label": "ব্রাহ্মণবাড়িয়া"
+    },
+    {
+        "id": "42",
+        "value": "Chandpur",
+        "label": "চাঁদপুর"
+    },
+    {
+        "id": "43",
+        "value": "Chattogram",
+        "label": "চট্টগ্রাম"
+    },
+    {
+        "id": "44",
+        "value": "Cumilla",
+        "label": "কুমিল্লা"
+    },
+    {
+        "id": "45",
+        "value": "Cox's Bazar",
+        "label": "কক্স বাজার"
+    },
+    {
+        "id": "46",
+        "value": "Feni",
+        "label": "ফেনী"
+    },
+    {
+        "id": "47",
+        "value": "Khagrachari",
+        "label": "খাগড়াছড়ি"
+    },
+    {
+        "id": "48",
+        "value": "Lakshmipur",
+        "label": "লক্ষ্মীপুর"
+    },
+    {
+        "id": "49",
+        "value": "Noakhali",
+        "label": "নোয়াখালী"
+    },
+    {
+        "id": "50",
+        "value": "Rangamati",
+        "label": "রাঙ্গামাটি"
+    },
+    {
+        "id": "51",
+        "value": "Habiganj",
+        "label": "হবিগঞ্জ"
+    },
+    {
+        "id": "52",
+        "value": "Maulvibazar",
+        "label": "মৌলভীবাজার"
+    },
+    {
+        "id": "53",
+        "value": "Sunamganj",
+        "label": "সুনামগঞ্জ"
+    },
+    {
+        "id": "54",
+        "value": "Sylhet",
+        "label": "সিলেট"
+    },
+    {
+        "id": "55",
+        "value": "Bagerhat",
+        "label": "বাগেরহাট"
+    },
+    {
+        "id": "56",
+        "value": "Chuadanga",
+        "label": "চুয়াডাঙ্গা"
+    },
+    {
+        "id": "57",
+        "value": "Jashore",
+        "label": "যশোর"
+    },
+    {
+        "id": "58",
+        "value": "Jhenaidah",
+        "label": "ঝিনাইদহ"
+    },
+    {
+        "id": "59",
+        "value": "Khulna",
+        "label": "খুলনা"
+    },
+    {
+        "id": "60",
+        "value": "Kushtia",
+        "label": "কুষ্টিয়া"
+    },
+    {
+        "id": "61",
+        "value": "Magura",
+        "label": "মাগুরা"
+    },
+    {
+        "id": "62",
+        "value": "Meherpur",
+        "label": "মেহেরপুর"
+    },
+    {
+        "id": "63",
+        "value": "Narail",
+        "label": "নড়াইল"
+    },
+    {
+        "id": "64",
+        "value": "Satkhira",
+        "label": "সাতক্ষীরা"
+    }
+]

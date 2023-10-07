@@ -6,7 +6,6 @@ import NavigationContainer from './src/navigators/NavigationContainer';
 import Navigator from './src/navigators/Navigator';
 import AuthenticationCheckProvider from './src/context/Authentication/AuthenticationCheckProvider';
 import colors from './src/utils/colors';
-import LoaderBgContext from './src/context/loaderBg/LoaderBg';
 
 const ShopProvider = createContext({})
 function App(): JSX.Element {
@@ -23,9 +22,7 @@ function App(): JSX.Element {
               showHideTransition={'slide'}
               hidden={false}
             />
-            <LoaderBgContext>
-              <Navigator />
-            </LoaderBgContext>
+            <Navigator />
           </ShopProvider.Provider>
         </DrawerMenuNavbar>
       </NavigationContainer>

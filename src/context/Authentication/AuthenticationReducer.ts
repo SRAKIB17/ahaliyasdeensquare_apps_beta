@@ -1,3 +1,5 @@
+import { initialStateInterface } from "./AuthenticationCheckProvider";
+
 export const actionType = {
     LOADING: 'LOADING',
     SUCCESS: "SUCCESS",
@@ -9,12 +11,6 @@ export interface actionTypeInterface {
     type: 'LOADING' | "SUCCESS" | "ERROR"
 }
 
-export interface initialStateInterface {
-    role: null | string,
-    isLoading: boolean,
-    user_info: any,
-    isLoggedIn: boolean
-}
 
 export const authenticationCheckProviderReducer = (state: initialStateInterface, action: actionTypeInterface) => {
     switch (action.type) {

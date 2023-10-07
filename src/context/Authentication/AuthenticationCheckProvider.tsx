@@ -1,6 +1,8 @@
 'use client'
 import React, { createContext, useEffect, useReducer } from 'react';
 import { actionTypeInterface, authenticationCheckProviderReducer, } from './AuthenticationReducer';
+import { refresh_api } from '../../config';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export const initialState = {
@@ -11,9 +13,25 @@ export const initialState = {
 }
 
 export interface initialStateInterface {
-    role: null | string,
+    role: string,
     isLoading: any,
-    user_info: any,
+    user_info?: {
+        userID?: number,
+        name?: string,
+        email?: string,
+        phone?: string,
+        defaultShippingAddress?: number,
+        userType?: string,
+        birthday?: string,
+        rewardCoins?: number,
+        lastLogin?: string,
+        balance?: number,
+        gender?: string,
+        isBlock?: boolean,
+        registered?: string,
+        country?: string,
+        verifiedEmail?: boolean,
+    },
     isLoggedIn: boolean
 }
 
@@ -24,32 +42,34 @@ const AuthenticationCheckProvider = (props: { children: React.ReactNode }) => {
 
     const [state, dispatch]: [initialStateInterface, (props: actionTypeInterface) => void] = useReducer(authenticationCheckProviderReducer, initialState);
 
-    // useEffect(() => {
-    //     const run = async () => {
-    //         try {
-    //             dispatch({ type: 'LOADING' || '' });
-    //             // const res = await fetch(refresh_api, {
-    //             //     headers: {
-    //             //         "ref_tkn": cookies
-    //             //     },
-    //             //     method: "POST",
-    //             //     body: JSON.stringify({})
-    //             // })
-    //             const data = await res.json()
-    //             if (data?.success) {
-    //                 dispatch({ type: 'SUCCESS', payload: data })
-    //             }
-    //             else {
-    //                 dispatch({ type: 'ERROR' });
-    //                 deleteCookie('ref_tkn')
-    //             }
-    //         }
-    //         catch {
-    //             dispatch({ type: 'ERROR' });
-    //         }
-    //     }
-    //     run()
-    // }, [dispatch]);
+    useEffect(() => {
+        const run = async () => {
+            try {
+                dispatch({ type: 'LOADING' || '' });
+                const ref_tkn: any = await AsyncStorage.getItem('ref_tkn')
+
+                const res = await fetch(refresh_api, {
+                    headers: {
+                        "ref_tkn": ref_tkn
+                    },
+                    method: "POST",
+                    body: JSON.stringify({})
+                })
+                const data = await res.json()
+
+                if (data?.success) {
+                    dispatch({ type: 'SUCCESS', payload: data })
+                }
+                else {
+                    dispatch({ type: 'ERROR' });
+                }
+            }
+            catch {
+                dispatch({ type: 'ERROR' });
+            }
+        }
+        run()
+    }, [dispatch]);
 
 
     return (

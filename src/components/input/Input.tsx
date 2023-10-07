@@ -13,12 +13,16 @@ export default function Input({
     setValue = () => { },
     placeholder = 'Write something..',
     pattern,
-    toast = 'Please input valid info'
+    style = {},
+    toast = 'Please input valid info',
+    multiline = false,
 }
     :
     {
+        style?: object | any,
         asset?: number,
         value: string,
+        multiline?: boolean,
         setValue: any,
         defaultValue?: string,
         placeholder?: string,
@@ -72,7 +76,7 @@ export default function Input({
                         alignItems: 'center',
                         gap: 4,
                     }
-                ] : {})}
+                ] : style)}
             >
                 {
                     asset ?
@@ -91,12 +95,13 @@ export default function Input({
                         <></>
                 }
                 <TextInput
+                    multiline={multiline}
                     onBlur={(text) => onBlurHandle()}
                     defaultValue={defaultValue}
                     placeholderTextColor={colors.grey}
                     onChangeText={onChangeTextHandle}
                     placeholder={placeholder}
-                    style={(asset ? { flex: 1, paddingLeft: 30, fontSize: 16 } : styles.input)}
+                    style={([(asset ? { flex: 1, paddingLeft: 30, fontSize: 16 } : styles.input), style])}
                 />
             </View>
         </View>

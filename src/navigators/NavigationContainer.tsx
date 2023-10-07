@@ -18,7 +18,11 @@ export interface navigationInterface {
     },
     translate: translateInterface,
     drawerRef: React.RefObject<DrawerLayoutAndroid>,
-    navigate_link: navigate_linkInterface
+    navigate_link: navigate_linkInterface,
+    loadingStart: boolean,
+    loadingComponent: boolean,
+    setLoadingStart: React.Dispatch<React.SetStateAction<boolean>>
+    setLoadingComponent: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const NavigationProvider = createContext<navigationInterface>({
@@ -30,7 +34,11 @@ export const NavigationProvider = createContext<navigationInterface>({
     },
     translate: translate?.en,
     drawerRef: { current: null },
-    navigate_link: navigate_link
+    navigate_link: navigate_link,
+    loadingStart: false,
+    setLoadingStart: () => { },
+    loadingComponent: false,
+    setLoadingComponent: () => { }
 })
 
 export default function NavigationContainer({ children }: { children: React.ReactNode }): JSX.Element {
@@ -136,12 +144,18 @@ export default function NavigationContainer({ children }: { children: React.Reac
 
     }, [screen])
 
-    const navigationConstructor: any = new navigation()
+    const navigationConstructor: any = new navigation();
+    const [loadingStart, setLoadingStart] = useState<boolean>(false)
+    const [loadingComponent, setLoadingComponent] = useState<boolean>(false)
     return (
         <NavigationProvider.Provider
             value={{
+                loadingStart: loadingStart,
+                setLoadingStart: setLoadingStart,
                 navigation: navigationConstructor,
                 translate: language,
+                loadingComponent: loadingComponent,
+                setLoadingComponent: setLoadingComponent,
                 drawerRef: drawerRef,
                 navigate_link: navigate_link
             }}

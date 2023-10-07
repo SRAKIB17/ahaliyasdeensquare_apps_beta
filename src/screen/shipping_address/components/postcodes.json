@@ -1,0 +1,5422 @@
+[
+    {
+        "id": 34,
+        "label": "Amtali - 8710"
+    },
+    {
+        "id": 34,
+        "label": "Bamna - 8730"
+    },
+    {
+        "id": 34,
+        "label": "Barguna Sadar - 8700"
+    },
+    {
+        "id": 34,
+        "label": "Nali Bandar - 8701"
+    },
+    {
+        "id": 34,
+        "label": "Betagi - 8740"
+    },
+    {
+        "id": 34,
+        "label": "Darul Ulam - 8741"
+    },
+    {
+        "id": 34,
+        "label": "Kakchira - 8721"
+    },
+    {
+        "id": 34,
+        "label": "Patharghata - 8720"
+    },
+    {
+        "id": 35,
+        "label": "Agailzhara - 8240"
+    },
+    {
+        "id": 35,
+        "label": "Gaila - 8241"
+    },
+    {
+        "id": 35,
+        "label": "Paisarhat - 8242"
+    },
+    {
+        "id": 35,
+        "label": "Babuganj - 8210"
+    },
+    {
+        "id": 35,
+        "label": "Barisal Cadet - 8216"
+    },
+    {
+        "id": 35,
+        "label": "Chandpasha - 8212"
+    },
+    {
+        "id": 35,
+        "label": "Madhabpasha - 8213"
+    },
+    {
+        "id": 35,
+        "label": "Nizamuddin College - 8215"
+    },
+    {
+        "id": 35,
+        "label": "Rahamatpur - 8211"
+    },
+    {
+        "id": 35,
+        "label": "Thakur Mallik - 8214"
+    },
+    {
+        "id": 35,
+        "label": "Barajalia - 8260"
+    },
+    {
+        "id": 35,
+        "label": "Osman Manjil - 8261"
+    },
+    {
+        "id": 35,
+        "label": "Barisal Sadar - 8200"
+    },
+    {
+        "id": 35,
+        "label": "Bukhainagar - 8201"
+    },
+    {
+        "id": 35,
+        "label": "Jaguarhat - 8206"
+    },
+    {
+        "id": 35,
+        "label": "Kashipur - 8205"
+    },
+    {
+        "id": 35,
+        "label": "Patang - 8204"
+    },
+    {
+        "id": 35,
+        "label": "Saheberhat - 8202"
+    },
+    {
+        "id": 35,
+        "label": "Sugandia - 8203"
+    },
+    {
+        "id": 35,
+        "label": "Batajor - 8233"
+    },
+    {
+        "id": 35,
+        "label": "Gouranadi - 8230"
+    },
+    {
+        "id": 35,
+        "label": "Kashemabad - 8232"
+    },
+    {
+        "id": 35,
+        "label": "Tarki Bandar - 8231"
+    },
+    {
+        "id": 35,
+        "label": "Langutia - 8274"
+    },
+    {
+        "id": 35,
+        "label": "Laskarpur - 8271"
+    },
+    {
+        "id": 35,
+        "label": "Mahendiganj - 8270"
+    },
+    {
+        "id": 35,
+        "label": "Nalgora - 8273"
+    },
+    {
+        "id": 35,
+        "label": "Ulania - 8272"
+    },
+    {
+        "id": 35,
+        "label": "Charkalekhan - 8252"
+    },
+    {
+        "id": 35,
+        "label": "Kazirchar - 8251"
+    },
+    {
+        "id": 35,
+        "label": "Muladi - 8250"
+    },
+    {
+        "id": 35,
+        "label": "Charamandi - 8281"
+    },
+    {
+        "id": 35,
+        "label": "kalaskati - 8284"
+    },
+    {
+        "id": 35,
+        "label": "Padri Shibpur - 8282"
+    },
+    {
+        "id": 35,
+        "label": "Sahebganj - 8280"
+    },
+    {
+        "id": 35,
+        "label": "Shialguni - 8283"
+    },
+    {
+        "id": 35,
+        "label": "Dakuarhat - 8223"
+    },
+    {
+        "id": 35,
+        "label": "Dhamura - 8221"
+    },
+    {
+        "id": 35,
+        "label": "Jugirkanda - 8222"
+    },
+    {
+        "id": 35,
+        "label": "Shikarpur - 8224"
+    },
+    {
+        "id": 35,
+        "label": "Uzirpur - 8220"
+    },
+    {
+        "id": 36,
+        "label": "Bhola Sadar - 8300"
+    },
+    {
+        "id": 36,
+        "label": "Joynagar - 8301"
+    },
+    {
+        "id": 36,
+        "label": "Borhanuddin UPO - 8320"
+    },
+    {
+        "id": 36,
+        "label": "Mirzakalu - 8321"
+    },
+    {
+        "id": 36,
+        "label": "Charfashion - 8340"
+    },
+    {
+        "id": 36,
+        "label": "Dularhat - 8341"
+    },
+    {
+        "id": 36,
+        "label": "Keramatganj - 8342"
+    },
+    {
+        "id": 36,
+        "label": "Doulatkhan - 8310"
+    },
+    {
+        "id": 36,
+        "label": "Hajipur - 8311"
+    },
+    {
+        "id": 36,
+        "label": "Hajirhat - 8360"
+    },
+    {
+        "id": 36,
+        "label": "Hatshoshiganj - 8350"
+    },
+    {
+        "id": 36,
+        "label": "Daurihat - 8331"
+    },
+    {
+        "id": 36,
+        "label": "Gazaria - 8332"
+    },
+    {
+        "id": 36,
+        "label": "Lalmohan UPO - 8330"
+    },
+    {
+        "id": 37,
+        "label": "Baukathi - 8402"
+    },
+    {
+        "id": 37,
+        "label": "Gabha - 8403"
+    },
+    {
+        "id": 37,
+        "label": "Jhalokathi Sadar - 8400"
+    },
+    {
+        "id": 37,
+        "label": "Nabagram - 8401"
+    },
+    {
+        "id": 37,
+        "label": "Shekherhat - 8404"
+    },
+    {
+        "id": 37,
+        "label": "Amua - 8431"
+    },
+    {
+        "id": 37,
+        "label": "Kathalia - 8430"
+    },
+    {
+        "id": 37,
+        "label": "Niamatee - 8432"
+    },
+    {
+        "id": 37,
+        "label": "Shoulajalia - 8433"
+    },
+    {
+        "id": 37,
+        "label": "Beerkathi - 8421"
+    },
+    {
+        "id": 37,
+        "label": "Nalchhiti - 8420"
+    },
+    {
+        "id": 37,
+        "label": "Rajapur - 8410"
+    },
+    {
+        "id": 38,
+        "label": "Bagabandar - 8621"
+    },
+    {
+        "id": 38,
+        "label": "Bauphal - 8620"
+    },
+    {
+        "id": 38,
+        "label": "Birpasha - 8622"
+    },
+    {
+        "id": 38,
+        "label": "Kalaia - 8624"
+    },
+    {
+        "id": 38,
+        "label": "Kalishari - 8623"
+    },
+    {
+        "id": 38,
+        "label": "Dashmina - 8630"
+    },
+    {
+        "id": 38,
+        "label": "Galachipa - 8640"
+    },
+    {
+        "id": 38,
+        "label": "Gazipur Bandar - 8641"
+    },
+    {
+        "id": 38,
+        "label": "Khepupara - 8650"
+    },
+    {
+        "id": 38,
+        "label": "Mahipur - 8651"
+    },
+    {
+        "id": 38,
+        "label": "Dumkee - 8602"
+    },
+    {
+        "id": 38,
+        "label": "Moukaran - 8601"
+    },
+    {
+        "id": 38,
+        "label": "Patuakhali Sadar - 8600"
+    },
+    {
+        "id": 38,
+        "label": "Rahimabad - 8603"
+    },
+    {
+        "id": 38,
+        "label": "Subidkhali - 8610"
+    },
+    {
+        "id": 39,
+        "label": "Banaripara - 8530"
+    },
+    {
+        "id": 39,
+        "label": "Chakhar - 8531"
+    },
+    {
+        "id": 39,
+        "label": "Bhandaria - 8550"
+    },
+    {
+        "id": 39,
+        "label": "Dhaoa - 8552"
+    },
+    {
+        "id": 39,
+        "label": "Kanudashkathi - 8551"
+    },
+    {
+        "id": 39,
+        "label": "Jolagati - 8513"
+    },
+    {
+        "id": 39,
+        "label": "Joykul - 8512"
+    },
+    {
+        "id": 39,
+        "label": "Kaukhali - 8510"
+    },
+    {
+        "id": 39,
+        "label": "Keundia - 8511"
+    },
+    {
+        "id": 39,
+        "label": "Betmor Natun Hat - 8565"
+    },
+    {
+        "id": 39,
+        "label": "Gulishakhali - 8563"
+    },
+    {
+        "id": 39,
+        "label": "Halta - 8562"
+    },
+    {
+        "id": 39,
+        "label": "Mathbaria - 8560"
+    },
+    {
+        "id": 39,
+        "label": "Shilarganj - 8566"
+    },
+    {
+        "id": 39,
+        "label": "Tiarkhali - 8564"
+    },
+    {
+        "id": 39,
+        "label": "Tushkhali - 8561"
+    },
+    {
+        "id": 39,
+        "label": "Nazirpur - 8540"
+    },
+    {
+        "id": 39,
+        "label": "Sriramkathi - 8541"
+    },
+    {
+        "id": 39,
+        "label": "Hularhat - 8501"
+    },
+    {
+        "id": 39,
+        "label": "Parerhat - 8502"
+    },
+    {
+        "id": 39,
+        "label": "Pirojpur Sadar - 8500"
+    },
+    {
+        "id": 39,
+        "label": "Darus Sunnat - 8521"
+    },
+    {
+        "id": 39,
+        "label": "Jalabari - 8523"
+    },
+    {
+        "id": 39,
+        "label": "Kaurikhara - 8522"
+    },
+    {
+        "id": 39,
+        "label": "Swarupkathi - 8520"
+    },
+    {
+        "id": 40,
+        "label": "Alikadam - 4650"
+    },
+    {
+        "id": 40,
+        "label": "Bandarban Sadar - 4600"
+    },
+    {
+        "id": 40,
+        "label": "Naikhong - 4660"
+    },
+    {
+        "id": 40,
+        "label": "Roanchhari - 4610"
+    },
+    {
+        "id": 40,
+        "label": "Ruma - 4620"
+    },
+    {
+        "id": 40,
+        "label": "Lama - 4641"
+    },
+    {
+        "id": 40,
+        "label": "Thanchi - 4630"
+    },
+    {
+        "id": 41,
+        "label": "Akhaura - 3450"
+    },
+    {
+        "id": 41,
+        "label": "Azampur - 3451"
+    },
+    {
+        "id": 41,
+        "label": "Gangasagar - 3452"
+    },
+    {
+        "id": 41,
+        "label": "Banchharampur - 3420"
+    },
+    {
+        "id": 41,
+        "label": "Ashuganj - 3402"
+    },
+    {
+        "id": 41,
+        "label": "Ashuganj Share - 3403"
+    },
+    {
+        "id": 41,
+        "label": "Brahamanbaria Sadar - 3400"
+    },
+    {
+        "id": 41,
+        "label": "Poun - 3404"
+    },
+    {
+        "id": 41,
+        "label": "Talshahar - 3401"
+    },
+    {
+        "id": 41,
+        "label": "Chandidar - 3462"
+    },
+    {
+        "id": 41,
+        "label": "Chargachh - 3463"
+    },
+    {
+        "id": 41,
+        "label": "Gopinathpur - 3464"
+    },
+    {
+        "id": 41,
+        "label": "Kasba - 3460"
+    },
+    {
+        "id": 41,
+        "label": "Kuti - 3461"
+    },
+    {
+        "id": 41,
+        "label": "Jibanganj - 3419"
+    },
+    {
+        "id": 41,
+        "label": "Kaitala - 3417"
+    },
+    {
+        "id": 41,
+        "label": "Laubfatehpur - 3411"
+    },
+    {
+        "id": 41,
+        "label": "Nabinagar - 3410"
+    },
+    {
+        "id": 41,
+        "label": "Rasullabad - 3412"
+    },
+    {
+        "id": 41,
+        "label": "Ratanpur - 3414"
+    },
+    {
+        "id": 41,
+        "label": "Salimganj - 3418"
+    },
+    {
+        "id": 41,
+        "label": "Shahapur - 3415"
+    },
+    {
+        "id": 41,
+        "label": "Shamgram - 3413"
+    },
+    {
+        "id": 41,
+        "label": "Fandauk - 3441"
+    },
+    {
+        "id": 41,
+        "label": "Nasirnagar - 3440"
+    },
+    {
+        "id": 41,
+        "label": "Chandura - 3432"
+    },
+    {
+        "id": 41,
+        "label": "Sarial - 3430"
+    },
+    {
+        "id": 41,
+        "label": "Shahbajpur - 3431"
+    },
+    {
+        "id": 42,
+        "label": "Baburhat - 3602"
+    },
+    {
+        "id": 42,
+        "label": "Chandpur Sadar - 3600"
+    },
+    {
+        "id": 42,
+        "label": "Puranbazar - 3601"
+    },
+    {
+        "id": 42,
+        "label": "Sahatali - 3603"
+    },
+    {
+        "id": 42,
+        "label": "Chandra - 3651"
+    },
+    {
+        "id": 42,
+        "label": "Faridganj - 3650"
+    },
+    {
+        "id": 42,
+        "label": "Gridkaliandia - 3653"
+    },
+    {
+        "id": 42,
+        "label": "Islampur Shah Isain - 3655"
+    },
+    {
+        "id": 42,
+        "label": "Rampurbazar - 3654"
+    },
+    {
+        "id": 42,
+        "label": "Rupsha - 3652"
+    },
+    {
+        "id": 42,
+        "label": "Bolakhal - 3611"
+    },
+    {
+        "id": 42,
+        "label": "Hajiganj - 3610"
+    },
+    {
+        "id": 42,
+        "label": "Gandamara - 3661"
+    },
+    {
+        "id": 42,
+        "label": "Hayemchar - 3660"
+    },
+    {
+        "id": 42,
+        "label": "Kachua - 3630"
+    },
+    {
+        "id": 42,
+        "label": "Pak Shrirampur - 3631"
+    },
+    {
+        "id": 42,
+        "label": "Rahima Nagar - 3632"
+    },
+    {
+        "id": 42,
+        "label": "Shachar - 3633"
+    },
+    {
+        "id": 42,
+        "label": "Kalipur - 3642"
+    },
+    {
+        "id": 42,
+        "label": "Matlobganj - 3640"
+    },
+    {
+        "id": 42,
+        "label": "Mohanpur - 3641"
+    },
+    {
+        "id": 42,
+        "label": "Chotoshi - 3623"
+    },
+    {
+        "id": 42,
+        "label": "Islamia Madrasha - 3624"
+    },
+    {
+        "id": 42,
+        "label": "Khilabazar - 3621"
+    },
+    {
+        "id": 42,
+        "label": "Pashchim Kherihar Al - 3622"
+    },
+    {
+        "id": 42,
+        "label": "Shahrasti - 3620"
+    },
+    {
+        "id": 43,
+        "label": "Anowara - 4376"
+    },
+    {
+        "id": 43,
+        "label": "Battali - 4378"
+    },
+    {
+        "id": 43,
+        "label": "Paroikora - 4377"
+    },
+    {
+        "id": 43,
+        "label": "Boalkhali - 4366"
+    },
+    {
+        "id": 43,
+        "label": "Charandwip - 4369"
+    },
+    {
+        "id": 43,
+        "label": "Iqbal Park - 4365"
+    },
+    {
+        "id": 43,
+        "label": "Kadurkhal - 4368"
+    },
+    {
+        "id": 43,
+        "label": "Kanungopara - 4363"
+    },
+    {
+        "id": 43,
+        "label": "Sakpura - 4367"
+    },
+    {
+        "id": 43,
+        "label": "Saroatoli - 4364"
+    },
+    {
+        "id": 43,
+        "label": "Al- Amin Baria Madra - 4221"
+    },
+    {
+        "id": 43,
+        "label": "Amin Jute Mills - 4211"
+    },
+    {
+        "id": 43,
+        "label": "Anandabazar - 4215"
+    },
+    {
+        "id": 43,
+        "label": "Bayezid Bostami - 4210"
+    },
+    {
+        "id": 43,
+        "label": "Chandgaon - 4212"
+    },
+    {
+        "id": 43,
+        "label": "Chawkbazar - 4203"
+    },
+    {
+        "id": 43,
+        "label": "Chitt. Cantonment - 4220"
+    },
+    {
+        "id": 43,
+        "label": "Chitt. Customs Acca - 4219"
+    },
+    {
+        "id": 43,
+        "label": "Chitt. Politechnic In - 4209"
+    },
+    {
+        "id": 43,
+        "label": "Chitt. Sailers Colon - 4218"
+    },
+    {
+        "id": 43,
+        "label": "Chittagong Airport - 4205"
+    },
+    {
+        "id": 43,
+        "label": "Chittagong Bandar - 4100"
+    },
+    {
+        "id": 43,
+        "label": "Chittagong GPO - 4000"
+    },
+    {
+        "id": 43,
+        "label": "Export Processing - 4223"
+    },
+    {
+        "id": 43,
+        "label": "Firozshah - 4207"
+    },
+    {
+        "id": 43,
+        "label": "Halishahar - 4216"
+    },
+    {
+        "id": 43,
+        "label": "Halishshar - 4225"
+    },
+    {
+        "id": 43,
+        "label": "Jalalabad - 4214"
+    },
+    {
+        "id": 43,
+        "label": "Jaldia Merine Accade - 4206"
+    },
+    {
+        "id": 43,
+        "label": "Middle Patenga - 4222"
+    },
+    {
+        "id": 43,
+        "label": "Mohard - 4208"
+    },
+    {
+        "id": 43,
+        "label": "North Halishahar - 4226"
+    },
+    {
+        "id": 43,
+        "label": "North Katuli - 4217"
+    },
+    {
+        "id": 43,
+        "label": "Pahartoli - 4202"
+    },
+    {
+        "id": 43,
+        "label": "Patenga - 4204"
+    },
+    {
+        "id": 43,
+        "label": "Rampura TSO - 4224"
+    },
+    {
+        "id": 43,
+        "label": "Wazedia - 4213"
+    },
+    {
+        "id": 43,
+        "label": "Barma - 4383"
+    },
+    {
+        "id": 43,
+        "label": "Dohazari - 4382"
+    },
+    {
+        "id": 43,
+        "label": "East Joara - 4380"
+    },
+    {
+        "id": 43,
+        "label": "Gachbaria - 4381"
+    },
+    {
+        "id": 43,
+        "label": "Bhandar Sharif - 4352"
+    },
+    {
+        "id": 43,
+        "label": "Fatikchhari - 4350"
+    },
+    {
+        "id": 43,
+        "label": "Harualchhari - 4354"
+    },
+    {
+        "id": 43,
+        "label": "Najirhat - 4353"
+    },
+    {
+        "id": 43,
+        "label": "Nanupur - 4351"
+    },
+    {
+        "id": 43,
+        "label": "Narayanhat - 4355"
+    },
+    {
+        "id": 43,
+        "label": "Chitt.University - 4331"
+    },
+    {
+        "id": 43,
+        "label": "Fatahabad - 4335"
+    },
+    {
+        "id": 43,
+        "label": "Gorduara - 4332"
+    },
+    {
+        "id": 43,
+        "label": "Hathazari - 4330"
+    },
+    {
+        "id": 43,
+        "label": "Katirhat - 4333"
+    },
+    {
+        "id": 43,
+        "label": "Madrasa - 4339"
+    },
+    {
+        "id": 43,
+        "label": "Mirzapur - 4334"
+    },
+    {
+        "id": 43,
+        "label": "Nuralibari - 4337"
+    },
+    {
+        "id": 43,
+        "label": "Yunus Nagar - 4338"
+    },
+    {
+        "id": 43,
+        "label": "Banigram - 4393"
+    },
+    {
+        "id": 43,
+        "label": "Gunagari - 4392"
+    },
+    {
+        "id": 43,
+        "label": "Jaldi - 4390"
+    },
+    {
+        "id": 43,
+        "label": "Khan Bahadur - 4391"
+    },
+    {
+        "id": 43,
+        "label": "Chunti - 4398"
+    },
+    {
+        "id": 43,
+        "label": "Lohagara - 4396"
+    },
+    {
+        "id": 43,
+        "label": "Padua - 4397"
+    },
+    {
+        "id": 43,
+        "label": "Abutorab - 4321"
+    },
+    {
+        "id": 43,
+        "label": "Azampur - 4325"
+    },
+    {
+        "id": 43,
+        "label": "Bharawazhat - 4323"
+    },
+    {
+        "id": 43,
+        "label": "Darrogahat - 4322"
+    },
+    {
+        "id": 43,
+        "label": "Joarganj - 4324"
+    },
+    {
+        "id": 43,
+        "label": "Korerhat - 4327"
+    },
+    {
+        "id": 43,
+        "label": "Mirsharai - 4320"
+    },
+    {
+        "id": 43,
+        "label": "Mohazanhat - 4328"
+    },
+    {
+        "id": 43,
+        "label": "Budhpara - 4371"
+    },
+    {
+        "id": 43,
+        "label": "Patiya Head Office - 4370"
+    },
+    {
+        "id": 43,
+        "label": "Dhamair - 4361"
+    },
+    {
+        "id": 43,
+        "label": "Rangunia - 4360"
+    },
+    {
+        "id": 43,
+        "label": "B.I.T Post Office - 4349"
+    },
+    {
+        "id": 43,
+        "label": "Beenajuri - 4341"
+    },
+    {
+        "id": 43,
+        "label": "Dewanpur - 4347"
+    },
+    {
+        "id": 43,
+        "label": "Fatepur - 4345"
+    },
+    {
+        "id": 43,
+        "label": "Gahira - 4343"
+    },
+    {
+        "id": 43,
+        "label": "Guzra Noapara - 4346"
+    },
+    {
+        "id": 43,
+        "label": "jagannath Hat - 4344"
+    },
+    {
+        "id": 43,
+        "label": "Kundeshwari - 4342"
+    },
+    {
+        "id": 43,
+        "label": "Mohamuni - 4348"
+    },
+    {
+        "id": 43,
+        "label": "Rouzan - 4340"
+    },
+    {
+        "id": 43,
+        "label": "Sandwip - 4300"
+    },
+    {
+        "id": 43,
+        "label": "Shiberhat - 4301"
+    },
+    {
+        "id": 43,
+        "label": "Urirchar - 4302"
+    },
+    {
+        "id": 43,
+        "label": "Baitul Ijjat - 4387"
+    },
+    {
+        "id": 43,
+        "label": "Bazalia - 4388"
+    },
+    {
+        "id": 43,
+        "label": "Satkania - 4386"
+    },
+    {
+        "id": 43,
+        "label": "Barabkunda - 4312"
+    },
+    {
+        "id": 43,
+        "label": "Baroidhala - 4311"
+    },
+    {
+        "id": 43,
+        "label": "Bawashbaria - 4313"
+    },
+    {
+        "id": 43,
+        "label": "Bhatiari - 4315"
+    },
+    {
+        "id": 43,
+        "label": "Fouzdarhat - 4316"
+    },
+    {
+        "id": 43,
+        "label": "Jafrabad - 4317"
+    },
+    {
+        "id": 43,
+        "label": "Kumira - 4314"
+    },
+    {
+        "id": 43,
+        "label": "Sitakunda - 4310"
+    },
+    {
+        "id": 44,
+        "label": "Barura - 3560"
+    },
+    {
+        "id": 44,
+        "label": "Murdafarganj - 3562"
+    },
+    {
+        "id": 44,
+        "label": "Poyalgachha - 3561"
+    },
+    {
+        "id": 44,
+        "label": "Brahmanpara - 3526"
+    },
+    {
+        "id": 44,
+        "label": "Burichang - 3520"
+    },
+    {
+        "id": 44,
+        "label": "Maynamoti bazar - 3521"
+    },
+    {
+        "id": 44,
+        "label": "Chandia - 3510"
+    },
+    {
+        "id": 44,
+        "label": "Madhaiabazar - 3511"
+    },
+    {
+        "id": 44,
+        "label": "Batisa - 3551"
+    },
+    {
+        "id": 44,
+        "label": "Chiora - 3552"
+    },
+    {
+        "id": 44,
+        "label": "Chouddagram - 3550"
+    },
+    {
+        "id": 44,
+        "label": "Comilla Contoment - 3501"
+    },
+    {
+        "id": 44,
+        "label": "Comilla Sadar - 3500"
+    },
+    {
+        "id": 44,
+        "label": "Courtbari - 3503"
+    },
+    {
+        "id": 44,
+        "label": "Halimanagar - 3502"
+    },
+    {
+        "id": 44,
+        "label": "Suaganj - 3504"
+    },
+    {
+        "id": 44,
+        "label": "Dashpara - 3518"
+    },
+    {
+        "id": 44,
+        "label": "Daudkandi - 3516"
+    },
+    {
+        "id": 44,
+        "label": "Eliotganj - 3519"
+    },
+    {
+        "id": 44,
+        "label": "Gouripur - 3517"
+    },
+    {
+        "id": 44,
+        "label": "Barashalghar - 3532"
+    },
+    {
+        "id": 44,
+        "label": "Davidhar - 3530"
+    },
+    {
+        "id": 44,
+        "label": "Dhamtee - 3533"
+    },
+    {
+        "id": 44,
+        "label": "Gangamandal - 3531"
+    },
+    {
+        "id": 44,
+        "label": "Homna - 3546"
+    },
+    {
+        "id": 44,
+        "label": "Bipulasar - 3572"
+    },
+    {
+        "id": 44,
+        "label": "Laksam - 3570"
+    },
+    {
+        "id": 44,
+        "label": "Lakshamanpur - 3571"
+    },
+    {
+        "id": 44,
+        "label": "Chhariabazar - 3582"
+    },
+    {
+        "id": 44,
+        "label": "Dhalua - 3581"
+    },
+    {
+        "id": 44,
+        "label": "Gunabati - 3583"
+    },
+    {
+        "id": 44,
+        "label": "Langalkot - 3580"
+    },
+    {
+        "id": 44,
+        "label": "Bangra - 3543"
+    },
+    {
+        "id": 44,
+        "label": "Companyganj - 3542"
+    },
+    {
+        "id": 44,
+        "label": "Muradnagar - 3540"
+    },
+    {
+        "id": 44,
+        "label": "Pantibazar - 3545"
+    },
+    {
+        "id": 44,
+        "label": "Ramchandarpur - 3541"
+    },
+    {
+        "id": 44,
+        "label": "Sonakanda - 3544"
+    },
+    {
+        "id": 45,
+        "label": "Badarkali - 4742"
+    },
+    {
+        "id": 45,
+        "label": "Chiringga - 4740"
+    },
+    {
+        "id": 45,
+        "label": "Chiringga S.O - 4741"
+    },
+    {
+        "id": 45,
+        "label": "Malumghat - 4743"
+    },
+    {
+        "id": 45,
+        "label": "Coxs Bazar Sadar - 4700"
+    },
+    {
+        "id": 45,
+        "label": "Eidga - 4702"
+    },
+    {
+        "id": 45,
+        "label": "Zhilanja - 4701"
+    },
+    {
+        "id": 45,
+        "label": "Gorakghat - 4710"
+    },
+    {
+        "id": 45,
+        "label": "Kutubdia - 4720"
+    },
+    {
+        "id": 45,
+        "label": "Ramu - 4730"
+    },
+    {
+        "id": 45,
+        "label": "Hnila - 4761"
+    },
+    {
+        "id": 45,
+        "label": "St.Martin - 4762"
+    },
+    {
+        "id": 45,
+        "label": "Teknaf - 4760"
+    },
+    {
+        "id": 45,
+        "label": "Ukhia - 4750"
+    },
+    {
+        "id": 46,
+        "label": "Chhagalnaia - 3910"
+    },
+    {
+        "id": 46,
+        "label": "Daraga Hat - 3912"
+    },
+    {
+        "id": 46,
+        "label": "Maharajganj - 3911"
+    },
+    {
+        "id": 46,
+        "label": "Puabashimulia - 3913"
+    },
+    {
+        "id": 46,
+        "label": "Chhilonia - 3922"
+    },
+    {
+        "id": 46,
+        "label": "Dagondhuia - 3920"
+    },
+    {
+        "id": 46,
+        "label": "Dudmukha - 3921"
+    },
+    {
+        "id": 46,
+        "label": "Rajapur - 3923"
+    },
+    {
+        "id": 46,
+        "label": "Fazilpur - 3901"
+    },
+    {
+        "id": 46,
+        "label": "Feni Sadar - 3900"
+    },
+    {
+        "id": 46,
+        "label": "Laskarhat - 3903"
+    },
+    {
+        "id": 46,
+        "label": "Sharshadie - 3902"
+    },
+    {
+        "id": 46,
+        "label": "Fulgazi - 3942"
+    },
+    {
+        "id": 46,
+        "label": "Munshirhat - 3943"
+    },
+    {
+        "id": 46,
+        "label": "Pashurampur - 3940"
+    },
+    {
+        "id": 46,
+        "label": "Shuarbazar - 3941"
+    },
+    {
+        "id": 46,
+        "label": "Ahmadpur - 3932"
+    },
+    {
+        "id": 46,
+        "label": "Kazirhat - 3933"
+    },
+    {
+        "id": 46,
+        "label": "Motiganj - 3931"
+    },
+    {
+        "id": 46,
+        "label": "Sonagazi - 3930"
+    },
+    {
+        "id": 47,
+        "label": "Diginala - 4420"
+    },
+    {
+        "id": 47,
+        "label": "Khagrachari Sadar - 4400"
+    },
+    {
+        "id": 47,
+        "label": "Laxmichhari - 4470"
+    },
+    {
+        "id": 47,
+        "label": "Mahalchhari - 4430"
+    },
+    {
+        "id": 47,
+        "label": "Manikchhari - 4460"
+    },
+    {
+        "id": 47,
+        "label": "Matiranga - 4450"
+    },
+    {
+        "id": 47,
+        "label": "Panchhari - 4410"
+    },
+    {
+        "id": 47,
+        "label": "Ramghar Head Office - 4440"
+    },
+    {
+        "id": 48,
+        "label": "Char Alexgander - 3730"
+    },
+    {
+        "id": 48,
+        "label": "Hajirghat - 3731"
+    },
+    {
+        "id": 48,
+        "label": "Ramgatirhat - 3732"
+    },
+    {
+        "id": 48,
+        "label": "Amani Lakshimpur - 3709"
+    },
+    {
+        "id": 48,
+        "label": "Bhabaniganj - 3702"
+    },
+    {
+        "id": 48,
+        "label": "Chandraganj - 3708"
+    },
+    {
+        "id": 48,
+        "label": "Choupalli - 3707"
+    },
+    {
+        "id": 48,
+        "label": "Dalal Bazar - 3701"
+    },
+    {
+        "id": 48,
+        "label": "Duttapara - 3706"
+    },
+    {
+        "id": 48,
+        "label": "Keramatganj - 3704"
+    },
+    {
+        "id": 48,
+        "label": "Lakshimpur Sadar - 3700"
+    },
+    {
+        "id": 48,
+        "label": "Mandari - 3703"
+    },
+    {
+        "id": 48,
+        "label": "Rupchara - 3705"
+    },
+    {
+        "id": 48,
+        "label": "Alipur - 3721"
+    },
+    {
+        "id": 48,
+        "label": "Dolta - 3725"
+    },
+    {
+        "id": 48,
+        "label": "Kanchanpur - 3723"
+    },
+    {
+        "id": 48,
+        "label": "Naagmud - 3724"
+    },
+    {
+        "id": 48,
+        "label": "Panpara - 3722"
+    },
+    {
+        "id": 48,
+        "label": "Ramganj - 3720"
+    },
+    {
+        "id": 48,
+        "label": "Bhuabari - 3714"
+    },
+    {
+        "id": 48,
+        "label": "Haydarganj - 3713"
+    },
+    {
+        "id": 48,
+        "label": "Nagerdighirpar - 3712"
+    },
+    {
+        "id": 48,
+        "label": "Rakhallia - 3711"
+    },
+    {
+        "id": 48,
+        "label": "Raypur - 3710"
+    },
+    {
+        "id": 49,
+        "label": "Basur Hat - 3850"
+    },
+    {
+        "id": 49,
+        "label": "Charhajari - 3851"
+    },
+    {
+        "id": 49,
+        "label": "Alaiarpur - 3831"
+    },
+    {
+        "id": 49,
+        "label": "Amisha Para - 3847"
+    },
+    {
+        "id": 49,
+        "label": "Banglabazar - 3822"
+    },
+    {
+        "id": 49,
+        "label": "Bazra - 3824"
+    },
+    {
+        "id": 49,
+        "label": "Begumganj - 3820"
+    },
+    {
+        "id": 49,
+        "label": "Bhabani Jibanpur - 3837"
+    },
+    {
+        "id": 49,
+        "label": "Choumohani - 3821"
+    },
+    {
+        "id": 49,
+        "label": "Dauti - 3843"
+    },
+    {
+        "id": 49,
+        "label": "Durgapur - 3848"
+    },
+    {
+        "id": 49,
+        "label": "Gopalpur - 3828"
+    },
+    {
+        "id": 49,
+        "label": "Jamidar Hat - 3825"
+    },
+    {
+        "id": 49,
+        "label": "Joyag - 3844"
+    },
+    {
+        "id": 49,
+        "label": "Joynarayanpur - 3829"
+    },
+    {
+        "id": 49,
+        "label": "Khalafat Bazar - 3833"
+    },
+    {
+        "id": 49,
+        "label": "Khalishpur - 3842"
+    },
+    {
+        "id": 49,
+        "label": "Maheshganj - 3838"
+    },
+    {
+        "id": 49,
+        "label": "Mir Owarishpur - 3823"
+    },
+    {
+        "id": 49,
+        "label": "Nadona - 3839"
+    },
+    {
+        "id": 49,
+        "label": "Nandiapara - 3841"
+    },
+    {
+        "id": 49,
+        "label": "Oachhekpur - 3835"
+    },
+    {
+        "id": 49,
+        "label": "Rajganj - 3834"
+    },
+    {
+        "id": 49,
+        "label": "Sonaimuri - 3827"
+    },
+    {
+        "id": 49,
+        "label": "Tangirpar - 3832"
+    },
+    {
+        "id": 49,
+        "label": "Thanar Hat - 3845"
+    },
+    {
+        "id": 49,
+        "label": "Bansa Bazar - 3879"
+    },
+    {
+        "id": 49,
+        "label": "Bodalcourt - 3873"
+    },
+    {
+        "id": 49,
+        "label": "Chatkhil - 3870"
+    },
+    {
+        "id": 49,
+        "label": "Dosh Gharia - 3878"
+    },
+    {
+        "id": 49,
+        "label": "Karihati - 3877"
+    },
+    {
+        "id": 49,
+        "label": "Khilpara - 3872"
+    },
+    {
+        "id": 49,
+        "label": "Palla - 3871"
+    },
+    {
+        "id": 49,
+        "label": "Rezzakpur - 3874"
+    },
+    {
+        "id": 49,
+        "label": "Sahapur - 3881"
+    },
+    {
+        "id": 49,
+        "label": "Sampara - 3882"
+    },
+    {
+        "id": 49,
+        "label": "Shingbahura - 3883"
+    },
+    {
+        "id": 49,
+        "label": "Solla - 3875"
+    },
+    {
+        "id": 49,
+        "label": "Afazia - 3891"
+    },
+    {
+        "id": 49,
+        "label": "Hatiya - 3890"
+    },
+    {
+        "id": 49,
+        "label": "Tamoraddi - 3892"
+    },
+    {
+        "id": 49,
+        "label": "Chaprashir Hat - 3811"
+    },
+    {
+        "id": 49,
+        "label": "Char Jabbar - 3812"
+    },
+    {
+        "id": 49,
+        "label": "Charam Tua - 3809"
+    },
+    {
+        "id": 49,
+        "label": "Din Monir Hat - 3803"
+    },
+    {
+        "id": 49,
+        "label": "Kabirhat - 3807"
+    },
+    {
+        "id": 49,
+        "label": "Khalifar Hat - 3808"
+    },
+    {
+        "id": 49,
+        "label": "Mriddarhat - 3806"
+    },
+    {
+        "id": 49,
+        "label": "Noakhali College - 3801"
+    },
+    {
+        "id": 49,
+        "label": "Noakhali Sadar - 3800"
+    },
+    {
+        "id": 49,
+        "label": "Pak Kishoreganj - 3804"
+    },
+    {
+        "id": 49,
+        "label": "Sonapur - 3802"
+    },
+    {
+        "id": 49,
+        "label": "Beezbag - 3862"
+    },
+    {
+        "id": 49,
+        "label": "Chatarpaia - 3864"
+    },
+    {
+        "id": 49,
+        "label": "Kallyandi - 3861"
+    },
+    {
+        "id": 49,
+        "label": "Kankirhat - 3863"
+    },
+    {
+        "id": 49,
+        "label": "Senbag - 3860"
+    },
+    {
+        "id": 49,
+        "label": "T.P. Lamua - 3865"
+    },
+    {
+        "id": 50,
+        "label": "Barakal - 4570"
+    },
+    {
+        "id": 50,
+        "label": "Bilaichhari - 4550"
+    },
+    {
+        "id": 50,
+        "label": "Jarachhari - 4560"
+    },
+    {
+        "id": 50,
+        "label": "Betbunia - 4511"
+    },
+    {
+        "id": 50,
+        "label": "Kalampati - 4510"
+    },
+    {
+        "id": 50,
+        "label": "Chandraghona - 4531"
+    },
+    {
+        "id": 50,
+        "label": "Kaptai - 4530"
+    },
+    {
+        "id": 50,
+        "label": "Kaptai Nuton Bazar - 4533"
+    },
+    {
+        "id": 50,
+        "label": "Kaptai Project - 4532"
+    },
+    {
+        "id": 50,
+        "label": "Longachh - 4580"
+    },
+    {
+        "id": 50,
+        "label": "Marishya - 4590"
+    },
+    {
+        "id": 50,
+        "label": "Nanichhar - 4520"
+    },
+    {
+        "id": 50,
+        "label": "Rajsthali - 4540"
+    },
+    {
+        "id": 50,
+        "label": "Rangamati Sadar - 4500"
+    },
+    {
+        "id": 1,
+        "label": "Demra - 1360"
+    },
+    {
+        "id": 1,
+        "label": "Matuail - 1362"
+    },
+    {
+        "id": 1,
+        "label": "Sarulia - 1361"
+    },
+    {
+        "id": 1,
+        "label": "Dhaka CantonmentTSO - 1206"
+    },
+    {
+        "id": 1,
+        "label": "Dhamrai - 1350"
+    },
+    {
+        "id": 1,
+        "label": "Kamalpur - 1351"
+    },
+    {
+        "id": 1,
+        "label": "Jigatala TSO - 1209"
+    },
+    {
+        "id": 1,
+        "label": "Banani TSO - 1213"
+    },
+    {
+        "id": 1,
+        "label": "Gulshan Model Town - 1212"
+    },
+    {
+        "id": 1,
+        "label": "Dhania TSO - 1232"
+    },
+    {
+        "id": 1,
+        "label": "Joypara - 1330"
+    },
+    {
+        "id": 1,
+        "label": "Narisha - 1332"
+    },
+    {
+        "id": 1,
+        "label": "Palamganj - 1331"
+    },
+    {
+        "id": 1,
+        "label": "Ati - 1312"
+    },
+    {
+        "id": 1,
+        "label": "Dhaka Jute Mills - 1311"
+    },
+    {
+        "id": 1,
+        "label": "Kalatia - 1313"
+    },
+    {
+        "id": 1,
+        "label": "Keraniganj - 1310"
+    },
+    {
+        "id": 1,
+        "label": "KhilgaonTSO - 1219"
+    },
+    {
+        "id": 1,
+        "label": "KhilkhetTSO - 1229"
+    },
+    {
+        "id": 1,
+        "label": "Posta TSO - 1211"
+    },
+    {
+        "id": 1,
+        "label": "Mirpur TSO - 1216"
+    },
+    {
+        "id": 1,
+        "label": "Mohammadpur Housing - 1207"
+    },
+    {
+        "id": 1,
+        "label": "Sangsad BhabanTSO - 1225"
+    },
+    {
+        "id": 1,
+        "label": "BangabhabanTSO - 1222"
+    },
+    {
+        "id": 1,
+        "label": "DilkushaTSO - 1223"
+    },
+    {
+        "id": 1,
+        "label": "Agla - 1323"
+    },
+    {
+        "id": 1,
+        "label": "Churain - 1325"
+    },
+    {
+        "id": 1,
+        "label": "Daudpur - 1322"
+    },
+    {
+        "id": 1,
+        "label": "Hasnabad - 1321"
+    },
+    {
+        "id": 1,
+        "label": "Khalpar - 1324"
+    },
+    {
+        "id": 1,
+        "label": "Nawabganj - 1320"
+    },
+    {
+        "id": 1,
+        "label": "New Market TSO - 1205"
+    },
+    {
+        "id": 1,
+        "label": "Dhaka GPO - 1000"
+    },
+    {
+        "id": 1,
+        "label": "Shantinagr TSO - 1217"
+    },
+    {
+        "id": 1,
+        "label": "Basabo TSO - 1214"
+    },
+    {
+        "id": 1,
+        "label": "Amin Bazar - 1348"
+    },
+    {
+        "id": 1,
+        "label": "Dairy Farm - 1341"
+    },
+    {
+        "id": 1,
+        "label": "EPZ - 1349"
+    },
+    {
+        "id": 1,
+        "label": "Jahangirnagar Univer - 1342"
+    },
+    {
+        "id": 1,
+        "label": "Kashem Cotton Mills - 1346"
+    },
+    {
+        "id": 1,
+        "label": "Rajphulbaria - 1347"
+    },
+    {
+        "id": 1,
+        "label": "Savar - 1340"
+    },
+    {
+        "id": 1,
+        "label": "Savar Canttonment - 1344"
+    },
+    {
+        "id": 1,
+        "label": "Saver P.A.T.C - 1343"
+    },
+    {
+        "id": 1,
+        "label": "Shimulia - 1345"
+    },
+    {
+        "id": 1,
+        "label": "Dhaka Sadar HO - 1100"
+    },
+    {
+        "id": 1,
+        "label": "Gendaria TSO - 1204"
+    },
+    {
+        "id": 1,
+        "label": "Wari TSO - 1203"
+    },
+    {
+        "id": 1,
+        "label": "Tejgaon TSO - 1215"
+    },
+    {
+        "id": 1,
+        "label": "Dhaka Politechnic - 1208"
+    },
+    {
+        "id": 1,
+        "label": "Uttara Model TwonTSO - 1230"
+    },
+    {
+        "id": 2,
+        "label": "Alfadanga - 7870"
+    },
+    {
+        "id": 2,
+        "label": "Bhanga - 7830"
+    },
+    {
+        "id": 2,
+        "label": "Boalmari - 7860"
+    },
+    {
+        "id": 2,
+        "label": "Rupatpat - 7861"
+    },
+    {
+        "id": 2,
+        "label": "Charbadrashan - 7810"
+    },
+    {
+        "id": 2,
+        "label": "Ambikapur - 7802"
+    },
+    {
+        "id": 2,
+        "label": "Baitulaman Politecni - 7803"
+    },
+    {
+        "id": 2,
+        "label": "Faridpursadar - 7800"
+    },
+    {
+        "id": 2,
+        "label": "Kanaipur - 7801"
+    },
+    {
+        "id": 2,
+        "label": "Kamarkali - 7851"
+    },
+    {
+        "id": 2,
+        "label": "Madukhali - 7850"
+    },
+    {
+        "id": 2,
+        "label": "Nagarkanda - 7840"
+    },
+    {
+        "id": 2,
+        "label": "Talma - 7841"
+    },
+    {
+        "id": 2,
+        "label": "Bishwa jaker Manjil - 7822"
+    },
+    {
+        "id": 2,
+        "label": "Hat Krishapur - 7821"
+    },
+    {
+        "id": 2,
+        "label": "Sadarpur - 7820"
+    },
+    {
+        "id": 2,
+        "label": "Shriangan - 7804"
+    },
+    {
+        "id": 3,
+        "label": "B.O.F - 1703"
+    },
+    {
+        "id": 3,
+        "label": "B.R.R - 1701"
+    },
+    {
+        "id": 3,
+        "label": "Chandna - 1702"
+    },
+    {
+        "id": 3,
+        "label": "Gazipur Sadar - 1700"
+    },
+    {
+        "id": 3,
+        "label": "National University - 1704"
+    },
+    {
+        "id": 3,
+        "label": "Kaliakaar - 1750"
+    },
+    {
+        "id": 3,
+        "label": "Safipur - 1751"
+    },
+    {
+        "id": 3,
+        "label": "Kaliganj - 1720"
+    },
+    {
+        "id": 3,
+        "label": "Pubail - 1721"
+    },
+    {
+        "id": 3,
+        "label": "Santanpara - 1722"
+    },
+    {
+        "id": 3,
+        "label": "Vaoal Jamalpur - 1723"
+    },
+    {
+        "id": 3,
+        "label": "kapashia - 1730"
+    },
+    {
+        "id": 3,
+        "label": "Ershad Nagar - 1712"
+    },
+    {
+        "id": 3,
+        "label": "Monnunagar - 1710"
+    },
+    {
+        "id": 3,
+        "label": "Nishat Nagar - 1711"
+    },
+    {
+        "id": 3,
+        "label": "Barmi - 1743"
+    },
+    {
+        "id": 3,
+        "label": "Bashamur - 1747"
+    },
+    {
+        "id": 3,
+        "label": "Boubi - 1748"
+    },
+    {
+        "id": 3,
+        "label": "Kawraid - 1745"
+    },
+    {
+        "id": 3,
+        "label": "Satkhamair - 1744"
+    },
+    {
+        "id": 3,
+        "label": "Sreepur - 1740"
+    },
+    {
+        "id": 3,
+        "label": "Rajendrapur - 1741"
+    },
+    {
+        "id": 3,
+        "label": "Rajendrapur Canttome - 1742"
+    },
+    {
+        "id": 4,
+        "label": "Barfa - 8102"
+    },
+    {
+        "id": 4,
+        "label": "Chandradighalia - 8013"
+    },
+    {
+        "id": 4,
+        "label": "Gopalganj Sadar - 8100"
+    },
+    {
+        "id": 4,
+        "label": "Ulpur - 8101"
+    },
+    {
+        "id": 4,
+        "label": "Jonapur - 8133"
+    },
+    {
+        "id": 4,
+        "label": "Kashiani - 8130"
+    },
+    {
+        "id": 4,
+        "label": "Ramdia College - 8131"
+    },
+    {
+        "id": 4,
+        "label": "Ratoil - 8132"
+    },
+    {
+        "id": 4,
+        "label": "Kotalipara - 8110"
+    },
+    {
+        "id": 4,
+        "label": "Batkiamari - 8141"
+    },
+    {
+        "id": 4,
+        "label": "Khandarpara - 8142"
+    },
+    {
+        "id": 4,
+        "label": "Maksudpur - 8140"
+    },
+    {
+        "id": 4,
+        "label": "Patgati - 8121"
+    },
+    {
+        "id": 4,
+        "label": "Tungipara - 8120"
+    },
+    {
+        "id": 5,
+        "label": "Dewangonj - 2030"
+    },
+    {
+        "id": 5,
+        "label": "Dewangonj S. Mills - 2031"
+    },
+    {
+        "id": 5,
+        "label": "Durmoot - 2021"
+    },
+    {
+        "id": 5,
+        "label": "Gilabari - 2022"
+    },
+    {
+        "id": 5,
+        "label": "Islampur - 2020"
+    },
+    {
+        "id": 5,
+        "label": "Jamalpur - 2000"
+    },
+    {
+        "id": 5,
+        "label": "Nandina - 2001"
+    },
+    {
+        "id": 5,
+        "label": "Narundi - 2002"
+    },
+    {
+        "id": 5,
+        "label": "Jamalpur - 2011"
+    },
+    {
+        "id": 5,
+        "label": "Mahmoodpur - 2013"
+    },
+    {
+        "id": 5,
+        "label": "Malancha - 2012"
+    },
+    {
+        "id": 5,
+        "label": "Malandah - 2010"
+    },
+    {
+        "id": 5,
+        "label": "Balijhuri - 2041"
+    },
+    {
+        "id": 5,
+        "label": "Mathargonj - 2040"
+    },
+    {
+        "id": 5,
+        "label": "Bausee - 2052"
+    },
+    {
+        "id": 5,
+        "label": "Gunerbari - 2051"
+    },
+    {
+        "id": 5,
+        "label": "Jagannath Ghat - 2053"
+    },
+    {
+        "id": 5,
+        "label": "Jamuna Sar Karkhana - 2055"
+    },
+    {
+        "id": 5,
+        "label": "Pingna - 2054"
+    },
+    {
+        "id": 5,
+        "label": "Shorishabari - 2050"
+    },
+    {
+        "id": 6,
+        "label": "Bajitpur - 2336"
+    },
+    {
+        "id": 6,
+        "label": "Laksmipur - 2338"
+    },
+    {
+        "id": 6,
+        "label": "Sararchar - 2337"
+    },
+    {
+        "id": 6,
+        "label": "Bhairab - 2350"
+    },
+    {
+        "id": 6,
+        "label": "Hossenpur - 2320"
+    },
+    {
+        "id": 6,
+        "label": "Itna - 2390"
+    },
+    {
+        "id": 6,
+        "label": "Karimganj - 2310"
+    },
+    {
+        "id": 6,
+        "label": "Gochhihata - 2331"
+    },
+    {
+        "id": 6,
+        "label": "Katiadi - 2330"
+    },
+    {
+        "id": 6,
+        "label": "Kishoreganj S.Mills - 2301"
+    },
+    {
+        "id": 6,
+        "label": "Kishoreganj Sadar - 2300"
+    },
+    {
+        "id": 6,
+        "label": "Maizhati - 2302"
+    },
+    {
+        "id": 6,
+        "label": "Nilganj - 2303"
+    },
+    {
+        "id": 6,
+        "label": "Chhoysuti - 2341"
+    },
+    {
+        "id": 6,
+        "label": "Kuliarchar - 2340"
+    },
+    {
+        "id": 6,
+        "label": "Abdullahpur - 2371"
+    },
+    {
+        "id": 6,
+        "label": "MIthamoin - 2370"
+    },
+    {
+        "id": 6,
+        "label": "Nikli - 2360"
+    },
+    {
+        "id": 6,
+        "label": "Ostagram - 2380"
+    },
+    {
+        "id": 6,
+        "label": "Pakundia - 2326"
+    },
+    {
+        "id": 6,
+        "label": "Tarial - 2316"
+    },
+    {
+        "id": 7,
+        "label": "Bahadurpur - 7932"
+    },
+    {
+        "id": 7,
+        "label": "Barhamganj - 7930"
+    },
+    {
+        "id": 7,
+        "label": "Nilaksmibandar - 7931"
+    },
+    {
+        "id": 7,
+        "label": "Umedpur - 7933"
+    },
+    {
+        "id": 7,
+        "label": "Kalkini - 7920"
+    },
+    {
+        "id": 7,
+        "label": "Sahabrampur - 7921"
+    },
+    {
+        "id": 7,
+        "label": "Charmugria - 7901"
+    },
+    {
+        "id": 7,
+        "label": "Habiganj - 7903"
+    },
+    {
+        "id": 7,
+        "label": "Kulpaddi - 7902"
+    },
+    {
+        "id": 7,
+        "label": "Madaripur Sadar - 7900"
+    },
+    {
+        "id": 7,
+        "label": "Mustafapur - 7904"
+    },
+    {
+        "id": 7,
+        "label": "Khalia - 7911"
+    },
+    {
+        "id": 7,
+        "label": "Rajoir - 7910"
+    },
+    {
+        "id": 8,
+        "label": "Doulatpur - 1860"
+    },
+    {
+        "id": 8,
+        "label": "Gheor - 1840"
+    },
+    {
+        "id": 8,
+        "label": "Jhitka - 1831"
+    },
+    {
+        "id": 8,
+        "label": "Lechhraganj - 1830"
+    },
+    {
+        "id": 8,
+        "label": "Barangail - 1804"
+    },
+    {
+        "id": 8,
+        "label": "Gorpara - 1802"
+    },
+    {
+        "id": 8,
+        "label": "Mahadebpur - 1803"
+    },
+    {
+        "id": 8,
+        "label": "Manikganj Bazar - 1801"
+    },
+    {
+        "id": 8,
+        "label": "Manikganj Sadar - 1800"
+    },
+    {
+        "id": 8,
+        "label": "Baliati - 1811"
+    },
+    {
+        "id": 8,
+        "label": "Saturia - 1810"
+    },
+    {
+        "id": 8,
+        "label": "Aricha - 1851"
+    },
+    {
+        "id": 8,
+        "label": "Shibaloy - 1850"
+    },
+    {
+        "id": 8,
+        "label": "Tewta - 1852"
+    },
+    {
+        "id": 8,
+        "label": "Uthli - 1853"
+    },
+    {
+        "id": 8,
+        "label": "Baira - 1821"
+    },
+    {
+        "id": 8,
+        "label": "joymantop - 1822"
+    },
+    {
+        "id": 8,
+        "label": "Singair - 1820"
+    },
+    {
+        "id": 9,
+        "label": "Gajaria - 1510"
+    },
+    {
+        "id": 9,
+        "label": "Hossendi - 1511"
+    },
+    {
+        "id": 9,
+        "label": "Rasulpur - 1512"
+    },
+    {
+        "id": 9,
+        "label": "Gouragonj - 1334"
+    },
+    {
+        "id": 9,
+        "label": "Gouragonj - 1534"
+    },
+    {
+        "id": 9,
+        "label": "Haldia SO - 1532"
+    },
+    {
+        "id": 9,
+        "label": "Haridia - 1333"
+    },
+    {
+        "id": 9,
+        "label": "Haridia DESO - 1533"
+    },
+    {
+        "id": 9,
+        "label": "Korhati - 1531"
+    },
+    {
+        "id": 9,
+        "label": "Lohajang - 1530"
+    },
+    {
+        "id": 9,
+        "label": "Madini Mandal - 1335"
+    },
+    {
+        "id": 9,
+        "label": "Medini Mandal EDSO - 1535"
+    },
+    {
+        "id": 9,
+        "label": "Kathakhali - 1503"
+    },
+    {
+        "id": 9,
+        "label": "Mirkadim - 1502"
+    },
+    {
+        "id": 9,
+        "label": "Munshiganj Sadar - 1500"
+    },
+    {
+        "id": 9,
+        "label": "Rikabibazar - 1501"
+    },
+    {
+        "id": 9,
+        "label": "Ichapur - 1542"
+    },
+    {
+        "id": 9,
+        "label": "Kola - 1541"
+    },
+    {
+        "id": 9,
+        "label": "Malkha Nagar - 1543"
+    },
+    {
+        "id": 9,
+        "label": "Shekher Nagar - 1544"
+    },
+    {
+        "id": 9,
+        "label": "Sirajdikhan - 1540"
+    },
+    {
+        "id": 9,
+        "label": "Baghra - 1557"
+    },
+    {
+        "id": 9,
+        "label": "Barikhal - 1551"
+    },
+    {
+        "id": 9,
+        "label": "Bhaggyakul - 1558"
+    },
+    {
+        "id": 9,
+        "label": "Hashara - 1553"
+    },
+    {
+        "id": 9,
+        "label": "Kolapara - 1554"
+    },
+    {
+        "id": 9,
+        "label": "Kumarbhog - 1555"
+    },
+    {
+        "id": 9,
+        "label": "Mazpara - 1552"
+    },
+    {
+        "id": 9,
+        "label": "Srinagar - 1550"
+    },
+    {
+        "id": 9,
+        "label": "Vaggyakul SO - 1556"
+    },
+    {
+        "id": 9,
+        "label": "Bajrajugini - 1523"
+    },
+    {
+        "id": 9,
+        "label": "Baligao - 1522"
+    },
+    {
+        "id": 9,
+        "label": "Betkahat - 1521"
+    },
+    {
+        "id": 9,
+        "label": "Dighirpar - 1525"
+    },
+    {
+        "id": 9,
+        "label": "Hasail - 1524"
+    },
+    {
+        "id": 9,
+        "label": "Pura - 1527"
+    },
+    {
+        "id": 9,
+        "label": "Pura EDSO - 1526"
+    },
+    {
+        "id": 9,
+        "label": "Tangibari - 1520"
+    },
+    {
+        "id": 10,
+        "label": "Bhaluka - 2240"
+    },
+    {
+        "id": 10,
+        "label": "Fulbaria - 2216"
+    },
+    {
+        "id": 10,
+        "label": "Duttarbazar - 2234"
+    },
+    {
+        "id": 10,
+        "label": "Gaforgaon - 2230"
+    },
+    {
+        "id": 10,
+        "label": "Kandipara - 2233"
+    },
+    {
+        "id": 10,
+        "label": "Shibganj - 2231"
+    },
+    {
+        "id": 10,
+        "label": "Usti - 2232"
+    },
+    {
+        "id": 10,
+        "label": "Gouripur - 2270"
+    },
+    {
+        "id": 10,
+        "label": "Ramgopalpur - 2271"
+    },
+    {
+        "id": 10,
+        "label": "Dhara - 2261"
+    },
+    {
+        "id": 10,
+        "label": "Haluaghat - 2260"
+    },
+    {
+        "id": 10,
+        "label": "Munshirhat - 2262"
+    },
+    {
+        "id": 10,
+        "label": "Atharabari - 2282"
+    },
+    {
+        "id": 10,
+        "label": "Isshwargonj - 2280"
+    },
+    {
+        "id": 10,
+        "label": "Sohagi - 2281"
+    },
+    {
+        "id": 10,
+        "label": "Muktagachha - 2210"
+    },
+    {
+        "id": 10,
+        "label": "Agriculture Universi - 2202"
+    },
+    {
+        "id": 10,
+        "label": "Biddyaganj - 2204"
+    },
+    {
+        "id": 10,
+        "label": "Kawatkhali - 2201"
+    },
+    {
+        "id": 10,
+        "label": "Mymensingh Sadar - 2200"
+    },
+    {
+        "id": 10,
+        "label": "Pearpur - 2205"
+    },
+    {
+        "id": 10,
+        "label": "Shombhuganj - 2203"
+    },
+    {
+        "id": 10,
+        "label": "Gangail - 2291"
+    },
+    {
+        "id": 10,
+        "label": "Nandail - 2290"
+    },
+    {
+        "id": 10,
+        "label": "Beltia - 2251"
+    },
+    {
+        "id": 10,
+        "label": "Phulpur - 2250"
+    },
+    {
+        "id": 10,
+        "label": "Tarakanda - 2252"
+    },
+    {
+        "id": 10,
+        "label": "Ahmadbad - 2221"
+    },
+    {
+        "id": 10,
+        "label": "Dhala - 2223"
+    },
+    {
+        "id": 10,
+        "label": "Ram Amritaganj - 2222"
+    },
+    {
+        "id": 10,
+        "label": "Trishal - 2220"
+    },
+    {
+        "id": 11,
+        "label": "Araihazar - 1450"
+    },
+    {
+        "id": 11,
+        "label": "Gopaldi - 1451"
+    },
+    {
+        "id": 11,
+        "label": "Baidder Bazar - 1440"
+    },
+    {
+        "id": 11,
+        "label": "Bara Nagar - 1441"
+    },
+    {
+        "id": 11,
+        "label": "Barodi - 1442"
+    },
+    {
+        "id": 11,
+        "label": "Bandar - 1410"
+    },
+    {
+        "id": 11,
+        "label": "BIDS - 1413"
+    },
+    {
+        "id": 11,
+        "label": "D.C Mills - 1411"
+    },
+    {
+        "id": 11,
+        "label": "Madanganj - 1414"
+    },
+    {
+        "id": 11,
+        "label": "Nabiganj - 1412"
+    },
+    {
+        "id": 11,
+        "label": "Fatulla Bazar - 1421"
+    },
+    {
+        "id": 11,
+        "label": "Fatullah - 1420"
+    },
+    {
+        "id": 11,
+        "label": "Narayanganj Sadar - 1400"
+    },
+    {
+        "id": 11,
+        "label": "Bhulta - 1462"
+    },
+    {
+        "id": 11,
+        "label": "Kanchan - 1461"
+    },
+    {
+        "id": 11,
+        "label": "Murapara - 1464"
+    },
+    {
+        "id": 11,
+        "label": "Nagri - 1463"
+    },
+    {
+        "id": 11,
+        "label": "Rupganj - 1460"
+    },
+    {
+        "id": 11,
+        "label": "Adamjeenagar - 1431"
+    },
+    {
+        "id": 11,
+        "label": "LN Mills - 1432"
+    },
+    {
+        "id": 11,
+        "label": "Siddirganj - 1430"
+    },
+    {
+        "id": 12,
+        "label": "Belabo - 1640"
+    },
+    {
+        "id": 12,
+        "label": "Hatirdia - 1651"
+    },
+    {
+        "id": 12,
+        "label": "Katabaria - 1652"
+    },
+    {
+        "id": 12,
+        "label": "Monohordi - 1650"
+    },
+    {
+        "id": 12,
+        "label": "Karimpur - 1605"
+    },
+    {
+        "id": 12,
+        "label": "Madhabdi - 1604"
+    },
+    {
+        "id": 12,
+        "label": "Narshingdi College - 1602"
+    },
+    {
+        "id": 12,
+        "label": "Narshingdi Sadar - 1600"
+    },
+    {
+        "id": 12,
+        "label": "Panchdona - 1603"
+    },
+    {
+        "id": 12,
+        "label": "UMC Jute Mills - 1601"
+    },
+    {
+        "id": 12,
+        "label": "Char Sindhur - 1612"
+    },
+    {
+        "id": 12,
+        "label": "Ghorashal - 1613"
+    },
+    {
+        "id": 12,
+        "label": "Ghorashal Urea Facto - 1611"
+    },
+    {
+        "id": 12,
+        "label": "Palash - 1610"
+    },
+    {
+        "id": 12,
+        "label": "Bazar Hasnabad - 1631"
+    },
+    {
+        "id": 12,
+        "label": "Radhaganj bazar - 1632"
+    },
+    {
+        "id": 12,
+        "label": "Raypura - 1630"
+    },
+    {
+        "id": 12,
+        "label": "Shibpur - 1620"
+    },
+    {
+        "id": 13,
+        "label": "Susnng Durgapur - 2420"
+    },
+    {
+        "id": 13,
+        "label": "Atpara - 2470"
+    },
+    {
+        "id": 13,
+        "label": "Barhatta - 2440"
+    },
+    {
+        "id": 13,
+        "label": "Dharampasha - 2450"
+    },
+    {
+        "id": 13,
+        "label": "Dhobaura - 2416"
+    },
+    {
+        "id": 13,
+        "label": "Sakoai - 2417"
+    },
+    {
+        "id": 13,
+        "label": "Kalmakanda - 2430"
+    },
+    {
+        "id": 13,
+        "label": "Kendua - 2480"
+    },
+    {
+        "id": 13,
+        "label": "Khaliajhri - 2460"
+    },
+    {
+        "id": 13,
+        "label": "Shaldigha - 2462"
+    },
+    {
+        "id": 13,
+        "label": "Madan - 2490"
+    },
+    {
+        "id": 13,
+        "label": "Moddoynagar - 2456"
+    },
+    {
+        "id": 13,
+        "label": "Mohanganj - 2446"
+    },
+    {
+        "id": 13,
+        "label": "Baikherhati - 2401"
+    },
+    {
+        "id": 13,
+        "label": "Netrakona Sadar - 2400"
+    },
+    {
+        "id": 13,
+        "label": "Jaria Jhanjhail - 2412"
+    },
+    {
+        "id": 13,
+        "label": "Purbadhola - 2410"
+    },
+    {
+        "id": 13,
+        "label": "Shamgonj - 2411"
+    },
+    {
+        "id": 14,
+        "label": "Baliakandi - 7730"
+    },
+    {
+        "id": 14,
+        "label": "Nalia - 7731"
+    },
+    {
+        "id": 14,
+        "label": "Mrigibazar - 7723"
+    },
+    {
+        "id": 14,
+        "label": "Pangsha - 7720"
+    },
+    {
+        "id": 14,
+        "label": "Ramkol - 7721"
+    },
+    {
+        "id": 14,
+        "label": "Ratandia - 7722"
+    },
+    {
+        "id": 14,
+        "label": "Goalanda - 7710"
+    },
+    {
+        "id": 14,
+        "label": "Khankhanapur - 7711"
+    },
+    {
+        "id": 14,
+        "label": "Rajbari Sadar - 7700"
+    },
+    {
+        "id": 15,
+        "label": "Bhedorganj - 8030"
+    },
+    {
+        "id": 15,
+        "label": "Damudhya - 8040"
+    },
+    {
+        "id": 15,
+        "label": "Gosairhat - 8050"
+    },
+    {
+        "id": 15,
+        "label": "Jajira - 8010"
+    },
+    {
+        "id": 15,
+        "label": "Bhozeshwar - 8021"
+    },
+    {
+        "id": 15,
+        "label": "Gharisar - 8022"
+    },
+    {
+        "id": 15,
+        "label": "Kartikpur - 8024"
+    },
+    {
+        "id": 15,
+        "label": "Naria - 8020"
+    },
+    {
+        "id": 15,
+        "label": "Upshi - 8023"
+    },
+    {
+        "id": 15,
+        "label": "Angaria - 8001"
+    },
+    {
+        "id": 15,
+        "label": "Chikandi - 8002"
+    },
+    {
+        "id": 15,
+        "label": "Shariatpur Sadar - 8000"
+    },
+    {
+        "id": 16,
+        "label": "Bakshigonj - 2140"
+    },
+    {
+        "id": 16,
+        "label": "Jhinaigati - 2120"
+    },
+    {
+        "id": 16,
+        "label": "Gonopaddi - 2151"
+    },
+    {
+        "id": 16,
+        "label": "Nakla - 2150"
+    },
+    {
+        "id": 16,
+        "label": "Hatibandha - 2111"
+    },
+    {
+        "id": 16,
+        "label": "Nalitabari - 2110"
+    },
+    {
+        "id": 16,
+        "label": "Sherpur Shadar - 2100"
+    },
+    {
+        "id": 16,
+        "label": "Shribardi - 2130"
+    },
+    {
+        "id": 17,
+        "label": "Basail - 1920"
+    },
+    {
+        "id": 17,
+        "label": "Bhuapur - 1960"
+    },
+    {
+        "id": 17,
+        "label": "Delduar - 1910"
+    },
+    {
+        "id": 17,
+        "label": "Elasin - 1913"
+    },
+    {
+        "id": 17,
+        "label": "Hinga Nagar - 1914"
+    },
+    {
+        "id": 17,
+        "label": "Jangalia - 1911"
+    },
+    {
+        "id": 17,
+        "label": "Lowhati - 1915"
+    },
+    {
+        "id": 17,
+        "label": "Patharail - 1912"
+    },
+    {
+        "id": 17,
+        "label": "D. Pakutia - 1982"
+    },
+    {
+        "id": 17,
+        "label": "Dhalapara - 1983"
+    },
+    {
+        "id": 17,
+        "label": "Ghatial - 1980"
+    },
+    {
+        "id": 17,
+        "label": "Lohani - 1984"
+    },
+    {
+        "id": 17,
+        "label": "Zahidganj - 1981"
+    },
+    {
+        "id": 17,
+        "label": "Gopalpur - 1990"
+    },
+    {
+        "id": 17,
+        "label": "Hemnagar - 1992"
+    },
+    {
+        "id": 17,
+        "label": "Jhowail - 1991"
+    },
+    {
+        "id": 17,
+        "label": "Ballabazar - 1973"
+    },
+    {
+        "id": 17,
+        "label": "Elinga - 1974"
+    },
+    {
+        "id": 17,
+        "label": "Kalihati - 1970"
+    },
+    {
+        "id": 17,
+        "label": "Nagarbari - 1977"
+    },
+    {
+        "id": 17,
+        "label": "Nagarbari SO - 1976"
+    },
+    {
+        "id": 17,
+        "label": "Nagbari - 1972"
+    },
+    {
+        "id": 17,
+        "label": "Palisha - 1975"
+    },
+    {
+        "id": 17,
+        "label": "Rajafair - 1971"
+    },
+    {
+        "id": 17,
+        "label": "Kashkawlia - 1930"
+    },
+    {
+        "id": 17,
+        "label": "Dhobari - 1997"
+    },
+    {
+        "id": 17,
+        "label": "Madhupur - 1996"
+    },
+    {
+        "id": 17,
+        "label": "Gorai - 1941"
+    },
+    {
+        "id": 17,
+        "label": "Jarmuki - 1944"
+    },
+    {
+        "id": 17,
+        "label": "M.C. College - 1942"
+    },
+    {
+        "id": 17,
+        "label": "Mirzapur - 1940"
+    },
+    {
+        "id": 17,
+        "label": "Mohera - 1945"
+    },
+    {
+        "id": 17,
+        "label": "Warri paikpara - 1943"
+    },
+    {
+        "id": 17,
+        "label": "Dhuburia - 1937"
+    },
+    {
+        "id": 17,
+        "label": "Nagarpur - 1936"
+    },
+    {
+        "id": 17,
+        "label": "Salimabad - 1938"
+    },
+    {
+        "id": 17,
+        "label": "Kochua - 1951"
+    },
+    {
+        "id": 17,
+        "label": "Sakhipur - 1950"
+    },
+    {
+        "id": 17,
+        "label": "Kagmari - 1901"
+    },
+    {
+        "id": 17,
+        "label": "Korotia - 1903"
+    },
+    {
+        "id": 17,
+        "label": "Purabari - 1904"
+    },
+    {
+        "id": 17,
+        "label": "Santosh - 1902"
+    },
+    {
+        "id": 17,
+        "label": "Tangail Sadar - 1900"
+    },
+    {
+        "id": 55,
+        "label": "Bagerhat Sadar - 9300"
+    },
+    {
+        "id": 55,
+        "label": "P.C College - 9301"
+    },
+    {
+        "id": 55,
+        "label": "Rangdia - 9302"
+    },
+    {
+        "id": 55,
+        "label": "Chalna Ankorage - 9350"
+    },
+    {
+        "id": 55,
+        "label": "Mongla Port - 9351"
+    },
+    {
+        "id": 55,
+        "label": "Barabaria - 9361"
+    },
+    {
+        "id": 55,
+        "label": "Chitalmari - 9360"
+    },
+    {
+        "id": 55,
+        "label": "Bhanganpar Bazar - 9372"
+    },
+    {
+        "id": 55,
+        "label": "Fakirhat - 9370"
+    },
+    {
+        "id": 55,
+        "label": "Mansa - 9371"
+    },
+    {
+        "id": 55,
+        "label": "Kachua - 9310"
+    },
+    {
+        "id": 55,
+        "label": "Sonarkola - 9311"
+    },
+    {
+        "id": 55,
+        "label": "Charkulia - 9383"
+    },
+    {
+        "id": 55,
+        "label": "Dariala - 9382"
+    },
+    {
+        "id": 55,
+        "label": "Kahalpur - 9381"
+    },
+    {
+        "id": 55,
+        "label": "Mollahat - 9380"
+    },
+    {
+        "id": 55,
+        "label": "Nagarkandi - 9384"
+    },
+    {
+        "id": 55,
+        "label": "Pak Gangni - 9385"
+    },
+    {
+        "id": 55,
+        "label": "Morelganj - 9320"
+    },
+    {
+        "id": 55,
+        "label": "Sannasi Bazar - 9321"
+    },
+    {
+        "id": 55,
+        "label": "Telisatee - 9322"
+    },
+    {
+        "id": 55,
+        "label": "Foylahat - 9341"
+    },
+    {
+        "id": 55,
+        "label": "Gourambha - 9343"
+    },
+    {
+        "id": 55,
+        "label": "Rampal - 9340"
+    },
+    {
+        "id": 55,
+        "label": "Sonatunia - 9342"
+    },
+    {
+        "id": 55,
+        "label": "Rayenda - 9330"
+    },
+    {
+        "id": 56,
+        "label": "Alamdanga - 7210"
+    },
+    {
+        "id": 56,
+        "label": "Hardi - 7211"
+    },
+    {
+        "id": 56,
+        "label": "Chuadanga Sadar - 7200"
+    },
+    {
+        "id": 56,
+        "label": "Munshiganj - 7201"
+    },
+    {
+        "id": 56,
+        "label": "Andulbaria - 7222"
+    },
+    {
+        "id": 56,
+        "label": "Damurhuda - 7220"
+    },
+    {
+        "id": 56,
+        "label": "Darshana - 7221"
+    },
+    {
+        "id": 56,
+        "label": "Doulatganj - 7230"
+    },
+    {
+        "id": 57,
+        "label": "Bagharpara - 7470"
+    },
+    {
+        "id": 57,
+        "label": "Gouranagar - 7471"
+    },
+    {
+        "id": 57,
+        "label": "Chougachha - 7410"
+    },
+    {
+        "id": 57,
+        "label": "Basundia - 7406"
+    },
+    {
+        "id": 57,
+        "label": "Chanchra - 7402"
+    },
+    {
+        "id": 57,
+        "label": "Churamankathi - 7407"
+    },
+    {
+        "id": 57,
+        "label": "Jessore Airbach - 7404"
+    },
+    {
+        "id": 57,
+        "label": "Jessore canttonment - 7403"
+    },
+    {
+        "id": 57,
+        "label": "Jessore Sadar - 7400"
+    },
+    {
+        "id": 57,
+        "label": "Jessore Upa-Shahar - 7401"
+    },
+    {
+        "id": 57,
+        "label": "Rupdia - 7405"
+    },
+    {
+        "id": 57,
+        "label": "Jhikargachha - 7420"
+    },
+    {
+        "id": 57,
+        "label": "Keshobpur - 7450"
+    },
+    {
+        "id": 57,
+        "label": "Monirampur - 7440"
+    },
+    {
+        "id": 57,
+        "label": "Bhugilhat - 7462"
+    },
+    {
+        "id": 57,
+        "label": "Noapara - 7460"
+    },
+    {
+        "id": 57,
+        "label": "Rajghat - 7461"
+    },
+    {
+        "id": 57,
+        "label": "Bag Achra - 7433"
+    },
+    {
+        "id": 57,
+        "label": "Benapole - 7431"
+    },
+    {
+        "id": 57,
+        "label": "Jadabpur - 7432"
+    },
+    {
+        "id": 57,
+        "label": "Sarsa - 7430"
+    },
+    {
+        "id": 58,
+        "label": "Harinakundu - 7310"
+    },
+    {
+        "id": 58,
+        "label": "Jinaidaha Cadet College - 7301"
+    },
+    {
+        "id": 58,
+        "label": "Jinaidaha Sadar - 7300"
+    },
+    {
+        "id": 58,
+        "label": "Kotchandpur - 7330"
+    },
+    {
+        "id": 58,
+        "label": "Maheshpur - 7340"
+    },
+    {
+        "id": 58,
+        "label": "Hatbar Bazar - 7351"
+    },
+    {
+        "id": 58,
+        "label": "Naldanga - 7350"
+    },
+    {
+        "id": 58,
+        "label": "Kumiradaha - 7321"
+    },
+    {
+        "id": 58,
+        "label": "Shailakupa - 7320"
+    },
+    {
+        "id": 59,
+        "label": "Alaipur - 9240"
+    },
+    {
+        "id": 59,
+        "label": "Belphulia - 9242"
+    },
+    {
+        "id": 59,
+        "label": "Rupsha - 9241"
+    },
+    {
+        "id": 59,
+        "label": "Batiaghat - 9260"
+    },
+    {
+        "id": 59,
+        "label": "Surkalee - 9261"
+    },
+    {
+        "id": 59,
+        "label": "Bajua - 9272"
+    },
+    {
+        "id": 59,
+        "label": "Chalna Bazar - 9270"
+    },
+    {
+        "id": 59,
+        "label": "Dakup - 9271"
+    },
+    {
+        "id": 59,
+        "label": "Nalian - 9273"
+    },
+    {
+        "id": 59,
+        "label": "Chandni Mahal - 9221"
+    },
+    {
+        "id": 59,
+        "label": "Digalia - 9220"
+    },
+    {
+        "id": 59,
+        "label": "Gazirhat - 9224"
+    },
+    {
+        "id": 59,
+        "label": "Ghoshghati - 9223"
+    },
+    {
+        "id": 59,
+        "label": "Senhati - 9222"
+    },
+    {
+        "id": 59,
+        "label": "Atra Shilpa Area - 9207"
+    },
+    {
+        "id": 59,
+        "label": "BIT Khulna - 9203"
+    },
+    {
+        "id": 59,
+        "label": "Doulatpur - 9202"
+    },
+    {
+        "id": 59,
+        "label": "Jahanabad Canttonmen - 9205"
+    },
+    {
+        "id": 59,
+        "label": "Khula Sadar - 9100"
+    },
+    {
+        "id": 59,
+        "label": "Khulna G.P.O - 9000"
+    },
+    {
+        "id": 59,
+        "label": "Khulna Shipyard - 9201"
+    },
+    {
+        "id": 59,
+        "label": "Khulna University - 9208"
+    },
+    {
+        "id": 59,
+        "label": "Siramani - 9204"
+    },
+    {
+        "id": 59,
+        "label": "Sonali Jute Mills - 9206"
+    },
+    {
+        "id": 59,
+        "label": "Amadee - 9291"
+    },
+    {
+        "id": 59,
+        "label": "Madinabad - 9290"
+    },
+    {
+        "id": 59,
+        "label": "Chandkhali - 9284"
+    },
+    {
+        "id": 59,
+        "label": "Garaikhali - 9285"
+    },
+    {
+        "id": 59,
+        "label": "Godaipur - 9281"
+    },
+    {
+        "id": 59,
+        "label": "Kapilmoni - 9282"
+    },
+    {
+        "id": 59,
+        "label": "Katipara - 9283"
+    },
+    {
+        "id": 59,
+        "label": "Paikgachha - 9280"
+    },
+    {
+        "id": 59,
+        "label": "Phultala - 9210"
+    },
+    {
+        "id": 59,
+        "label": "Chuknagar - 9252"
+    },
+    {
+        "id": 59,
+        "label": "Ghonabanda - 9251"
+    },
+    {
+        "id": 59,
+        "label": "Sajiara - 9250"
+    },
+    {
+        "id": 59,
+        "label": "Shahapur - 9253"
+    },
+    {
+        "id": 59,
+        "label": "Pak Barasat - 9231"
+    },
+    {
+        "id": 59,
+        "label": "Terakhada - 9230"
+    },
+    {
+        "id": 60,
+        "label": "Allardarga - 7042"
+    },
+    {
+        "id": 60,
+        "label": "Bheramara - 7040"
+    },
+    {
+        "id": 60,
+        "label": "Ganges Bheramara - 7041"
+    },
+    {
+        "id": 60,
+        "label": "Janipur - 7020"
+    },
+    {
+        "id": 60,
+        "label": "Khoksa - 7021"
+    },
+    {
+        "id": 60,
+        "label": "Kumarkhali - 7010"
+    },
+    {
+        "id": 60,
+        "label": "Panti - 7011"
+    },
+    {
+        "id": 60,
+        "label": "Islami University - 7003"
+    },
+    {
+        "id": 60,
+        "label": "Jagati - 7002"
+    },
+    {
+        "id": 60,
+        "label": "Kushtia Mohini - 7001"
+    },
+    {
+        "id": 60,
+        "label": "Kustia Sadar - 7000"
+    },
+    {
+        "id": 60,
+        "label": "Amla Sadarpur - 7032"
+    },
+    {
+        "id": 60,
+        "label": "Mirpur - 7030"
+    },
+    {
+        "id": 60,
+        "label": "Poradaha - 7031"
+    },
+    {
+        "id": 60,
+        "label": "Khasmathurapur - 7052"
+    },
+    {
+        "id": 60,
+        "label": "Rafayetpur - 7050"
+    },
+    {
+        "id": 60,
+        "label": "Taragunia - 7051"
+    },
+    {
+        "id": 61,
+        "label": "Arpara - 7620"
+    },
+    {
+        "id": 61,
+        "label": "Magura Sadar - 7600"
+    },
+    {
+        "id": 61,
+        "label": "Binodpur - 7631"
+    },
+    {
+        "id": 61,
+        "label": "Mohammadpur - 7630"
+    },
+    {
+        "id": 61,
+        "label": "Nahata - 7632"
+    },
+    {
+        "id": 61,
+        "label": "Langalbadh - 7611"
+    },
+    {
+        "id": 61,
+        "label": "Nachol - 7612"
+    },
+    {
+        "id": 61,
+        "label": "Shripur - 7610"
+    },
+    {
+        "id": 62,
+        "label": "Gangni - 7110"
+    },
+    {
+        "id": 62,
+        "label": "Amjhupi - 7101"
+    },
+    {
+        "id": 62,
+        "label": "Amjhupi - 7152"
+    },
+    {
+        "id": 62,
+        "label": "Meherpur Sadar - 7100"
+    },
+    {
+        "id": 62,
+        "label": "Mujib Nagar Complex - 7102"
+    },
+    {
+        "id": 63,
+        "label": "Kalia - 7520"
+    },
+    {
+        "id": 63,
+        "label": "Baradia - 7514"
+    },
+    {
+        "id": 63,
+        "label": "Itna - 7512"
+    },
+    {
+        "id": 63,
+        "label": "Laxmipasha - 7510"
+    },
+    {
+        "id": 63,
+        "label": "Lohagora - 7511"
+    },
+    {
+        "id": 63,
+        "label": "Naldi - 7513"
+    },
+    {
+        "id": 63,
+        "label": "Mohajan - 7521"
+    },
+    {
+        "id": 63,
+        "label": "Narail Sadar - 7500"
+    },
+    {
+        "id": 63,
+        "label": "Ratanganj - 7501"
+    },
+    {
+        "id": 64,
+        "label": "Ashashuni - 9460"
+    },
+    {
+        "id": 64,
+        "label": "Baradal - 9461"
+    },
+    {
+        "id": 64,
+        "label": "Debbhata - 9430"
+    },
+    {
+        "id": 64,
+        "label": "Gurugram - 9431"
+    },
+    {
+        "id": 64,
+        "label": "Chandanpur - 9415"
+    },
+    {
+        "id": 64,
+        "label": "Hamidpur - 9413"
+    },
+    {
+        "id": 64,
+        "label": "Jhaudanga - 9412"
+    },
+    {
+        "id": 64,
+        "label": "kalaroa - 9410"
+    },
+    {
+        "id": 64,
+        "label": "Khordo - 9414"
+    },
+    {
+        "id": 64,
+        "label": "Murarikati - 9411"
+    },
+    {
+        "id": 64,
+        "label": "Kaliganj UPO - 9440"
+    },
+    {
+        "id": 64,
+        "label": "Nalta Mubaroknagar - 9441"
+    },
+    {
+        "id": 64,
+        "label": "Ratanpur - 9442"
+    },
+    {
+        "id": 64,
+        "label": "Buri Goalini - 9453"
+    },
+    {
+        "id": 64,
+        "label": "Gabura - 9454"
+    },
+    {
+        "id": 64,
+        "label": "Habinagar - 9455"
+    },
+    {
+        "id": 64,
+        "label": "Nakipur - 9450"
+    },
+    {
+        "id": 64,
+        "label": "Naobeki - 9452"
+    },
+    {
+        "id": 64,
+        "label": "Noornagar - 9451"
+    },
+    {
+        "id": 64,
+        "label": "Budhhat - 9403"
+    },
+    {
+        "id": 64,
+        "label": "Gunakar kati - 9402"
+    },
+    {
+        "id": 64,
+        "label": "Satkhira Islamia Acc - 9401"
+    },
+    {
+        "id": 64,
+        "label": "Satkhira Sadar - 9400"
+    },
+    {
+        "id": 64,
+        "label": "Patkelghata - 9421"
+    },
+    {
+        "id": 64,
+        "label": "Taala - 9420"
+    },
+    {
+        "id": 18,
+        "label": "Adamdighi - 5890"
+    },
+    {
+        "id": 18,
+        "label": "Nasharatpur - 5892"
+    },
+    {
+        "id": 18,
+        "label": "Santahar - 5891"
+    },
+    {
+        "id": 18,
+        "label": "Bogra Canttonment - 5801"
+    },
+    {
+        "id": 18,
+        "label": "Bogra Sadar - 5800"
+    },
+    {
+        "id": 18,
+        "label": "Dhunat - 5850"
+    },
+    {
+        "id": 18,
+        "label": "Gosaibari - 5851"
+    },
+    {
+        "id": 18,
+        "label": "Dupchachia - 5880"
+    },
+    {
+        "id": 18,
+        "label": "Talora - 5881"
+    },
+    {
+        "id": 18,
+        "label": "Gabtoli - 5820"
+    },
+    {
+        "id": 18,
+        "label": "Sukhanpukur - 5821"
+    },
+    {
+        "id": 18,
+        "label": "Kahalu - 5870"
+    },
+    {
+        "id": 18,
+        "label": "Nandigram - 5860"
+    },
+    {
+        "id": 18,
+        "label": "Chandan Baisha - 5831"
+    },
+    {
+        "id": 18,
+        "label": "Sariakandi - 5830"
+    },
+    {
+        "id": 18,
+        "label": "Chandaikona - 5841"
+    },
+    {
+        "id": 18,
+        "label": "Palli Unnyan Accadem - 5842"
+    },
+    {
+        "id": 18,
+        "label": "Sherpur - 5840"
+    },
+    {
+        "id": 18,
+        "label": "Shibganj - 5810"
+    },
+    {
+        "id": 18,
+        "label": "Sonatola - 5826"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Bholahat",
+        "postOffice": "Bholahat",
+        "postCode": "6330"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Chapinawabganj Sadar",
+        "postOffice": "Amnura",
+        "postCode": "6303"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Chapinawabganj Sadar",
+        "postOffice": "Chapinawbganj Sadar",
+        "postCode": "6300"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Chapinawabganj Sadar",
+        "postOffice": "Rajarampur",
+        "postCode": "6301"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Chapinawabganj Sadar",
+        "postOffice": "Ramchandrapur",
+        "postCode": "6302"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Nachol",
+        "postOffice": "Mandumala",
+        "postCode": "6311"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Nachol",
+        "postOffice": "Nachol",
+        "postCode": "6310"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Rohanpur",
+        "postOffice": "Gomashtapur",
+        "postCode": "6321"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Rohanpur",
+        "postOffice": "Rohanpur",
+        "postCode": "6320"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Shibganj U.P.O",
+        "postOffice": "Kansart",
+        "postCode": "6341"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Shibganj U.P.O",
+        "postOffice": "Manaksha",
+        "postCode": "6342"
+    },
+    {
+        "district": "Chapinawabganj",
+        "upazila": "Shibganj U.P.O",
+        "postOffice": "Shibganj U.P.O",
+        "postCode": "6340"
+    },
+    {
+        "id": 19,
+        "label": "Akklepur - 5940"
+    },
+    {
+        "id": 19,
+        "label": "jamalganj - 5941"
+    },
+    {
+        "id": 19,
+        "label": "Tilakpur - 5942"
+    },
+    {
+        "id": 19,
+        "label": "Joypurhat Sadar - 5900"
+    },
+    {
+        "id": 19,
+        "label": "kalai - 5930"
+    },
+    {
+        "id": 19,
+        "label": "Khetlal - 5920"
+    },
+    {
+        "id": 19,
+        "label": "Panchbibi - 5910"
+    },
+    {
+        "id": 20,
+        "label": "Ahsanganj - 6596"
+    },
+    {
+        "id": 20,
+        "label": "Bandai - 6597"
+    },
+    {
+        "id": 20,
+        "label": "Badalgachhi - 6570"
+    },
+    {
+        "id": 20,
+        "label": "Dhamuirhat - 6580"
+    },
+    {
+        "id": 20,
+        "label": "Mahadebpur - 6530"
+    },
+    {
+        "id": 20,
+        "label": "Naogaon Sadar - 6500"
+    },
+    {
+        "id": 20,
+        "label": "Niamatpur - 6520"
+    },
+    {
+        "id": 20,
+        "label": "Nitpur - 6550"
+    },
+    {
+        "id": 20,
+        "label": "Panguria - 6552"
+    },
+    {
+        "id": 20,
+        "label": "Porsa - 6551"
+    },
+    {
+        "id": 20,
+        "label": "Patnitala - 6540"
+    },
+    {
+        "id": 20,
+        "label": "Balihar - 6512"
+    },
+    {
+        "id": 20,
+        "label": "Manda - 6511"
+    },
+    {
+        "id": 20,
+        "label": "Prasadpur - 6510"
+    },
+    {
+        "id": 20,
+        "label": "Kashimpur - 6591"
+    },
+    {
+        "id": 20,
+        "label": "Raninagar - 6590"
+    },
+    {
+        "id": 20,
+        "label": "Moduhil - 6561"
+    },
+    {
+        "id": 20,
+        "label": "Sapahar - 6560"
+    },
+    {
+        "id": 21,
+        "label": "Abdulpur - 6422"
+    },
+    {
+        "id": 21,
+        "label": "Gopalpur U.P.O - 6420"
+    },
+    {
+        "id": 21,
+        "label": "Lalpur S.O - 6421"
+    },
+    {
+        "id": 21,
+        "label": "Baraigram - 6432"
+    },
+    {
+        "id": 21,
+        "label": "Dayarampur - 6431"
+    },
+    {
+        "id": 21,
+        "label": "Harua - 6430"
+    },
+    {
+        "id": 21,
+        "label": "Hatgurudaspur - 6440"
+    },
+    {
+        "id": 21,
+        "label": "Laxman - 6410"
+    },
+    {
+        "id": 21,
+        "label": "Baiddyabal Gharia - 6402"
+    },
+    {
+        "id": 21,
+        "label": "Digapatia - 6401"
+    },
+    {
+        "id": 21,
+        "label": "Madhnagar - 6403"
+    },
+    {
+        "id": 21,
+        "label": "Natore Sadar - 6400"
+    },
+    {
+        "id": 21,
+        "label": "Singra - 6450"
+    },
+    {
+        "id": 22,
+        "label": "Banwarinagar - 6650"
+    },
+    {
+        "id": 22,
+        "label": "Bera - 6680"
+    },
+    {
+        "id": 22,
+        "label": "Kashinathpur - 6682"
+    },
+    {
+        "id": 22,
+        "label": "Nakalia - 6681"
+    },
+    {
+        "id": 22,
+        "label": "Puran Bharenga - 6683"
+    },
+    {
+        "id": 22,
+        "label": "Bhangura - 6640"
+    },
+    {
+        "id": 22,
+        "label": "Chatmohar - 6630"
+    },
+    {
+        "id": 22,
+        "label": "Debottar - 6610"
+    },
+    {
+        "id": 22,
+        "label": "Dhapari - 6621"
+    },
+    {
+        "id": 22,
+        "label": "Ishwardi - 6620"
+    },
+    {
+        "id": 22,
+        "label": "Pakshi - 6622"
+    },
+    {
+        "id": 22,
+        "label": "Rajapur - 6623"
+    },
+    {
+        "id": 22,
+        "label": "Hamayetpur - 6602"
+    },
+    {
+        "id": 22,
+        "label": "Kaliko Cotton Mills - 6601"
+    },
+    {
+        "id": 22,
+        "label": "Pabna Sadar - 6600"
+    },
+    {
+        "id": 22,
+        "label": "Sathia - 6670"
+    },
+    {
+        "id": 22,
+        "label": "Sagarkandi - 6661"
+    },
+    {
+        "id": 22,
+        "label": "Sujanagar - 6660"
+    },
+    {
+        "id": 24,
+        "label": "Arani - 6281"
+    },
+    {
+        "id": 24,
+        "label": "Bagha - 6280"
+    },
+    {
+        "id": 24,
+        "label": "Bhabaniganj - 6250"
+    },
+    {
+        "id": 24,
+        "label": "Taharpur - 6251"
+    },
+    {
+        "id": 24,
+        "label": "Charghat - 6270"
+    },
+    {
+        "id": 24,
+        "label": "Sarda - 6271"
+    },
+    {
+        "id": 24,
+        "label": "Durgapur - 6240"
+    },
+    {
+        "id": 24,
+        "label": "Godagari - 6290"
+    },
+    {
+        "id": 24,
+        "label": "Premtoli - 6291"
+    },
+    {
+        "id": 24,
+        "label": "Khodmohanpur - 6220"
+    },
+    {
+        "id": 24,
+        "label": "Lalitganj - 6210"
+    },
+    {
+        "id": 24,
+        "label": "Rajshahi Sugar Mills - 6211"
+    },
+    {
+        "id": 24,
+        "label": "Shyampur - 6212"
+    },
+    {
+        "id": 24,
+        "label": "Putia - 6260"
+    },
+    {
+        "id": 24,
+        "label": "Binodpur Bazar - 6206"
+    },
+    {
+        "id": 24,
+        "label": "Ghuramara - 6100"
+    },
+    {
+        "id": 24,
+        "label": "Kazla - 6204"
+    },
+    {
+        "id": 24,
+        "label": "Rajshahi Canttonment - 6202"
+    },
+    {
+        "id": 24,
+        "label": "Rajshahi Court - 6201"
+    },
+    {
+        "id": 24,
+        "label": "Rajshahi Sadar - 6000"
+    },
+    {
+        "id": 24,
+        "label": "Rajshahi University - 6205"
+    },
+    {
+        "id": 24,
+        "label": "Sapura - 6203"
+    },
+    {
+        "id": 24,
+        "label": "Tanor - 6230"
+    },
+    {
+        "id": 25,
+        "label": "Baiddya Jam Toil - 6730"
+    },
+    {
+        "id": 25,
+        "label": "Belkuchi - 6740"
+    },
+    {
+        "id": 25,
+        "label": "Enayetpur - 6751"
+    },
+    {
+        "id": 25,
+        "label": "Rajapur - 6742"
+    },
+    {
+        "id": 25,
+        "label": "Sohagpur - 6741"
+    },
+    {
+        "id": 25,
+        "label": "Sthal - 6752"
+    },
+    {
+        "id": 25,
+        "label": "Dhangora - 6720"
+    },
+    {
+        "id": 25,
+        "label": "Malonga - 6721"
+    },
+    {
+        "id": 25,
+        "label": "Gandail - 6712"
+    },
+    {
+        "id": 25,
+        "label": "Kazipur - 6710"
+    },
+    {
+        "id": 25,
+        "label": "Shuvgachha - 6711"
+    },
+    {
+        "id": 25,
+        "label": "Jamirta - 6772"
+    },
+    {
+        "id": 25,
+        "label": "Kaijuri - 6773"
+    },
+    {
+        "id": 25,
+        "label": "Porjana - 6771"
+    },
+    {
+        "id": 25,
+        "label": "Shahjadpur - 6770"
+    },
+    {
+        "id": 25,
+        "label": "Raipur - 6701"
+    },
+    {
+        "id": 25,
+        "label": "Rashidabad - 6702"
+    },
+    {
+        "id": 25,
+        "label": "Sirajganj Sadar - 6700"
+    },
+    {
+        "id": 25,
+        "label": "Tarash - 6780"
+    },
+    {
+        "id": 25,
+        "label": "Lahiri Mohanpur - 6762"
+    },
+    {
+        "id": 25,
+        "label": "Salap - 6763"
+    },
+    {
+        "id": 25,
+        "label": "Ullapara - 6760"
+    },
+    {
+        "id": 25,
+        "label": "Ullapara R.S - 6761"
+    },
+    {
+        "id": 26,
+        "label": "Bangla Hili - 5270"
+    },
+    {
+        "id": 26,
+        "label": "Biral - 5210"
+    },
+    {
+        "id": 26,
+        "label": "Birampur - 5266"
+    },
+    {
+        "id": 26,
+        "label": "Birganj - 5220"
+    },
+    {
+        "id": 26,
+        "label": "Chrirbandar - 5240"
+    },
+    {
+        "id": 26,
+        "label": "Ranirbandar - 5241"
+    },
+    {
+        "id": 26,
+        "label": "Dinajpur Rajbari - 5201"
+    },
+    {
+        "id": 26,
+        "label": "Dinajpur Sadar - 5200"
+    },
+    {
+        "id": 26,
+        "label": "Khansama - 5230"
+    },
+    {
+        "id": 26,
+        "label": "Pakarhat - 5231"
+    },
+    {
+        "id": 26,
+        "label": "Maharajganj - 5226"
+    },
+    {
+        "id": 26,
+        "label": "Daudpur - 5281"
+    },
+    {
+        "id": 26,
+        "label": "Gopalpur - 5282"
+    },
+    {
+        "id": 26,
+        "label": "Nababganj - 5280"
+    },
+    {
+        "id": 26,
+        "label": "Ghoraghat - 5291"
+    },
+    {
+        "id": 26,
+        "label": "Osmanpur - 5290"
+    },
+    {
+        "id": 26,
+        "label": "Parbatipur - 5250"
+    },
+    {
+        "id": 26,
+        "label": "Phulbari - 5260"
+    },
+    {
+        "id": 26,
+        "label": "Setabganj - 5216"
+    },
+    {
+        "id": 27,
+        "label": "Bonarpara - 5750"
+    },
+    {
+        "id": 27,
+        "label": "saghata - 5751"
+    },
+    {
+        "id": 27,
+        "label": "Gaibandha Sadar - 5700"
+    },
+    {
+        "id": 27,
+        "label": "Gobindhaganj - 5740"
+    },
+    {
+        "id": 27,
+        "label": "Mahimaganj - 5741"
+    },
+    {
+        "id": 27,
+        "label": "Palashbari - 5730"
+    },
+    {
+        "id": 27,
+        "label": "Bharatkhali - 5761"
+    },
+    {
+        "id": 27,
+        "label": "Phulchhari - 5760"
+    },
+    {
+        "id": 27,
+        "label": "Naldanga - 5711"
+    },
+    {
+        "id": 27,
+        "label": "Saadullapur - 5710"
+    },
+    {
+        "id": 27,
+        "label": "Bamandanga - 5721"
+    },
+    {
+        "id": 27,
+        "label": "Sundarganj - 5720"
+    },
+    {
+        "id": 28,
+        "label": "Bhurungamari - 5670"
+    },
+    {
+        "id": 28,
+        "label": "Chilmari - 5630"
+    },
+    {
+        "id": 28,
+        "label": "Jorgachh - 5631"
+    },
+    {
+        "id": 28,
+        "label": "Kurigram Sadar - 5600"
+    },
+    {
+        "id": 28,
+        "label": "Pandul - 5601"
+    },
+    {
+        "id": 28,
+        "label": "Phulbari - 5680"
+    },
+    {
+        "id": 28,
+        "label": "Nageshwar - 5660"
+    },
+    {
+        "id": 28,
+        "label": "Nazimkhan - 5611"
+    },
+    {
+        "id": 28,
+        "label": "Rajarhat - 5610"
+    },
+    {
+        "id": 28,
+        "label": "Rajibpur - 5650"
+    },
+    {
+        "id": 28,
+        "label": "Roumari - 5640"
+    },
+    {
+        "id": 28,
+        "label": "Bazarhat - 5621"
+    },
+    {
+        "id": 28,
+        "label": "Ulipur - 5620"
+    },
+    {
+        "id": 29,
+        "label": "Aditmari - 5510"
+    },
+    {
+        "id": 29,
+        "label": "Hatibandha - 5530"
+    },
+    {
+        "id": 29,
+        "label": "Kulaghat SO - 5502"
+    },
+    {
+        "id": 29,
+        "label": "Lalmonirhat Sadar - 5500"
+    },
+    {
+        "id": 29,
+        "label": "Moghalhat - 5501"
+    },
+    {
+        "id": 29,
+        "label": "Baura - 5541"
+    },
+    {
+        "id": 29,
+        "label": "Burimari - 5542"
+    },
+    {
+        "id": 29,
+        "label": "Patgram - 5540"
+    },
+    {
+        "id": 29,
+        "label": "Tushbhandar - 5520"
+    },
+    {
+        "id": 30,
+        "label": "Dimla - 5350"
+    },
+    {
+        "id": 30,
+        "label": "Ghaga Kharibari - 5351"
+    },
+    {
+        "id": 30,
+        "label": "Chilahati - 5341"
+    },
+    {
+        "id": 30,
+        "label": "Domar - 5340"
+    },
+    {
+        "id": 30,
+        "label": "Jaldhaka - 5330"
+    },
+    {
+        "id": 30,
+        "label": "Kishoriganj - 5320"
+    },
+    {
+        "id": 30,
+        "label": "Nilphamari Sadar - 5300"
+    },
+    {
+        "id": 30,
+        "label": "Nilphamari Sugar Mil - 5301"
+    },
+    {
+        "id": 30,
+        "label": "Syedpur - 5310"
+    },
+    {
+        "id": 30,
+        "label": "Syedpur Upashahar - 5311"
+    },
+    {
+        "id": 31,
+        "label": "Boda - 5010"
+    },
+    {
+        "id": 31,
+        "label": "Chotto Dab - 5040"
+    },
+    {
+        "id": 31,
+        "label": "Mirjapur - 5041"
+    },
+    {
+        "id": 31,
+        "label": "Dabiganj - 5020"
+    },
+    {
+        "id": 31,
+        "label": "Panchagarh Sadar - 5000"
+    },
+    {
+        "id": 31,
+        "label": "Tetulia - 5030"
+    },
+    {
+        "id": 32,
+        "label": "Badarganj - 5430"
+    },
+    {
+        "id": 32,
+        "label": "Shyampur - 5431"
+    },
+    {
+        "id": 32,
+        "label": "Gangachara - 5410"
+    },
+    {
+        "id": 32,
+        "label": "Haragachh - 5441"
+    },
+    {
+        "id": 32,
+        "label": "Kaunia - 5440"
+    },
+    {
+        "id": 32,
+        "label": "Mithapukur - 5460"
+    },
+    {
+        "id": 32,
+        "label": "Pirgachha - 5450"
+    },
+    {
+        "id": 32,
+        "label": "Alamnagar - 5402"
+    },
+    {
+        "id": 32,
+        "label": "Mahiganj - 5403"
+    },
+    {
+        "id": 32,
+        "label": "Rangpur Cadet Colleg - 5404"
+    },
+    {
+        "id": 32,
+        "label": "Rangpur Carmiecal Col - 5405"
+    },
+    {
+        "id": 32,
+        "label": "Rangpur Sadar - 5400"
+    },
+    {
+        "id": 32,
+        "label": "Rangpur Upa-Shahar - 5401"
+    },
+    {
+        "id": 32,
+        "label": "Taraganj - 5420"
+    },
+    {
+        "id": 33,
+        "label": "Baliadangi - 5140"
+    },
+    {
+        "id": 33,
+        "label": "Lahiri - 5141"
+    },
+    {
+        "id": 33,
+        "label": "Jibanpur - 5130"
+    },
+    {
+        "id": 33,
+        "label": "Pirganj - 5110"
+    },
+    {
+        "id": 33,
+        "label": "Pirganj - 5470"
+    },
+    {
+        "id": 33,
+        "label": "Nekmarad - 5121"
+    },
+    {
+        "id": 33,
+        "label": "Rani Sankail - 5120"
+    },
+    {
+        "id": 33,
+        "label": "Ruhia - 5103"
+    },
+    {
+        "id": 33,
+        "label": "Shibganj - 5102"
+    },
+    {
+        "id": 33,
+        "label": "Thakurgaon Road - 5101"
+    },
+    {
+        "id": 33,
+        "label": "Thakurgaon Sadar - 5100"
+    },
+    {
+        "id": 51,
+        "label": "Azmireeganj - 3360"
+    },
+    {
+        "id": 51,
+        "label": "Bahubal - 3310"
+    },
+    {
+        "id": 51,
+        "label": "Baniachang - 3350"
+    },
+    {
+        "id": 51,
+        "label": "Jatrapasha - 3351"
+    },
+    {
+        "id": 51,
+        "label": "Kadirganj - 3352"
+    },
+    {
+        "id": 51,
+        "label": "Chandpurbagan - 3321"
+    },
+    {
+        "id": 51,
+        "label": "Chunarughat - 3320"
+    },
+    {
+        "id": 51,
+        "label": "Narapati - 3322"
+    },
+    {
+        "id": 51,
+        "label": "Gopaya - 3302"
+    },
+    {
+        "id": 51,
+        "label": "Hobiganj Sadar - 3300"
+    },
+    {
+        "id": 51,
+        "label": "Shaestaganj - 3301"
+    },
+    {
+        "id": 51,
+        "label": "Kalauk - 3340"
+    },
+    {
+        "id": 51,
+        "label": "Lakhai - 3341"
+    },
+    {
+        "id": 51,
+        "label": "Itakhola - 3331"
+    },
+    {
+        "id": 51,
+        "label": "Madhabpur - 3330"
+    },
+    {
+        "id": 51,
+        "label": "Saihamnagar - 3333"
+    },
+    {
+        "id": 51,
+        "label": "Shahajibazar - 3332"
+    },
+    {
+        "id": 51,
+        "label": "Digalbak - 3373"
+    },
+    {
+        "id": 51,
+        "label": "Golduba - 3372"
+    },
+    {
+        "id": 51,
+        "label": "Goplarbazar - 3371"
+    },
+    {
+        "id": 51,
+        "label": "Inathganj - 3374"
+    },
+    {
+        "id": 51,
+        "label": "Nabiganj - 3370"
+    },
+    {
+        "id": 52,
+        "label": "Baralekha - 3250"
+    },
+    {
+        "id": 52,
+        "label": "Dhakkhinbag - 3252"
+    },
+    {
+        "id": 52,
+        "label": "Juri - 3251"
+    },
+    {
+        "id": 52,
+        "label": "Purbashahabajpur - 3253"
+    },
+    {
+        "id": 52,
+        "label": "Kamalganj - 3220"
+    },
+    {
+        "id": 52,
+        "label": "Keramatnaga - 3221"
+    },
+    {
+        "id": 52,
+        "label": "Munshibazar - 3224"
+    },
+    {
+        "id": 52,
+        "label": "Patrakhola - 3222"
+    },
+    {
+        "id": 52,
+        "label": "Shamsher Nagar - 3223"
+    },
+    {
+        "id": 52,
+        "label": "Baramchal - 3237"
+    },
+    {
+        "id": 52,
+        "label": "Kajaldhara - 3234"
+    },
+    {
+        "id": 52,
+        "label": "Karimpur - 3235"
+    },
+    {
+        "id": 52,
+        "label": "Kulaura - 3230"
+    },
+    {
+        "id": 52,
+        "label": "Langla - 3232"
+    },
+    {
+        "id": 52,
+        "label": "Prithimpasha - 3233"
+    },
+    {
+        "id": 52,
+        "label": "Tillagaon - 3231"
+    },
+    {
+        "id": 52,
+        "label": "Afrozganj - 3203"
+    },
+    {
+        "id": 52,
+        "label": "Barakapan - 3201"
+    },
+    {
+        "id": 52,
+        "label": "Monumukh - 3202"
+    },
+    {
+        "id": 52,
+        "label": "Moulvibazar Sadar - 3200"
+    },
+    {
+        "id": 52,
+        "label": "Rajnagar - 3240"
+    },
+    {
+        "id": 52,
+        "label": "Kalighat - 3212"
+    },
+    {
+        "id": 52,
+        "label": "Khejurichhara - 3213"
+    },
+    {
+        "id": 52,
+        "label": "Narain Chora - 3211"
+    },
+    {
+        "id": 52,
+        "label": "Satgaon - 3214"
+    },
+    {
+        "id": 52,
+        "label": "Srimangal - 3210"
+    },
+    {
+        "id": 53,
+        "label": "Bishamsapur - 3010"
+    },
+    {
+        "id": 53,
+        "label": "Chhatak - 3080"
+    },
+    {
+        "id": 53,
+        "label": "Chhatak Cement Facto - 3081"
+    },
+    {
+        "id": 53,
+        "label": "Chhatak Paper Mills - 3082"
+    },
+    {
+        "id": 53,
+        "label": "Chourangi Bazar - 3893"
+    },
+    {
+        "id": 53,
+        "label": "Gabindaganj - 3083"
+    },
+    {
+        "id": 53,
+        "label": "Gabindaganj Natun Ba - 3084"
+    },
+    {
+        "id": 53,
+        "label": "Islamabad - 3088"
+    },
+    {
+        "id": 53,
+        "label": "jahidpur - 3087"
+    },
+    {
+        "id": 53,
+        "label": "Khurma - 3085"
+    },
+    {
+        "id": 53,
+        "label": "Moinpur - 3086"
+    },
+    {
+        "id": 53,
+        "label": "Dhirai Chandpur - 3040"
+    },
+    {
+        "id": 53,
+        "label": "Jagdal - 3041"
+    },
+    {
+        "id": 53,
+        "label": "Duara bazar - 3070"
+    },
+    {
+        "id": 53,
+        "label": "Ghungiar - 3050"
+    },
+    {
+        "id": 53,
+        "label": "Atuajan - 3062"
+    },
+    {
+        "id": 53,
+        "label": "Hasan Fatemapur - 3063"
+    },
+    {
+        "id": 53,
+        "label": "Jagnnathpur - 3060"
+    },
+    {
+        "id": 53,
+        "label": "Rasulganj - 3064"
+    },
+    {
+        "id": 53,
+        "label": "Shiramsi - 3065"
+    },
+    {
+        "id": 53,
+        "label": "Syedpur - 3061"
+    },
+    {
+        "id": 53,
+        "label": "Sachna - 3020"
+    },
+    {
+        "id": 53,
+        "label": "Pagla - 3001"
+    },
+    {
+        "id": 53,
+        "label": "Patharia - 3002"
+    },
+    {
+        "id": 53,
+        "label": "Sunamganj Sadar - 3000"
+    },
+    {
+        "id": 53,
+        "label": "Tahirpur - 3030"
+    },
+    {
+        "id": 54,
+        "label": "Balaganj - 3120"
+    },
+    {
+        "id": 54,
+        "label": "Begumpur - 3125"
+    },
+    {
+        "id": 54,
+        "label": "Brahman Shashon - 3122"
+    },
+    {
+        "id": 54,
+        "label": "Gaharpur - 3128"
+    },
+    {
+        "id": 54,
+        "label": "Goala Bazar - 3124"
+    },
+    {
+        "id": 54,
+        "label": "Karua - 3121"
+    },
+    {
+        "id": 54,
+        "label": "Kathal Khair - 3127"
+    },
+    {
+        "id": 54,
+        "label": "Natun Bazar - 3129"
+    },
+    {
+        "id": 54,
+        "label": "Omarpur - 3126"
+    },
+    {
+        "id": 54,
+        "label": "Tajpur - 3123"
+    },
+    {
+        "id": 54,
+        "label": "Bianibazar - 3170"
+    },
+    {
+        "id": 54,
+        "label": "Churkai - 3175"
+    },
+    {
+        "id": 54,
+        "label": "jaldup - 3171"
+    },
+    {
+        "id": 54,
+        "label": "Kurar bazar - 3173"
+    },
+    {
+        "id": 54,
+        "label": "Mathiura - 3172"
+    },
+    {
+        "id": 54,
+        "label": "Salia bazar - 3174"
+    },
+    {
+        "id": 54,
+        "label": "Bishwanath - 3130"
+    },
+    {
+        "id": 54,
+        "label": "Dashghar - 3131"
+    },
+    {
+        "id": 54,
+        "label": "Deokalas - 3133"
+    },
+    {
+        "id": 54,
+        "label": "Doulathpur - 3132"
+    },
+    {
+        "id": 54,
+        "label": "Singer kanch - 3134"
+    },
+    {
+        "id": 54,
+        "label": "Fenchuganj - 3116"
+    },
+    {
+        "id": 54,
+        "label": "Fenchuganj SareKarkh - 3117"
+    },
+    {
+        "id": 54,
+        "label": "Chiknagul - 3152"
+    },
+    {
+        "id": 54,
+        "label": "Gowainghat - 3150"
+    },
+    {
+        "id": 54,
+        "label": "Jaflong - 3151"
+    },
+    {
+        "id": 54,
+        "label": "banigram - 3164"
+    },
+    {
+        "id": 54,
+        "label": "Chandanpur - 3165"
+    },
+    {
+        "id": 54,
+        "label": "Dakkhin Bhadashore - 3162"
+    },
+    {
+        "id": 54,
+        "label": "Dhaka Dakkhin - 3161"
+    },
+    {
+        "id": 54,
+        "label": "Gopalgannj - 3160"
+    },
+    {
+        "id": 54,
+        "label": "Ranaping - 3163"
+    },
+    {
+        "id": 54,
+        "label": "Jaintapur - 3156"
+    },
+    {
+        "id": 54,
+        "label": "Ichhamati - 3191"
+    },
+    {
+        "id": 54,
+        "label": "Jakiganj - 3190"
+    },
+    {
+        "id": 54,
+        "label": "Chatulbazar - 3181"
+    },
+    {
+        "id": 54,
+        "label": "Gachbari - 3183"
+    },
+    {
+        "id": 54,
+        "label": "Kanaighat - 3180"
+    },
+    {
+        "id": 54,
+        "label": "Manikganj - 3182"
+    },
+    {
+        "id": 54,
+        "label": "Kompanyganj - 3140"
+    },
+    {
+        "id": 54,
+        "label": "Birahimpur - 3106"
+    },
+    {
+        "id": 54,
+        "label": "Jalalabad - 3107"
+    },
+    {
+        "id": 54,
+        "label": "Jalalabad Cantoment - 3104"
+    },
+    {
+        "id": 54,
+        "label": "Kadamtali - 3111"
+    },
+    {
+        "id": 54,
+        "label": "Kamalbazer - 3112"
+    },
+    {
+        "id": 54,
+        "label": "Khadimnagar - 3103"
+    },
+    {
+        "id": 54,
+        "label": "Lalbazar - 3113"
+    },
+    {
+        "id": 54,
+        "label": "Mogla - 3108"
+    },
+    {
+        "id": 54,
+        "label": "Ranga Hajiganj - 3109"
+    },
+    {
+        "id": 54,
+        "label": "Shahajalal Science & - 3114"
+    },
+    {
+        "id": 54,
+        "label": "Silam - 3105"
+    },
+    {
+        "id": 54,
+        "label": "Sylhe Sadar - 3100"
+    },
+    {
+        "id": 54,
+        "label": "Sylhet Biman Bondar - 3102"
+    },
+    {
+        "id": 54,
+        "label": "Sylhet Cadet Col - 3101"
+    }
+]
