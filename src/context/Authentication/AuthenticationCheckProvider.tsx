@@ -3,13 +3,15 @@ import React, { createContext, useEffect, useReducer } from 'react';
 import { actionTypeInterface, authenticationCheckProviderReducer, } from './AuthenticationReducer';
 import { refresh_api } from '../../config';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ref_token } from '../../hooks/ref_token';
 
 
 export const initialState = {
     role: null,
     isLoggedIn: false,
     isLoading: true,
-    user_info: {}
+    user_info: {},
+    refetch: () => { }
 }
 
 export interface initialStateInterface {
@@ -32,48 +34,51 @@ export interface initialStateInterface {
         country?: string,
         verifiedEmail?: boolean,
     },
-    isLoggedIn: boolean
+    isLoggedIn?: boolean,
+    refetch?: () => Promise<void>
+
 }
 
-export const AuthenticationCheck = createContext<initialStateInterface>({ isLoading: false, role: null, user_info: {}, isLoggedIn: false });
+export const AuthenticationCheck = createContext<initialStateInterface>({
+    isLoading: false, role: '', user_info: {}, isLoggedIn: false
+});
 
 
 const AuthenticationCheckProvider = (props: { children: React.ReactNode }) => {
 
     const [state, dispatch]: [initialStateInterface, (props: actionTypeInterface) => void] = useReducer(authenticationCheckProviderReducer, initialState);
 
-    useEffect(() => {
-        const run = async () => {
-            try {
-                dispatch({ type: 'LOADING' || '' });
-                const ref_tkn: any = await AsyncStorage.getItem('ref_tkn')
+    const run = async () => {
+        try {
+            dispatch({ type: 'LOADING' || '' });
 
-                const res = await fetch(refresh_api, {
-                    headers: {
-                        "ref_tkn": ref_tkn
-                    },
-                    method: "POST",
-                    body: JSON.stringify({})
-                })
-                const data = await res.json()
+            const res = await fetch(refresh_api, {
+                headers: {
+                    "ref_tkn": await ref_token()
+                },
+                method: "POST",
+                body: JSON.stringify({})
+            })
+            const data = await res.json()
 
-                if (data?.success) {
-                    dispatch({ type: 'SUCCESS', payload: data })
-                }
-                else {
-                    dispatch({ type: 'ERROR' });
-                }
+            if (data?.success) {
+                dispatch({ type: 'SUCCESS', payload: data })
             }
-            catch {
+            else {
                 dispatch({ type: 'ERROR' });
             }
         }
+        catch {
+            dispatch({ type: 'ERROR' });
+        }
+    }
+    useEffect(() => {
         run()
     }, [dispatch]);
 
 
     return (
-        <AuthenticationCheck.Provider value={state}>
+        <AuthenticationCheck.Provider value={{ ...state, refetch: run }}>
             {props.children}
         </AuthenticationCheck.Provider>
     );

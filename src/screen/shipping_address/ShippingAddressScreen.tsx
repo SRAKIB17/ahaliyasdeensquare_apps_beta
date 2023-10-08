@@ -26,7 +26,10 @@ export default function ShippingAddressScreen({ translate }: navigationInterface
 
     return (
         <SafeAreaView style={global_styles.container}>
-            <AddNewShippingAddress translate={translate} />
+            {
+                addNew &&
+                <AddNewShippingAddress translate={translate} setAddNew={setAddNew} />
+            }
             <>
                 {
                     loading ?

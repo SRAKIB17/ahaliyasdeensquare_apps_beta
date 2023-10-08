@@ -47,6 +47,7 @@ function SignUpScreen(props: navigationInterface) {
             email: emailInput,
             password: passwordInput
         }
+
         // fetch(signin_api, {
         //     method: "POST",
         //     headers: {
@@ -99,7 +100,7 @@ function SignUpScreen(props: navigationInterface) {
                         value={phoneInput}
                         placeholder={phone}
                         toast={phone_error}
-                        pattern={/^[0-9|+]{11}$/}
+                        pattern={/^01\d{9}$/}
                     />
                 </View>
                 {/* Email */}

@@ -77,7 +77,7 @@ function DropDownPicker({
         else {
             setSearchItems(items)
         }
-    }, [searchValue])
+    }, [searchValue, items])
 
     useEffect(() => {
         if (defaultValue?.label) {
@@ -140,6 +140,11 @@ function DropDownPicker({
                 onRequestClose={() => setIsVisible(false)}
             >
                 <View style={styles.modal}>
+                    <View style={[{ paddingBottom: 10, }]}>
+                        <Text style={[global_styles.text_xl, global_styles.font_medium]}>
+                            {placeholder}
+                        </Text>
+                    </View>
                     <View style={{ paddingBottom: 10 }}>
                         <Input
                             style={{ height: 48 }}

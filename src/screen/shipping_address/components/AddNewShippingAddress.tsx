@@ -10,66 +10,83 @@ import Input from '../../../components/input/Input';
 import { assets_images } from '../../../assets/assets_images';
 import districts from './districts.json'
 import postcodes from './postcodes.json'
+import PressableButton from '../../../components/button/PressableButton';
+import axios from 'axios';
+import { ref_token } from '../../../hooks/ref_token';
+import { address_api } from '../../../config';
 
-function AddNewShippingAddress({ translate }: { translate: translateInterface }) {
+function AddNewShippingAddress({
+    translate, setAddNew
+}: {
+    translate: translateInterface,
+    setAddNew: React.Dispatch<React.SetStateAction<boolean>>
+}) {
     const { add_new_address, phone, phone_error, alternate_phone_number, no_results_found, search_for_something, enter_valid_info_of_area_address, courier_service_address, address_label, area_address, select_area, select_city } = translate
-
-
-    const [details, setDetails] = useState('')
-    const [amount, setAmount] = useState<number>(0)
-    const [title, setTitle] = useState('');
-    const [typeExpense, setType] = useState<{
-        label: string;
-        value: string;
-    }>({ label: "", value: "" })
-
-
-    const [nameInput, setNameInput] = useState('');
+    const [addressLabelInput, setAddressLabelInput] = useState('')
     const [countryInput, setCountryInput] = useState({ label: "Bangladesh", value: 'Bangladesh' });
-    const [emailInput, setEmailInput] = useState('');
-
+    const [localAreaInput, setLocalAreaInput] = useState('');
     const [phoneInput, setPhoneInput] = useState('');
     const [alternativePhoneInput, setAlternativePhonePhoneInput] = useState('');
+    const [courierInput, setCourierInput] = useState('');
 
-    const [passwordInput, setPasswordInput] = useState('');
-
-    const addTimeSlots = async () => {
-        if (!Boolean(amount) || !Boolean(details) || !Boolean(amount) || !Boolean(title) || !Boolean(typeExpense)) {
-            Toast({
-                text: "Please fill all input filled"
-            })
-        }
-        else {
-            // const add_new = {
-            //     "id": transactionsDB?.length + 1,
-            //     "datetime": new Date(),
-            //     "title": title,
-            //     "amount": amount,
-            //     "details": details,
-            //     "type": typeExpense?.value
-            // }
-            // AsyncStorage.setItem('transactions', JSON.stringify([...transactionsDB, add_new])).then(r => {
-            //     setNewEntry(false)
-            // })
-        }
-    }
-
-    const [selectCity, setSelectCity] = useState<{
+    const [selectCityInput, setSelectCityInput] = useState<{
         id?: number | string,
         label: string;
         value: string;
     }>({ label: "", value: "", id: '' })
 
-    const [selectArea, setSelectArea] = useState<{
+    const [selectAreaInput, setSelectAreaInput] = useState<{
         id?: number | string,
         label: string;
         value: string;
     }>({ label: "", value: "" })
 
     useEffect(() => {
-        setSelectArea({ label: "", value: "", id: "" })
-    }, [selectCity])
-    const postcodesFilter = postcodes?.filter(r => r.id == selectCity?.id)
+        setSelectAreaInput({ label: "", value: "", id: "" })
+    }, [selectCityInput])
+    const postcodesFilter: any = postcodes?.filter(r => r.id == selectCityInput?.id)
+
+
+    const addNewHandle = async () => {
+        const address_info = {
+            addressLabel: addressLabelInput,
+            alternativePhoneNumber: alternativePhoneInput,
+            area: localAreaInput,
+            city: `${selectAreaInput?.label}, ${selectCityInput?.value}`,
+            country: countryInput?.value,
+            courierServiceAddress: courierInput,
+            phoneNumber: phoneInput,
+        }
+        const { data } = await axios.post(`${address_api}`, address_info, {
+            headers: {
+                "ref_tkn": await ref_token(),
+            }
+        })
+
+        if (data?.success) {
+            Toast({ text: 'Successfully add your address' })
+            setAddNew(false)
+
+            // if (!checkout) {
+            //     submit_loading(false)
+            //     router.push((return_url ? return_url : '/account/address'))
+            // }
+            // else {
+            //     submit_loading(false)
+            //     window.location.reload()
+            // }
+            // toast.success('Successfully create your address', {
+            //     position: "top-right",
+            //     icon: <LocationOutlineSVG color='red' strokeWidth='1' size='20' />,
+            //     autoClose: 3000,
+            //     closeOnClick: true,
+            //     theme: "light"
+            // });
+        }
+        else {
+            Toast({ text: 'Something is wrong.Please try again' })
+        }
+    }
 
     return (
         <View style={{ display: "flex", gap: 16 }}>
@@ -84,17 +101,12 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                     {address_label}
                 </Text>
                 <Input
-                    style={{ minHeight: 100 }}
-                    setValue={setAlternativePhonePhoneInput}
-                    value={alternativePhoneInput}
-                    placeholder={courier_service_address}
-                    multiline={true}
+                    setValue={setAddressLabelInput}
+                    value={addressLabelInput}
+                    placeholder={address_label}
                     toast={courier_service_address}
-                    pattern={/^[0-9a-zA-Z\s,'-]*$/}
                 />
             </View>
-
-            {/* Contact number */}
 
             {/* Phone number */}
             <View>
@@ -106,7 +118,7 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                     value={phoneInput}
                     placeholder={phone}
                     toast={phone_error}
-                    pattern={/^[0-9|+]{11}$/}
+                    pattern={/^01\d{9}$/}
                 />
             </View>
             {/*Alternate Phone number */}
@@ -120,7 +132,7 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                     value={alternativePhoneInput}
                     placeholder={alternate_phone_number}
                     toast={phone_error}
-                    pattern={/^[0-9|+]{11}$/}
+                    pattern={/^01\d{9}$/}
                 />
             </View>
 
@@ -129,9 +141,9 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                     {select_city}
                 </Text>
                 <DropDownPicker
-                    setValue={setSelectCity}
+                    setValue={setSelectCityInput}
                     searchPlaceholder={search_for_something}
-                    value={selectCity}
+                    value={selectCityInput}
                     noResultsFoundPlaceholder={no_results_found}
                     items={districts}
                     placeholder={select_city}
@@ -143,8 +155,8 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                 </Text>
                 <DropDownPicker
                     searchPlaceholder={search_for_something}
-                    setValue={setSelectArea}
-                    value={selectArea}
+                    setValue={setSelectAreaInput}
+                    value={selectAreaInput}
                     noResultsFoundPlaceholder={no_results_found}
                     items={postcodesFilter}
                     placeholder={select_area}
@@ -157,8 +169,8 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                 </Text>
                 <Input
                     style={{ minHeight: 100 }}
-                    setValue={setAlternativePhonePhoneInput}
-                    value={alternativePhoneInput}
+                    setValue={setLocalAreaInput}
+                    value={localAreaInput}
                     placeholder={'Mention the house/flat number, neighborhood name, area of contact (বাসা/ফ্ল্যাট নম্বর, পাড়া-মহল্লার নাম, পরিচিতির এলাকা উল্লেখ করুন)'}
                     multiline={true}
                     toast={enter_valid_info_of_area_address}
@@ -173,8 +185,8 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                 </Text>
                 <Input
                     style={{ minHeight: 100 }}
-                    setValue={setAlternativePhonePhoneInput}
-                    value={alternativePhoneInput}
+                    setValue={setCourierInput}
+                    value={courierInput}
                     placeholder={courier_service_address}
                     multiline={true}
                     toast={courier_service_address}
@@ -182,7 +194,33 @@ function AddNewShippingAddress({ translate }: { translate: translateInterface })
                 />
             </View>
 
+            {
+                // loading ?
+                //     <PressableButton
+                //         image={assets_images.loading_gif}
+                //         imageStyle={{ height: 28, width: 28 }}
+                //         textStyle={{ color: colors.primary_text }}
+                //         onPress={() => Toast({ text: "Please wait" })}
+                //         containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
+                //     />
+                //     :
+                <PressableButton
+                    disabled={(
+                        !Boolean(addressLabelInput) ||
+                        !Boolean(phoneInput) ||
+                        !Boolean(alternativePhoneInput) ||
+                        !Boolean(selectCityInput?.value) ||
+                        !Boolean(selectAreaInput?.label) ||
+                        !Boolean(localAreaInput) ||
+                        !Boolean(courierInput)
+                    )}
+                    text={add_new_address}
+                    textStyle={{ color: colors.primary_text }}
+                    onPress={addNewHandle}
+                    containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
+                />
 
+            }
         </View>
     );
 }

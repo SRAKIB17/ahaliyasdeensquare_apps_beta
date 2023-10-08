@@ -12,7 +12,7 @@ export interface actionTypeInterface {
 }
 
 
-export const authenticationCheckProviderReducer = (state: initialStateInterface, action: actionTypeInterface) => {
+export const authenticationCheckProviderReducer = (state: any, action: actionTypeInterface) => {
     switch (action.type) {
         case actionType.LOADING:
             return {
