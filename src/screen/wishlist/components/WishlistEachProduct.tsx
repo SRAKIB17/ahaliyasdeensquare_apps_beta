@@ -9,10 +9,11 @@ import decimalPoint from '../../../hooks/decimalPoint';
 import { assets_images } from '../../../assets/assets_images';
 import { eachProductInterface } from '../../../interface/each_product.interface';
 import TouchableOpacityButton from '../../../components/button/TouchableOpacityButton';
+import base_upload_image_api_concat from '../../../hooks/base_upload_api_concat';
 
 export default function WishlistEachProduct(props: { product: eachProductInterface }) {
     const { title, images, availabilityStatus, price, currency, discount } = props?.product
-    const product_image = images?.split(',')?.[0]?.trim();
+    const product_image = base_upload_image_api_concat({ images: images })?.[0];
 
     return (
         <View style={styles.item}>

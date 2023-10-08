@@ -1,6 +1,7 @@
 export default {
     transparent: "transparent",
-    primary: "#2da7bc",
+    primary: "#05AEB1",
+    // primary: "#2da7bc",
     primary_text: 'white',
     secondary: "#ff7622",
     secondary_text: 'white',

@@ -13,7 +13,7 @@ export interface eachProductInterface {
     description?: string,
     fullDescription?: string,
     sku?: number,
-    images?: string,
+    images: string,
     categoryID?: number,
     subCategoryID?: number,
     tags?: string,

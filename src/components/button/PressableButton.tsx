@@ -72,7 +72,7 @@ export default function PressableButton({
 
 const styles = StyleSheet.create({
     root: {
-        backgroundColor: '#e47911',
+        backgroundColor: colors.secondary,
         height: 35,
         display: "flex",
         flexDirection: "row",
