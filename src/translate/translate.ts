@@ -8,6 +8,9 @@ export interface translateInterface {
     "notifications": string,
     "my_orders": string,
     "my_carts": string,
+    "search": string,
+    "update": string,
+    "go_back": string,
     "my_wishlists": string,
     "shipping_address": string,
     "support_tickets": string,
@@ -67,6 +70,8 @@ export interface translateInterface {
 
 export const translate: { bn: translateInterface, en: translateInterface } = {
     "bn": {
+        "search": "সার্চ",
+        "go_back": "ফিরে যান",
         "browser_history": "ব্রাউজার ইতিহাস",
         "address_label": "ঠিকানা লেবেল",
         "home": "বাড়ি",
@@ -101,6 +106,7 @@ export const translate: { bn: translateInterface, en: translateInterface } = {
         "reward_coins": "reward_coins",
         "user_id": "ব্যবহারকারী আইডি",
         "user_type": "ব্যবহারকারীর ধরন",
+        "update": "আপডেট করুন",
         "change_language": "ভাষা পরিবর্তন করুন",
         "details": "বিস্তারিত",
         "tracking_number": "ট্র্যাকিং নম্বর",
@@ -135,6 +141,7 @@ export const translate: { bn: translateInterface, en: translateInterface } = {
     },
 
     "en": {
+        "search": "Search",
         "no_results_found": "No results found",
         "add_new_address": "Add New Address",
         "home": "Home",
@@ -145,6 +152,7 @@ export const translate: { bn: translateInterface, en: translateInterface } = {
         "search_for_something": "Search for something",
         "cart": "Cart",
         "profile": "Profile",
+        "go_back": "Back",
         "account_information": "Account Information",
         "notifications": "Notifications",
         "my_orders": "My Orders",
@@ -196,6 +204,7 @@ export const translate: { bn: translateInterface, en: translateInterface } = {
         "password_error": "Minimum eight characters, at least one letter and one number",
         "email_error": "Please input valid email",
         "password": 'Password',
+        "update": "Update",
         "forget_my_password": "Forget my password",
         "name_error": "Please input a valid name",
         "phone_error": "please input a valid phone number",

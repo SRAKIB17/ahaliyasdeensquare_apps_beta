@@ -35,12 +35,12 @@ export interface initialStateInterface {
         verifiedEmail?: boolean,
     },
     isLoggedIn?: boolean,
-    refetch?: () => Promise<void>
+    refetch: () => Promise<void> | any
 
 }
 
 export const AuthenticationCheck = createContext<initialStateInterface>({
-    isLoading: false, role: '', user_info: {}, isLoggedIn: false
+    isLoading: false, role: '', user_info: {}, isLoggedIn: false, refetch: () => { }
 });
 
 
@@ -51,7 +51,6 @@ const AuthenticationCheckProvider = (props: { children: React.ReactNode }) => {
     const run = async () => {
         try {
             dispatch({ type: 'LOADING' || '' });
-
             const res = await fetch(refresh_api, {
                 headers: {
                     "ref_tkn": await ref_token()
@@ -60,7 +59,6 @@ const AuthenticationCheckProvider = (props: { children: React.ReactNode }) => {
                 body: JSON.stringify({})
             })
             const data = await res.json()
-
             if (data?.success) {
                 dispatch({ type: 'SUCCESS', payload: data })
             }

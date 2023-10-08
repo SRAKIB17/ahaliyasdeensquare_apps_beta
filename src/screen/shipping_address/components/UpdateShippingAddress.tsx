@@ -15,21 +15,27 @@ import axios from 'axios';
 import { ref_token } from '../../../hooks/ref_token';
 import { address_api } from '../../../config';
 
-function AddNewShippingAddress({
-    translate, setAddNew,
+function UpdateShippingAddress({
+    translate,
+    setUpdateEntry,
+    updateEntry,
     refetch,
 }: {
     translate: translateInterface,
+    updateEntry: any,
     refetch: () => void,
-    setAddNew: React.Dispatch<React.SetStateAction<boolean>>
+    setUpdateEntry: React.Dispatch<React.SetStateAction<{}>>
 }) {
-    const { add_new_address, phone, phone_error, alternate_phone_number, no_results_found, search_for_something, enter_valid_info_of_area_address, courier_service_address, address_label, area_address, select_area, select_city } = translate
-    const [addressLabelInput, setAddressLabelInput] = useState('')
+    const { update, phone, phone_error, alternate_phone_number, no_results_found, search_for_something, enter_valid_info_of_area_address, courier_service_address, address_label, area_address, select_area, select_city } = translate
+
+    const [addressLabelInput, setAddressLabelInput] = useState(updateEntry?.addressLabel)
     const [countryInput, setCountryInput] = useState({ label: "Bangladesh", value: 'Bangladesh' });
-    const [localAreaInput, setLocalAreaInput] = useState('');
-    const [phoneInput, setPhoneInput] = useState('');
-    const [alternativePhoneInput, setAlternativePhonePhoneInput] = useState('');
-    const [courierInput, setCourierInput] = useState('');
+
+    const [localAreaInput, setLocalAreaInput] = useState(updateEntry?.area);
+    const [phoneInput, setPhoneInput] = useState(updateEntry?.phoneNumber);
+    const [alternativePhoneInput, setAlternativePhonePhoneInput] = useState(updateEntry?.alternativePhoneNumber);
+
+    const [courierInput, setCourierInput] = useState(updateEntry?.courierServiceAddress);
 
     const [selectCityInput, setSelectCityInput] = useState<{
         id?: number | string,
@@ -49,7 +55,7 @@ function AddNewShippingAddress({
     const postcodesFilter: any = postcodes?.filter(r => r.id == selectCityInput?.id)
 
 
-    const addNewHandle = async () => {
+    const updateHandle = async () => {
         const address_info = {
             addressLabel: addressLabelInput,
             alternativePhoneNumber: alternativePhoneInput,
@@ -58,17 +64,20 @@ function AddNewShippingAddress({
             country: countryInput?.value,
             courierServiceAddress: courierInput,
             phoneNumber: phoneInput,
+            shippingAddressID: updateEntry?.shippingAddressID
         }
-        const { data } = await axios.post(`${address_api}`, address_info, {
+
+        const { data } = await axios.put(`${address_api}`, address_info, {
             headers: {
-                "ref_tkn": await ref_token(),
+                "ref_tkn": await ref_token()
             }
         })
 
         if (data?.success) {
-            Toast({ text: 'Successfully add your address' })
-            setAddNew(false)
+            Toast({ text: 'Successfully update your address' })
+            setUpdateEntry({})
             refetch()
+
             // if (!checkout) {
             //     submit_loading(false)
             //     router.push((return_url ? return_url : '/account/address'))
@@ -94,7 +103,7 @@ function AddNewShippingAddress({
         <View style={{ display: "flex", gap: 16 }}>
             <View>
                 <Text style={[global_styles.text_2xl, global_styles.font_medium]}>
-                    {add_new_address}
+                    {update}
                 </Text>
             </View>
             {/* Address Laval */}
@@ -105,6 +114,7 @@ function AddNewShippingAddress({
                 <Input
                     setValue={setAddressLabelInput}
                     value={addressLabelInput}
+                    defaultValue={updateEntry?.addressLabel}
                     placeholder={address_label}
                     toast={courier_service_address}
                 />
@@ -120,6 +130,7 @@ function AddNewShippingAddress({
                     value={phoneInput}
                     placeholder={phone}
                     toast={phone_error}
+                    defaultValue={updateEntry?.phoneNumber}
                     pattern={/^01\d{9}$/}
                 />
             </View>
@@ -132,6 +143,7 @@ function AddNewShippingAddress({
                 <Input
                     setValue={setAlternativePhonePhoneInput}
                     value={alternativePhoneInput}
+                    defaultValue={updateEntry?.alternativePhoneNumber}
                     placeholder={alternate_phone_number}
                     toast={phone_error}
                     pattern={/^01\d{9}$/}
@@ -173,6 +185,7 @@ function AddNewShippingAddress({
                     style={{ minHeight: 100 }}
                     setValue={setLocalAreaInput}
                     value={localAreaInput}
+                    defaultValue={updateEntry?.area}
                     placeholder={'Mention the house/flat number, neighborhood name, area of contact (বাসা/ফ্ল্যাট নম্বর, পাড়া-মহল্লার নাম, পরিচিতির এলাকা উল্লেখ করুন)'}
                     multiline={true}
                     toast={enter_valid_info_of_area_address}
@@ -189,6 +202,7 @@ function AddNewShippingAddress({
                     style={{ minHeight: 100 }}
                     setValue={setCourierInput}
                     value={courierInput}
+                    defaultValue={updateEntry?.courierServiceAddress}
                     placeholder={courier_service_address}
                     multiline={true}
                     toast={courier_service_address}
@@ -216,9 +230,9 @@ function AddNewShippingAddress({
                         !Boolean(localAreaInput) ||
                         !Boolean(courierInput)
                     )}
-                    text={add_new_address}
+                    text={update}
                     textStyle={{ color: colors.primary_text }}
-                    onPress={addNewHandle}
+                    onPress={updateHandle}
                     containerStyles={{ borderWidth: 0, height: 48, backgroundColor: colors.primary }}
                 />
 
@@ -227,7 +241,7 @@ function AddNewShippingAddress({
     );
 }
 
-export default AddNewShippingAddress;
+export default UpdateShippingAddress;
 
 
 export const styles = StyleSheet.create({

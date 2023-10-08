@@ -47,7 +47,12 @@ function SignUpScreen(props: navigationInterface) {
             email: emailInput,
             password: passwordInput
         }
-
+        // AsyncStorage.setItem('ref_tkn', data?.token).then(r => {
+        //     setTimeout(async () => {
+        //         await refetch()
+        //     }, 200);
+        //     navigation.navigate({ link: navigate_link.profile })
+        // })
         // fetch(signin_api, {
         //     method: "POST",
         //     headers: {

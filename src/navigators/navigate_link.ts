@@ -13,10 +13,12 @@ export interface navigate_linkInterface {
     "shipping_address": string,
     "support_tickets": string,
     "settings": string,
+    "search": string,
     "browser_history": string,
 }
 export const navigate_link: navigate_linkInterface = {
     sign_in: "/sign-in",
+    search: "/search",
     sign_up: "/sign-up",
     home: "/home",
     profile: "/profile",

@@ -7,15 +7,20 @@ import { shippingAddressInterface } from '../../../interface/shipping_address.in
 import PressableButton from '../../../components/button/PressableButton';
 import { assets_images } from '../../../assets/assets_images';
 import axios from 'axios'
-import { address_api } from '../../../config';
+import { address_api, user_profile_api } from '../../../config';
 import { ref_token } from '../../../hooks/ref_token';
 import Toast from '../../../components/toast/Toast';
 // import QuantitySelector from '../../../components/QuantitySelector/QuantitySelector';
 
 export default function EachShippingAddress({
     address,
-    refetch
-}: { address: shippingAddressInterface, refetch: () => void }) {
+    refetch,
+    setUpdateEntry,
+}: {
+    address: shippingAddressInterface,
+    refetch: () => void,
+    setUpdateEntry: React.Dispatch<React.SetStateAction<{}>>
+}) {
     const { translate } = useContext(NavigationProvider)
     const { phone, shipping_address, courier_address, default_address } = translate;
     const [loading, setLoading] = useState(false);
@@ -44,6 +49,33 @@ export default function EachShippingAddress({
 
         }
     }
+
+    const [primaryLoading, setPrimaryLoading] = useState(false)
+    const makePrimaryAddress = async (shippingAddressID: number) => {
+        setPrimaryLoading(true)
+        try {
+            const { data } = await axios.put(`${user_profile_api}`, { defaultShippingAddress: shippingAddressID }, {
+                headers: {
+                    "ref_tkn": await ref_token()
+                }
+            })
+            if (data?.success) {
+                setPrimaryLoading(false)
+                refetch()
+                Toast({ text: "Successfully added" })
+            }
+            else {
+                refetch()
+                setPrimaryLoading(false)
+                Toast({ text: 'Something is wrong.Please try again' });
+            }
+        }
+        catch {
+            setPrimaryLoading(false)
+            Toast({ text: 'Something is wrong.Please try again' });
+        }
+    }
+
     return (
         <View style={styles.container}>
             <View style={{ gap: 4 }}>
@@ -67,22 +99,56 @@ export default function EachShippingAddress({
                             </View>
                         }
                     </View>
-                    <View>
+                    <View style={{ flexDirection: 'row', gap: 4, alignItems: 'center' }}>
                         {
-                            loading ?
-                                <ActivityIndicator size="small" color={colors.primary} />
-                                :
-                                <PressableButton
-                                    onPress={deleteShippingAddress}
-                                    image={assets_images.delete3d}
-                                    imageStyle={{ width: 20, height: 20 }}
-                                    containerStyles={{
-                                        backgroundColor: 'transparent',
-                                        width: 32,
-                                        height: 32,
-                                    }}
-                                />
+                            !Boolean(address?.isDefaultShippingAddress) &&
+                            <View>
+                                {
+                                    primaryLoading ?
+                                        <ActivityIndicator size="small" color={colors.primary} />
+                                        :
+                                        <PressableButton
+                                            onPress={() => makePrimaryAddress(address?.shippingAddressID)}
+                                            image={assets_images.location3d}
+                                            imageStyle={{ width: 20, height: 20 }}
+                                            containerStyles={{
+                                                backgroundColor: 'transparent',
+                                                width: 32,
+                                                height: 32,
+                                            }}
+                                        />
+                                }
+                            </View>
                         }
+                        <View>
+                            <PressableButton
+                                onPress={() => { setUpdateEntry(address) }}
+                                image={assets_images.edit3d}
+                                imageStyle={{ width: 20, height: 20 }}
+                                containerStyles={{
+                                    backgroundColor: 'transparent',
+                                    width: 32,
+                                    height: 32,
+                                }}
+                            />
+                        </View>
+                        <View>
+                            {
+                                loading ?
+                                    <ActivityIndicator size="small" color={colors.primary} />
+                                    :
+                                    <PressableButton
+                                        onPress={deleteShippingAddress}
+                                        image={assets_images.delete3d}
+                                        imageStyle={{ width: 20, height: 20 }}
+                                        containerStyles={{
+                                            backgroundColor: 'transparent',
+                                            width: 32,
+                                            height: 32,
+                                        }}
+                                    />
+                            }
+                        </View>
                     </View>
                 </View>
 

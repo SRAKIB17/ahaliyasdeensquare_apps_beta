@@ -1,6 +1,7 @@
 export const assets_images = {
-    "search_dark": require('./images/search_dark.png'),
     "search_white": require('./images/search_light.png'),
+    "search_dark": require('./images/search_dark.png'),
+    "search_grey": require('./images/search_grey.png'),
     "arrow_right_dark": require('./images/arrow_right_dark.png'),
     "arrow_right_light": require('./images/arrow_right_light.png'),
     "arrow_right_grey": require('./images/arrow_right_grey.png'),
@@ -20,12 +21,11 @@ export const assets_images = {
     "support_ticket_light": require('./images/support_ticket_light.png'),
     "log_out_dark": require('./images/log_out_dark.png'),
     "log_out_light": require('./images/log_out_light.png'),
-    "settings_light": require('./images/settings_light.png'),
-    "settings_dark": require('./images/settings_dark.png'),
-    "language_light": require('./images/language_light.png'),
-    "language_dark": require('./images/language_dark.png'),
     "info_dark": require('./images/info_dark.png'),
     "info_light": require('./images/info_light.png'),
+
+    "arrow_left_indicate_light": require('./images/arrow_left_indicate_light.png'),
+    "menu_navbar_light": require('./images/menu_navbar_light.png'),
 
     "male_avatar": require('./images/male_avatar.png'),
     "female_avatar": require('./images/female_avatar.png'),
@@ -40,6 +40,7 @@ export const assets_images = {
     "location3d": require('./images/3d/location3d.png'),
     "notifications3d": require('./images/3d/notifications3d.png'),
     "orders3d": require('./images/3d/orders3d.png'),
+    "edit3d": require('./images/3d/edit3d.png'),
     "password3d": require('./images/3d/password3d.png'),
     "person_256_3d": require('./images/3d/person_256_3d.png'),
     "person3d": require('./images/3d/person3d.png'),
@@ -48,6 +49,7 @@ export const assets_images = {
     "wishlists3d": require('./images/3d/wishlists3d.png'),
     "shipping_address3d": require('./images/3d/shipping_address3d.png'),
     "sign_out3d": require('./images/3d/sign_out3d.png'),
+    "language_change3d": require('./images/3d/language_change3d.png'),
     "support_ticket3d": require('./images/3d/support_ticket3d.png'),
 
     // Gif

@@ -17,6 +17,7 @@ import PrivacyPolicyScreen from "../screen/static/PrivacyPolicyScreen";
 import TermsConditionScreen from "../screen/static/TermsConditionScreen";
 import { AuthenticationCheck } from "../context/Authentication/AuthenticationCheckProvider";
 import LoaderComponent from "./LoaderComponent";
+import SearchScreen from "../screen/search/SearchScreen";
 
 
 export default function Router(props: navigationInterface) {
@@ -47,6 +48,13 @@ export default function Router(props: navigationInterface) {
             title: "Home",
             component: HomeScreen,
             link: navigate_link.home,
+            authentication: 'user/guest',
+        },
+        // /home
+        {
+            title: "Search",
+            component: SearchScreen,
+            link: navigate_link.search,
             authentication: 'user/guest',
         },
         // privacy-policy

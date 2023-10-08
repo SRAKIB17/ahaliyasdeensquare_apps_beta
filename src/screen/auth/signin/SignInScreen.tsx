@@ -12,11 +12,13 @@ import { signin_api } from '../../../config';
 import Toast from '../../../components/toast/Toast';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Link from '../../../components/link/Link';
+import { AuthenticationCheck } from '../../../context/Authentication/AuthenticationCheckProvider';
 
 function SignInScreen(props: navigationInterface) {
     const { navigation, translate, navigate_link } = props
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const { refetch } = useContext(AuthenticationCheck)
 
     const { sign_in, password_error, password: passwordTr, email: emailTr, email_error, new_here, sign_up, forget_my_password } = translate
     const [loading, setLoading] = useState(false);
@@ -38,8 +40,12 @@ function SignInScreen(props: navigationInterface) {
         }).then(res => res.json()).then(data => {
             setLoading(false)
             if (data?.success) {
-                AsyncStorage.setItem('ref_tkn', data?.token)
-                navigation.navigate({ link: navigate_link.profile })
+                AsyncStorage.setItem('ref_tkn', data?.token).then(r => {
+                    setTimeout(async () => {
+                        await refetch()
+                    }, 200);
+                    navigation.navigate({ link: navigate_link.profile })
+                })
             }
             else {
                 setError(data?.message)

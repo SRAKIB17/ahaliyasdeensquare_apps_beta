@@ -7,12 +7,17 @@ import { shippingAddressInterface } from '../../interface/shipping_address.inter
 import LoaderComponent from '../../navigators/LoaderComponent';
 import AddNewShippingAddress from './components/AddNewShippingAddress';
 import { navigationInterface } from '../../navigators/NavigationContainer';
+import PressableButton from '../../components/button/PressableButton';
+import colors from '../../utils/colors';
+import UpdateShippingAddress from './components/UpdateShippingAddress';
 
 
 export default function ShippingAddressScreen({ translate }: navigationInterface) {
-    const [addNew, setAddNew] = useState(true)
+    const [addNew, setAddNew] = useState(false)
+    const [updateEntry, setUpdateEntry] = useState<{}>({})
     const [loading, setLoading] = useState(true)
     const [address, setAddress] = useState<shippingAddressInterface[]>([]);
+    const { go_back, add_new_address } = translate
     const refetch = () => {
         fetchShippingAddress().then(address => {
             setAddress(address?.result)
@@ -26,9 +31,41 @@ export default function ShippingAddressScreen({ translate }: navigationInterface
 
     return (
         <SafeAreaView style={global_styles.container}>
+
+            <View style={{ alignItems: 'flex-end', paddingBottom: 6 }}>
+                <PressableButton
+                    onPress={() => {
+                        if (Boolean(Object.values(updateEntry)?.length)) {
+                            setUpdateEntry({})
+                        }
+                        else {
+                            setAddNew(!addNew)
+                            setUpdateEntry({})
+                        }
+                    }}
+                    text={
+                        Boolean(Object.values(updateEntry)?.length) ? go_back : (addNew ? go_back : add_new_address)
+                    }
+                    containerStyles={{ height: 40, backgroundColor: colors.primary, borderWidth: 0, paddingHorizontal: 16 }}
+                    textStyle={{ color: colors.primary_text }}
+                />
+            </View>
+            {
+                Boolean(Object.values(updateEntry)?.length) &&
+                <UpdateShippingAddress
+                    refetch={refetch}
+                    translate={translate}
+                    setUpdateEntry={setUpdateEntry}
+                    updateEntry={updateEntry}
+                />
+            }
             {
                 addNew &&
-                <AddNewShippingAddress translate={translate} setAddNew={setAddNew} />
+                <AddNewShippingAddress
+                    translate={translate}
+                    setAddNew={setAddNew}
+                    refetch={refetch}
+                />
             }
             <>
                 {
@@ -37,12 +74,13 @@ export default function ShippingAddressScreen({ translate }: navigationInterface
                         :
                         <>
                             {
-                                Boolean(addNew) ||
+                                Boolean(addNew) || Boolean(Object.values(updateEntry)?.length) ||
                                 <View>
                                     {
                                         address?.map(address => {
                                             return (
                                                 <EachShippingAddress
+                                                    setUpdateEntry={setUpdateEntry}
                                                     address={address}
                                                     key={address?.shippingAddressID}
                                                     refetch={refetch}

@@ -1,15 +1,13 @@
 import React, { useRef, useState } from 'react';
-import { Image, SafeAreaView, StyleSheet, View, Text, Button, TouchableHighlight, DrawerLayoutAndroid } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, View, Text, Button, TouchableHighlight, DrawerLayoutAndroid, Pressable } from 'react-native';
 import Colors from '../../../utils/colors';
 import { assets_images } from '../../../assets/assets_images';
+import SearchScreen from '../../../screen/search/SearchScreen';
 
 
 const MainNavbar = ({ drawerRef }: { drawerRef: React.RefObject<DrawerLayoutAndroid> }) => {
 
 
-    const onPress = () => {
-        return drawerRef.current?.openDrawer()
-    }
     // <View style={styles.container}>
 
     //     <Text style={styles.paragraph}>
@@ -20,6 +18,7 @@ const MainNavbar = ({ drawerRef }: { drawerRef: React.RefObject<DrawerLayoutAndr
     //         onPress={() => drawer.current?.openDrawer()}
     //     />
     // </View>
+
     return (
         <>
             <View style={styles.navbar}>
@@ -31,8 +30,9 @@ const MainNavbar = ({ drawerRef }: { drawerRef: React.RefObject<DrawerLayoutAndr
                 </View>
 
                 <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                    {/* 
                     <View>
-                        <TouchableHighlight onPress={onPress}>
+                        <Pressable onPress={() => setIsVisible(true)}>
                             <View
                                 style={styles.navbar_button}
                             >
@@ -41,20 +41,25 @@ const MainNavbar = ({ drawerRef }: { drawerRef: React.RefObject<DrawerLayoutAndr
                                     style={{ height: 28, width: 28 }}
                                 />
                             </View>
-                        </TouchableHighlight>
-                    </View>
+                        </Pressable>
+                    </View> */}
+
                     <View>
-                        <TouchableHighlight onPress={onPress}>
+                        <Pressable onPress={() => drawerRef.current?.openDrawer()}>
                             <View
                                 style={styles.navbar_button}
                             >
-                                <View style={{ height: 4, width: 24, backgroundColor: Colors.white }}></View>
-                                <View style={{ height: 4, width: 24, backgroundColor: Colors.white }}></View>
-                                <View style={{ height: 4, width: 24, backgroundColor: Colors.white }}></View>
+                                <Image
+                                    source={assets_images.menu_navbar_light}
+                                    style={{ width: 32, height: 32 }}
+                                />
                             </View>
-                        </TouchableHighlight>
+                        </Pressable>
                     </View>
                 </View>
+
+                {/* ************** */}
+                {/* <SearchScreen isVisible={isVisible} setIsVisible={setIsVisible} /> */}
                 {/* <Button title='fsdf' /> */}
             </View>
 
@@ -66,7 +71,7 @@ const styles = StyleSheet.create({
     navbar: {
         display: 'flex',
         borderBottomColor: Colors.white,
-        borderBottomWidth: 2,
+        borderBottomWidth: 1,
         backgroundColor: Colors.primary,
         flexDirection: 'row',
         alignItems: 'center',
@@ -74,8 +79,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         color: 'black',
         height: 64,
-        paddingLeft: 10,
-        paddingRight: 10,
+        paddingHorizontal: 10,
         alignContent: 'space-between',
 
         shadowColor: "#000",
@@ -89,39 +93,13 @@ const styles = StyleSheet.create({
 
     },
     navbar_button: {
-        width: 40,
         padding: 8,
-        backgroundColor: Colors.primary,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 4
-    },
-
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        paddingHorizontal: 10,
     },
 
     button: {
         alignItems: 'center',
         backgroundColor: 'white',
         padding: 10,
-    },
-
-    countContainer: {
-        alignItems: 'center',
-        padding: 10,
-    },
-    countText: {
-        color: '#FF00FF',
-    },
-    header: {
-        width: '100%',
-        flexDirection: 'row',
-        alignContent: 'center',
-        justifyContent: 'center',
-        padding: 20,
     },
 });
 

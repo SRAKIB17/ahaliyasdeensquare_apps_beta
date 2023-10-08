@@ -5,11 +5,11 @@ import { assets_images } from '../../../assets/assets_images';
 import { global_styles } from '../../../styles/global';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
 function LanguageSettings({ button, button_title_image }: { button: object, button_title_image: object }) {
     const { navigation: { navigate }, translate } = useContext(NavigationProvider)
     const { change_language } = translate
     const [isEnabled, setIsEnabled] = useState(false);
+
     useEffect(() => {
         AsyncStorage.getItem('language')
             .then(r => {
@@ -41,9 +41,9 @@ function LanguageSettings({ button, button_title_image }: { button: object, butt
             <View style={button_title_image}>
                 <View>
                     <Image
-                        source={assets_images.language_dark}
+                        source={assets_images.language_change3d}
                         style={{
-                            height: 20, width: 20, objectFit: 'contain',
+                            height: 24, width: 24, objectFit: 'contain',
                         }}
                     />
                 </View>

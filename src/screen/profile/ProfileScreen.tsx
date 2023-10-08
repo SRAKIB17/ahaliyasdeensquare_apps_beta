@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Image, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationProvider, navigationInterface } from '../../navigators/NavigationContainer';
 import { global_styles } from '../../styles/global';
@@ -8,24 +8,9 @@ import TouchableOpacityButton from '../../components/button/TouchableOpacityButt
 import { navigate_link } from '../../navigators/navigate_link';
 import PressableButton from '../../components/button/PressableButton';
 import { AuthenticationCheck } from '../../context/Authentication/AuthenticationCheckProvider';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import HardReload from '../../hooks/ref_token';
 
-const user_info = {
-    name: "MD Rakibul Islam",
-    email: 'reakibulssc5@gmail.com',
-    profile: assets_images.person_256_3d,
-    balance: 0,
-    birthday: "2023-08-19",
-    country: "Bangladesh",
-    defaultShippingAddress: 10000,
-    gender: "Male",
-    isBlock: 0,
-    lastLogin: "2023-09-30T09:23:57.000Z",
-    phone: "+8801873989651",
-    registered: "2023-08-11T16:57:10.000Z",
-    rewardCoins: 2100,
-    userID: 10000,
-    userType: 0
-}
 
 
 export default function ProfileScreen({ navigation, drawerRef, translate, navigate_link }: navigationInterface) {
@@ -70,7 +55,7 @@ export default function ProfileScreen({ navigation, drawerRef, translate, naviga
             authentication: 'user/guest'
         },
         {
-            title: shipping_address,
+            title: `${shipping_address} DONe`,
             link: navigate_link?.shipping_address,
             icon: assets_images.shipping_address3d,
             authentication: 'user'
@@ -88,7 +73,7 @@ export default function ProfileScreen({ navigation, drawerRef, translate, naviga
             authentication: 'user/guest'
         },
     ]
-    const { isLoading, isLoggedIn, role, user_info } = useContext(AuthenticationCheck);
+    const { isLoading, isLoggedIn, role, user_info, refetch } = useContext(AuthenticationCheck);
 
     const avatar = user_info?.gender?.toLowerCase() == 'male' ?
         assets_images.male_avatar :
@@ -97,6 +82,11 @@ export default function ProfileScreen({ navigation, drawerRef, translate, naviga
                 assets_images?.female_avatar :
                 assets_images.male_avatar
         )
+    useEffect(() => {
+        // refetch()
+        return () => {
+        }
+    }, [])
 
     return (
         <View style={global_styles.container}>
@@ -130,7 +120,7 @@ export default function ProfileScreen({ navigation, drawerRef, translate, naviga
                             <PressableButton
                                 text={sign_in}
                                 textStyle={{ color: colors.secondary_text }}
-                                onPress={() => { navigation.navigate({ link: navigate_link.sign_in }) }}
+                                onPress={() => navigation.navigate({ link: navigate_link.sign_in })}
                                 containerStyles={{ height: 48, backgroundColor: colors.secondary }}
                             />
                         </View>
@@ -182,41 +172,49 @@ export default function ProfileScreen({ navigation, drawerRef, translate, naviga
                         }
                     })
                 }
-                <View>
-                    <Pressable
-                        onPress={() => navigation.navigate({ link: "r?.link" })}
-                    >
-                        <View style={styles.button}>
-                            <View style={styles.button_title_image}>
+                {
+                    isLoggedIn &&
+                    <View>
+                        <Pressable
+                            onPress={async () => {
+                                await AsyncStorage.removeItem('ref_tkn').then(() => {
+                                    refetch()
+                                    HardReload()
+                                })
+                            }}
+                        >
+                            <View style={styles.button}>
+                                <View style={styles.button_title_image}>
+                                    <View>
+                                        <Image
+                                            source={assets_images.sign_out3d}
+                                            style={{
+                                                height: 20, width: 20, objectFit: 'contain',
+                                            }}
+                                        />
+                                    </View>
+                                    <View>
+                                        <Text style={global_styles.text_lg}>
+                                            {
+                                                log_out
+                                            }
+                                        </Text>
+                                    </View>
+                                </View>
+
                                 <View>
                                     <Image
-                                        source={assets_images.sign_out3d}
+                                        source={assets_images.arrow_right_grey}
                                         style={{
-                                            height: 20, width: 20, objectFit: 'contain',
+                                            height: 16, objectFit: 'contain',
                                         }}
                                     />
                                 </View>
-                                <View>
-                                    <Text style={global_styles.text_lg}>
-                                        {
-                                            log_out
-                                        }
-                                    </Text>
-                                </View>
                             </View>
+                        </Pressable>
 
-                            <View>
-                                <Image
-                                    source={assets_images.arrow_right_grey}
-                                    style={{
-                                        height: 16, objectFit: 'contain',
-                                    }}
-                                />
-                            </View>
-                        </View>
-                    </Pressable>
-
-                </View>
+                    </View>
+                }
             </View>
         </View>
     );

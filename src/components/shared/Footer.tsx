@@ -7,13 +7,19 @@ import { assets_images } from '../../assets/assets_images';
 
 export default function Footer() {
     const { navigation, translate, navigate_link } = useContext(NavigationProvider)
-    const { home, wishlist, cart, profile } = translate
+    const { home, wishlist, cart, profile, search } = translate
     const footerMenuButton = [
         {
             light: assets_images.home_light,
             dark: assets_images.home_dark,
             title: home,
             link: "/home",
+        },
+        {
+            light: assets_images.search_white,
+            dark: assets_images.search_dark,
+            title: search,
+            link: "/search"
         },
         {
             light: assets_images.wishlist_light,
@@ -78,8 +84,8 @@ export default function Footer() {
 const styles = StyleSheet.create({
     footer: {
         backgroundColor: colors.white,
-        borderTopEndRadius: 24,
-        borderTopStartRadius: 24,
+        borderTopEndRadius: 20,
+        borderTopStartRadius: 20,
         padding: 16,
         paddingHorizontal: 20,
         display: 'flex',

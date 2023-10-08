@@ -33,37 +33,46 @@ const NavbarTitleBackButton = ({
     //     />
     // </View>
     return (
-        <>
-            <View style={styles.navbar}>
-                <View style={styles.title}>
-
-                    <View style={{ position: 'absolute' }}>
-                        <TouchableOpacityButton
-                            key={title}
-                            onPress={() => { navigation.navigate({ link: backward }) }}
-                            image={assets_images.arrow_right_light}
-                            imageStyle={{ transform: [{ rotate: "180deg" }] }}
-                            containerStyles={{
-                                backgroundColor: 'transparent',
-                                width: 36,
-                                height: 36,
-                                borderWidth: 0,
-                            }}
-                        />
-                    </View>
-
-                    <View style={{ width: "100%", display: 'flex', justifyContent: "center", alignContent: 'center', flexDirection: 'row' }}>
-                        <Text style={[global_styles.text_xl, global_styles.font_bold, { color: colors.primary_text }]}
-                        >
-                            {
-                                title
-                            }
-                        </Text>
-                    </View>
-                </View>
+        <View style={styles.navbar}>
+            <View>
+                <TouchableOpacityButton
+                    key={title}
+                    imageStyle={{
+                        width: 24,
+                        height: 24
+                    }}
+                    onPress={() => { navigation.navigate({ link: backward }) }}
+                    image={assets_images.arrow_left_indicate_light}
+                    containerStyles={{
+                        backgroundColor: 'transparent',
+                        width: 36,
+                        height: 36,
+                        borderWidth: 0,
+                    }}
+                />
             </View>
 
-        </>
+            <View>
+                <Text style={[global_styles.text_xl, global_styles.font_bold, { color: colors.primary_text }]}
+                >
+                    {
+                        title
+                    }
+                </Text>
+            </View>
+            <View>
+                <TouchableHighlight onPress={onPress}>
+                    <View
+                        style={styles.navbar_button}
+                    >
+                        <Image
+                            source={assets_images.menu_navbar_light}
+                            style={{ width: 32, height: 32 }}
+                        />
+                    </View>
+                </TouchableHighlight>
+            </View>
+        </View>
     );
 };
 
@@ -72,7 +81,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         display: 'flex',
         borderBottomColor: Colors.white,
-        borderBottomWidth: 2,
+        borderBottomWidth: 1,
         backgroundColor: Colors.primary,
         flexDirection: 'row',
         alignItems: 'center',
@@ -94,13 +103,8 @@ const styles = StyleSheet.create({
         elevation: 3,
 
     },
-    title: {
-        display: 'flex',
-        position: "relative",
-        gap: 16,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
+    navbar_button: {
+        padding: 8,
     },
 });
 

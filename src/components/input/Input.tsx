@@ -16,9 +16,11 @@ export default function Input({
     style = {},
     toast = 'Please input valid info',
     multiline = false,
+    autoFocus = false,
 }
     :
     {
+        autoFocus?: boolean,
         style?: object | any,
         asset?: number,
         value: string,
@@ -95,6 +97,7 @@ export default function Input({
                         <></>
                 }
                 <TextInput
+                    autoFocus={autoFocus}
                     multiline={multiline}
                     onBlur={(text) => onBlurHandle()}
                     defaultValue={defaultValue}

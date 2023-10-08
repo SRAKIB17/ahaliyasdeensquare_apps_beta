@@ -48,7 +48,6 @@ function DropDownPicker({
     }) {
 
     const [isVisible, setIsVisible] = useState(false);
-    const [selectedOption, setSelectedOption] = useState('');
 
 
 
